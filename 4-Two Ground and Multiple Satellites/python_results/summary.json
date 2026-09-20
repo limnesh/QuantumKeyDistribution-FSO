@@ -1,0 +1,45 @@
+{
+  "parameters": {
+    "stage": 4,
+    "satellite_count": 2,
+    "ground_separation_km": 3000,
+    "satellite_span_deg": 26.979648177561916,
+    "duration_s": 1200,
+    "time_points": 601,
+    "isl_divergence_rad": 2e-06,
+    "isl_receiver_radius_m": 0.3,
+    "isl_pointing_loss_db": 1.0,
+    "isl_background_yield": 1e-07,
+    "isl_clearance_km": 20.0,
+    "enable_isl": true,
+    "link": {
+      "earth_radius_km": 6371.0,
+      "altitude_km": 500.0,
+      "gravitational_parameter_km3_s2": 398600.4418,
+      "minimum_elevation_deg": 10.0,
+      "sample_count": 401,
+      "atmosphere_height_km": 20.0,
+      "zenith_atmosphere_loss_db": 2.0,
+      "beam_waist_m": 0.05,
+      "divergence_rad": 1e-05,
+      "receiver_radius_m": 0.5,
+      "pointing_loss_db": 1.0,
+      "optical_efficiency": 0.7,
+      "detector_efficiency": 0.5,
+      "mean_photons": 0.5,
+      "background_yield": 2e-06,
+      "optical_error_probability": 0.015,
+      "error_correction_efficiency": 1.16,
+      "pulse_rate_hz": 100000000.0,
+      "signal_duty": 0.8,
+      "basis_sift": 0.5
+    }
+  },
+  "metrics": {
+    "peak_rate_bps": 9897.533685795592,
+    "integrated_key_bits": 2281947.38951181,
+    "connected_duration_s": 442.0,
+    "stored_pair_bits": null,
+    "best_index": 264
+  }
+}

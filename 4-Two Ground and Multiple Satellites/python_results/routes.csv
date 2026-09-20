@@ -1,0 +1,602 @@
+time_s,route_rate_bps,cumulative_key_bits,route
+-600.0,0.0,0.0,No simultaneous positive-key route
+-598.0,0.0,0.0,No simultaneous positive-key route
+-596.0,0.0,0.0,No simultaneous positive-key route
+-594.0,0.0,0.0,No simultaneous positive-key route
+-592.0,0.0,0.0,No simultaneous positive-key route
+-590.0,0.0,0.0,No simultaneous positive-key route
+-588.0,0.0,0.0,No simultaneous positive-key route
+-586.0,0.0,0.0,No simultaneous positive-key route
+-584.0,0.0,0.0,No simultaneous positive-key route
+-582.0,0.0,0.0,No simultaneous positive-key route
+-580.0,0.0,0.0,No simultaneous positive-key route
+-578.0,0.0,0.0,No simultaneous positive-key route
+-576.0,0.0,0.0,No simultaneous positive-key route
+-574.0,0.0,0.0,No simultaneous positive-key route
+-572.0,0.0,0.0,No simultaneous positive-key route
+-570.0,0.0,0.0,No simultaneous positive-key route
+-568.0,0.0,0.0,No simultaneous positive-key route
+-566.0,0.0,0.0,No simultaneous positive-key route
+-564.0,0.0,0.0,No simultaneous positive-key route
+-562.0,0.0,0.0,No simultaneous positive-key route
+-560.0,0.0,0.0,No simultaneous positive-key route
+-558.0,0.0,0.0,No simultaneous positive-key route
+-556.0,0.0,0.0,No simultaneous positive-key route
+-554.0,0.0,0.0,No simultaneous positive-key route
+-552.0,0.0,0.0,No simultaneous positive-key route
+-550.0,0.0,0.0,No simultaneous positive-key route
+-548.0,0.0,0.0,No simultaneous positive-key route
+-546.0,0.0,0.0,No simultaneous positive-key route
+-544.0,0.0,0.0,No simultaneous positive-key route
+-542.0,0.0,0.0,No simultaneous positive-key route
+-540.0,0.0,0.0,No simultaneous positive-key route
+-538.0,0.0,0.0,No simultaneous positive-key route
+-536.0,0.0,0.0,No simultaneous positive-key route
+-534.0,0.0,0.0,No simultaneous positive-key route
+-532.0,0.0,0.0,No simultaneous positive-key route
+-530.0,0.0,0.0,No simultaneous positive-key route
+-528.0,0.0,0.0,No simultaneous positive-key route
+-526.0,0.0,0.0,No simultaneous positive-key route
+-524.0,0.0,0.0,No simultaneous positive-key route
+-522.0,0.0,0.0,No simultaneous positive-key route
+-520.0,0.0,0.0,No simultaneous positive-key route
+-518.0,0.0,0.0,No simultaneous positive-key route
+-516.0,0.0,0.0,No simultaneous positive-key route
+-514.0,0.0,0.0,No simultaneous positive-key route
+-512.0,0.0,0.0,No simultaneous positive-key route
+-510.0,0.0,0.0,No simultaneous positive-key route
+-508.0,0.0,0.0,No simultaneous positive-key route
+-506.0,0.0,0.0,No simultaneous positive-key route
+-504.0,0.0,0.0,No simultaneous positive-key route
+-502.0,0.0,0.0,No simultaneous positive-key route
+-500.0,0.0,0.0,No simultaneous positive-key route
+-498.0,0.0,0.0,No simultaneous positive-key route
+-496.0,0.0,0.0,No simultaneous positive-key route
+-494.0,0.0,0.0,No simultaneous positive-key route
+-492.0,0.0,0.0,No simultaneous positive-key route
+-490.0,0.0,0.0,No simultaneous positive-key route
+-488.0,0.0,0.0,No simultaneous positive-key route
+-486.0,0.0,0.0,No simultaneous positive-key route
+-484.0,0.0,0.0,No simultaneous positive-key route
+-482.0,0.0,0.0,No simultaneous positive-key route
+-480.0,0.0,0.0,No simultaneous positive-key route
+-478.0,0.0,0.0,No simultaneous positive-key route
+-476.0,0.0,0.0,No simultaneous positive-key route
+-474.0,0.0,0.0,No simultaneous positive-key route
+-472.0,0.0,0.0,No simultaneous positive-key route
+-470.0,0.0,0.0,No simultaneous positive-key route
+-468.0,0.0,0.0,No simultaneous positive-key route
+-466.0,0.0,0.0,No simultaneous positive-key route
+-464.0,0.0,0.0,No simultaneous positive-key route
+-462.0,0.0,0.0,No simultaneous positive-key route
+-460.0,0.0,0.0,No simultaneous positive-key route
+-458.0,0.0,0.0,No simultaneous positive-key route
+-456.0,0.0,0.0,No simultaneous positive-key route
+-454.0,0.0,0.0,No simultaneous positive-key route
+-452.0,0.0,0.0,No simultaneous positive-key route
+-450.0,0.0,0.0,No simultaneous positive-key route
+-448.0,0.0,0.0,No simultaneous positive-key route
+-446.0,0.0,0.0,No simultaneous positive-key route
+-444.0,0.0,0.0,No simultaneous positive-key route
+-442.0,0.0,0.0,No simultaneous positive-key route
+-440.0,0.0,0.0,No simultaneous positive-key route
+-438.0,0.0,0.0,No simultaneous positive-key route
+-436.0,0.0,0.0,No simultaneous positive-key route
+-434.0,0.0,0.0,No simultaneous positive-key route
+-432.0,0.0,0.0,No simultaneous positive-key route
+-430.0,0.0,0.0,No simultaneous positive-key route
+-428.0,0.0,0.0,No simultaneous positive-key route
+-426.0,0.0,0.0,No simultaneous positive-key route
+-424.0,0.0,0.0,No simultaneous positive-key route
+-422.0,0.0,0.0,No simultaneous positive-key route
+-420.0,0.0,0.0,No simultaneous positive-key route
+-418.0,0.0,0.0,No simultaneous positive-key route
+-416.0,0.0,0.0,No simultaneous positive-key route
+-414.0,0.0,0.0,No simultaneous positive-key route
+-412.0,0.0,0.0,No simultaneous positive-key route
+-410.0,0.0,0.0,No simultaneous positive-key route
+-408.0,0.0,0.0,No simultaneous positive-key route
+-406.0,0.0,0.0,No simultaneous positive-key route
+-404.0,0.0,0.0,No simultaneous positive-key route
+-402.0,0.0,0.0,No simultaneous positive-key route
+-400.0,0.0,0.0,No simultaneous positive-key route
+-398.0,0.0,0.0,No simultaneous positive-key route
+-396.0,0.0,0.0,No simultaneous positive-key route
+-394.0,0.0,0.0,No simultaneous positive-key route
+-392.0,0.0,0.0,No simultaneous positive-key route
+-390.0,0.0,0.0,No simultaneous positive-key route
+-388.0,0.0,0.0,No simultaneous positive-key route
+-386.0,0.0,0.0,No simultaneous positive-key route
+-384.0,0.0,0.0,No simultaneous positive-key route
+-382.0,0.0,0.0,No simultaneous positive-key route
+-380.0,0.0,0.0,No simultaneous positive-key route
+-378.0,0.0,0.0,No simultaneous positive-key route
+-376.0,0.0,0.0,No simultaneous positive-key route
+-374.0,0.0,0.0,No simultaneous positive-key route
+-372.0,0.0,0.0,No simultaneous positive-key route
+-370.0,0.0,0.0,No simultaneous positive-key route
+-368.0,0.0,0.0,No simultaneous positive-key route
+-366.0,0.0,0.0,No simultaneous positive-key route
+-364.0,0.0,0.0,No simultaneous positive-key route
+-362.0,0.0,0.0,No simultaneous positive-key route
+-360.0,0.0,0.0,No simultaneous positive-key route
+-358.0,0.0,0.0,No simultaneous positive-key route
+-356.0,0.0,0.0,No simultaneous positive-key route
+-354.0,0.0,0.0,No simultaneous positive-key route
+-352.0,0.0,0.0,No simultaneous positive-key route
+-350.0,0.0,0.0,No simultaneous positive-key route
+-348.0,0.0,0.0,No simultaneous positive-key route
+-346.0,0.0,0.0,No simultaneous positive-key route
+-344.0,0.0,0.0,No simultaneous positive-key route
+-342.0,0.0,0.0,No simultaneous positive-key route
+-340.0,0.0,0.0,No simultaneous positive-key route
+-338.0,0.0,0.0,No simultaneous positive-key route
+-336.0,0.0,0.0,No simultaneous positive-key route
+-334.0,0.0,0.0,No simultaneous positive-key route
+-332.0,0.0,0.0,No simultaneous positive-key route
+-330.0,0.0,0.0,No simultaneous positive-key route
+-328.0,0.0,0.0,No simultaneous positive-key route
+-326.0,0.0,0.0,No simultaneous positive-key route
+-324.0,0.0,0.0,No simultaneous positive-key route
+-322.0,0.0,0.0,No simultaneous positive-key route
+-320.0,0.0,0.0,No simultaneous positive-key route
+-318.0,0.0,0.0,No simultaneous positive-key route
+-316.0,0.0,0.0,No simultaneous positive-key route
+-314.0,0.0,0.0,No simultaneous positive-key route
+-312.0,0.0,0.0,No simultaneous positive-key route
+-310.0,0.0,0.0,No simultaneous positive-key route
+-308.0,0.0,0.0,No simultaneous positive-key route
+-306.0,0.0,0.0,No simultaneous positive-key route
+-304.0,0.0,0.0,No simultaneous positive-key route
+-302.0,0.0,0.0,No simultaneous positive-key route
+-300.0,0.0,0.0,No simultaneous positive-key route
+-298.0,0.0,0.0,No simultaneous positive-key route
+-296.0,0.0,0.0,No simultaneous positive-key route
+-294.0,0.0,0.0,No simultaneous positive-key route
+-292.0,0.0,0.0,No simultaneous positive-key route
+-290.0,0.0,0.0,No simultaneous positive-key route
+-288.0,0.0,0.0,No simultaneous positive-key route
+-286.0,0.0,0.0,No simultaneous positive-key route
+-284.0,0.0,0.0,No simultaneous positive-key route
+-282.0,0.0,0.0,No simultaneous positive-key route
+-280.0,0.0,0.0,No simultaneous positive-key route
+-278.0,0.0,0.0,No simultaneous positive-key route
+-276.0,0.0,0.0,No simultaneous positive-key route
+-274.0,0.0,0.0,No simultaneous positive-key route
+-272.0,0.0,0.0,No simultaneous positive-key route
+-270.0,0.0,0.0,No simultaneous positive-key route
+-268.0,0.0,0.0,No simultaneous positive-key route
+-266.0,0.0,0.0,No simultaneous positive-key route
+-264.0,0.0,0.0,No simultaneous positive-key route
+-262.0,0.0,0.0,No simultaneous positive-key route
+-260.0,0.0,0.0,No simultaneous positive-key route
+-258.0,0.0,0.0,No simultaneous positive-key route
+-256.0,0.0,0.0,No simultaneous positive-key route
+-254.0,0.0,0.0,No simultaneous positive-key route
+-252.0,0.0,0.0,No simultaneous positive-key route
+-250.0,0.0,0.0,No simultaneous positive-key route
+-248.0,0.0,0.0,No simultaneous positive-key route
+-246.0,0.0,0.0,No simultaneous positive-key route
+-244.0,0.0,0.0,No simultaneous positive-key route
+-242.0,0.0,0.0,No simultaneous positive-key route
+-240.0,0.0,0.0,No simultaneous positive-key route
+-238.0,0.0,0.0,No simultaneous positive-key route
+-236.0,0.0,0.0,No simultaneous positive-key route
+-234.0,0.0,0.0,No simultaneous positive-key route
+-232.0,0.0,0.0,No simultaneous positive-key route
+-230.0,0.0,0.0,No simultaneous positive-key route
+-228.0,0.0,0.0,No simultaneous positive-key route
+-226.0,0.0,0.0,No simultaneous positive-key route
+-224.0,0.0,0.0,No simultaneous positive-key route
+-222.0,0.0,0.0,No simultaneous positive-key route
+-220.0,61.15387072243214,61.15387072243214,Ground A → Sat 2 → Ground B
+-218.0,80.01763686469018,202.32537830955445,Ground A → Sat 2 → Ground B
+-216.0,99.98242488814674,382.3254400623914,Ground A → Sat 2 → Ground B
+-214.0,121.08001952746491,603.3878844780031,Ground A → Sat 2 → Ground B
+-212.0,143.3435324271007,867.8114364325687,Ground A → Sat 1 → Sat 2 → Ground B
+-210.0,166.8074953960917,1177.962464255761,Ground A → Sat 1 → Sat 2 → Ground B
+-208.0,191.50795458739447,1536.2779142392471,Ground A → Sat 1 → Sat 2 → Ground B
+-206.0,217.48256605479014,1945.2684348814319,Ground A → Sat 1 → Sat 2 → Ground B
+-204.0,244.7706931249682,2407.5216940611904,Ground A → Sat 1 → Sat 2 → Ground B
+-202.0,273.4135060064414,2925.7058931926,Ground A → Sat 1 → Sat 2 → Ground B
+-200.0,303.45408404404327,3502.5734832430844,Ground A → Sat 1 → Sat 2 → Ground B
+-198.0,334.9375210171291,4140.965088304257,Ground A → Sat 1 → Sat 2 → Ground B
+-196.0,367.91103387151645,4843.813643192902,Ground A → Sat 1 → Sat 2 → Ground B
+-194.0,402.4240752664222,5614.148752330841,Ground A → Sat 1 → Sat 2 → Ground B
+-192.0,438.5284503154134,6455.101277912676,Ground A → Sat 1 → Sat 2 → Ground B
+-190.0,476.2784378931326,7369.908166121222,Ground A → Sat 1 → Sat 2 → Ground B
+-188.0,515.730916878655,8361.91752089301,Ground A → Sat 1 → Sat 2 → Ground B
+-186.0,556.9454977042209,9434.593935475887,Ground A → Sat 1 → Sat 2 → Ground B
+-184.0,599.9846595757798,10591.524092755888,Ground A → Sat 1 → Sat 2 → Ground B
+-182.0,644.9138937311573,11836.422646062825,Ground A → Sat 1 → Sat 2 → Ground B
+-180.0,691.8018531009129,13173.138392894896,Ground A → Sat 1 → Sat 2 → Ground B
+-178.0,740.7205087341684,14605.660754729977,Ground A → Sat 1 → Sat 2 → Ground B
+-176.0,791.7453133503365,16138.126576814482,Ground A → Sat 1 → Sat 2 → Ground B
+-174.0,844.9553723733933,17774.827262538212,Ground A → Sat 1 → Sat 2 → Ground B
+-172.0,900.4336228001312,19520.216257711738,Ground A → Sat 1 → Sat 2 → Ground B
+-170.0,958.2670202459582,21378.916900757828,Ground A → Sat 1 → Sat 2 → Ground B
+-168.0,1018.5467345014449,23355.73065550523,Ground A → Sat 1 → Sat 2 → Ground B
+-166.0,1081.368353918804,25455.64574392548,Ground A → Sat 1 → Sat 2 → Ground B
+-164.0,1146.8320989269832,27683.84619677127,Ground A → Sat 1 → Sat 2 → Ground B
+-162.0,1215.0430449539792,30045.72134065223,Ground A → Sat 1 → Sat 2 → Ground B
+-160.0,1286.1113549994916,32546.8757406057,Ground A → Sat 1 → Sat 2 → Ground B
+-158.0,1360.1525220662247,35193.13961767142,Ground A → Sat 1 → Sat 2 → Ground B
+-156.0,1437.2876216103127,37990.57976134796,Ground A → Sat 1 → Sat 2 → Ground B
+-154.0,1517.6435741130626,40945.51095707133,Ground A → Sat 1 → Sat 2 → Ground B
+-152.0,1601.3534178050215,44064.50794898941,Ground A → Sat 1 → Sat 2 → Ground B
+-150.0,1688.5565914905508,47354.41795828498,Ground A → Sat 1 → Sat 2 → Ground B
+-148.0,1779.3992273167548,50822.37377709229,Ground A → Sat 1 → Sat 2 → Ground B
+-146.0,1874.0344532108463,54475.80745761989,Ground A → Sat 1 → Sat 2 → Ground B
+-144.0,1972.622704563815,58322.46461539455,Ground A → Sat 1 → Sat 2 → Ground B
+-142.0,2075.3320445698405,62370.41936452821,Ground A → Sat 1 → Sat 2 → Ground B
+-140.0,2182.3384924254688,66628.08990152352,Ground A → Sat 1 → Sat 2 → Ground B
+-138.0,2293.826358361886,71104.25475231087,Ground A → Sat 1 → Sat 2 → Ground B
+-136.0,2409.9885842010112,75808.06969487376,Ground A → Sat 1 → Sat 2 → Ground B
+-134.0,2531.027087810181,80749.08536688494,Ground A → Sat 1 → Sat 2 → Ground B
+-132.0,2657.153109447599,85937.26556414273,Ground A → Sat 1 → Sat 2 → Ground B
+-130.0,2788.5875575643163,91383.00623115464,Ground A → Sat 1 → Sat 2 → Ground B
+-128.0,2925.561351117724,97097.15513983667,Ground A → Sat 1 → Sat 2 → Ground B
+-126.0,3068.3157548755607,103091.03224582996,Ground A → Sat 1 → Sat 2 → Ground B
+-124.0,3217.1027035187312,109376.45070422426,Ground A → Sat 1 → Sat 2 → Ground B
+-122.0,3372.185109585531,115965.73851732853,Ground A → Sat 1 → Sat 2 → Ground B
+-120.0,3533.8371494203843,122871.76077633444,Ground A → Sat 1 → Sat 2 → Ground B
+-118.0,3702.3445202860626,130107.94244604089,Ground A → Sat 1 → Sat 2 → Ground B
+-116.0,3878.0046606555647,137688.2916269825,Ground A → Sat 1 → Sat 2 → Ground B
+-114.0,4061.1269244022487,145627.42321204033,Ground A → Sat 1 → Sat 2 → Ground B
+-112.0,4252.0326981349635,153940.58283457754,Ground A → Sat 1 → Sat 2 → Ground B
+-110.0,4451.055449266106,162643.67098197862,Ground A → Sat 1 → Sat 2 → Ground B
+-108.0,4658.540690531061,171753.26712177577,Ground A → Sat 1 → Sat 2 → Ground B
+-106.0,4874.845844591818,181286.65365689865,Ground A → Sat 1 → Sat 2 → Ground B
+-104.0,5100.339990015848,191261.8394915063,Ground A → Sat 1 → Sat 2 → Ground B
+-102.0,5335.403467337334,201697.5829488595,Ground A → Sat 1 → Sat 2 → Ground B
+-100.0,5580.427321038821,212613.41373723565,Ground A → Sat 1 → Sat 2 → Ground B
+-98.0,5835.812550158502,224029.65360843297,Ground A → Sat 1 → Sat 2 → Ground B
+-96.0,6101.96913679292,235967.43529538438,Ground A → Sat 1 → Sat 2 → Ground B
+-94.0,6379.3148180797325,248448.71925025704,Ground A → Sat 1 → Sat 2 → Ground B
+-92.0,6668.273563262048,261496.30763159881,Ground A → Sat 1 → Sat 2 → Ground B
+-90.0,6969.273713265513,275133.85490812635,Ground A → Sat 1 → Sat 2 → Ground B
+-88.0,7282.7457358373795,289385.8743572292,Ground A → Sat 1 → Sat 2 → Ground B
+-86.0,7609.119544822584,304277.7396378892,Ground A → Sat 1 → Sat 2 → Ground B
+-84.0,7948.821327691039,319835.68051040283,Ground A → Sat 1 → Sat 2 → Ground B
+-82.0,8302.269821093443,336086.77165918733,Ground A → Sat 1 → Sat 2 → Ground B
+-80.0,8669.871970249169,353058.9134505299,Ground A → Sat 1 → Sat 2 → Ground B
+-78.0,9052.017904554752,370780.80332533387,Ground A → Sat 1 → Sat 2 → Ground B
+-76.0,9449.075159302598,389281.8963891912,Ground A → Sat 1 → Sat 2 → Ground B
+-74.0,9861.382072165958,408592.3536206598,Ground A → Sat 1 → Sat 2 → Ground B
+-72.0,9897.533685795592,428351.26937862136,Ground A → Sat 1 → Sat 2 → Ground B
+-70.0,9897.533685795592,448146.33675021253,Ground A → Sat 1 → Sat 2 → Ground B
+-68.0,9897.533685795592,467941.4041218037,Ground A → Sat 1 → Sat 2 → Ground B
+-66.0,9897.533685795592,487736.47149339487,Ground A → Sat 1 → Sat 2 → Ground B
+-64.0,9897.53368579559,507531.53886498604,Ground A → Sat 1 → Sat 2 → Ground B
+-62.0,9897.533685795592,527326.6062365773,Ground A → Sat 1 → Sat 2 → Ground B
+-60.0,9897.53368579559,547121.6736081685,Ground A → Sat 1 → Sat 2 → Ground B
+-58.0,9897.533685795592,566916.7409797597,Ground A → Sat 1 → Sat 2 → Ground B
+-56.0,9897.533685795592,586711.808351351,Ground A → Sat 1 → Sat 2 → Ground B
+-54.0,9897.533685795592,606506.8757229422,Ground A → Sat 1 → Sat 2 → Ground B
+-52.0,9897.533685795592,626301.9430945334,Ground A → Sat 1 → Sat 2 → Ground B
+-50.0,9897.53368579559,646097.0104661246,Ground A → Sat 1 → Sat 2 → Ground B
+-48.0,9897.53368579559,665892.0778377159,Ground A → Sat 1 → Sat 2 → Ground B
+-46.0,9897.53368579559,685687.1452093071,Ground A → Sat 1 → Sat 2 → Ground B
+-44.0,9897.53368579559,705482.2125808983,Ground A → Sat 1 → Sat 2 → Ground B
+-42.0,9897.53368579559,725277.2799524895,Ground A → Sat 1 → Sat 2 → Ground B
+-40.0,9897.53368579559,745072.3473240808,Ground A → Sat 1 → Sat 2 → Ground B
+-38.0,9897.533685795592,764867.414695672,Ground A → Sat 1 → Sat 2 → Ground B
+-36.0,9897.533685795592,784662.4820672632,Ground A → Sat 1 → Sat 2 → Ground B
+-34.0,9897.53368579559,804457.5494388544,Ground A → Sat 1 → Sat 2 → Ground B
+-32.0,9897.533685795592,824252.6168104457,Ground A → Sat 1 → Sat 2 → Ground B
+-30.0,9897.53368579559,844047.6841820369,Ground A → Sat 1 → Sat 2 → Ground B
+-28.0,9897.533685795592,863842.7515536281,Ground A → Sat 1 → Sat 2 → Ground B
+-26.0,9897.533685795592,883637.8189252194,Ground A → Sat 1 → Sat 2 → Ground B
+-24.0,9897.533685795592,903432.8862968106,Ground A → Sat 1 → Sat 2 → Ground B
+-22.0,9897.533685795592,923227.9536684018,Ground A → Sat 1 → Sat 2 → Ground B
+-20.0,9897.533685795592,943023.021039993,Ground A → Sat 1 → Sat 2 → Ground B
+-18.0,9897.533685795592,962818.0884115843,Ground A → Sat 1 → Sat 2 → Ground B
+-16.0,9897.533685795592,982613.1557831755,Ground A → Sat 1 → Sat 2 → Ground B
+-14.0,9897.53368579559,1002408.2231547667,Ground A → Sat 1 → Sat 2 → Ground B
+-12.0,9897.533685795592,1022203.290526358,Ground A → Sat 1 → Sat 2 → Ground B
+-10.0,9897.533685795592,1041998.3578979492,Ground A → Sat 1 → Sat 2 → Ground B
+-8.0,9897.533685795592,1061793.4252695404,Ground A → Sat 1 → Sat 2 → Ground B
+-6.0,9897.53368579559,1081588.4926411316,Ground A → Sat 1 → Sat 2 → Ground B
+-4.0,9897.533685795592,1101383.5600127229,Ground A → Sat 1 → Sat 2 → Ground B
+-2.0,9897.533685795592,1121178.627384314,Ground A → Sat 1 → Sat 2 → Ground B
+0.0,9897.533685795592,1140973.6947559053,Ground A → Sat 1 → Sat 2 → Ground B
+2.0,9897.533685795592,1160768.7621274965,Ground A → Sat 1 → Sat 2 → Ground B
+4.0,9897.533685795592,1180563.8294990878,Ground A → Sat 1 → Sat 2 → Ground B
+6.0,9897.53368579559,1200358.896870679,Ground A → Sat 1 → Sat 2 → Ground B
+8.0,9897.533685795592,1220153.9642422702,Ground A → Sat 1 → Sat 2 → Ground B
+10.0,9897.533685795592,1239949.0316138614,Ground A → Sat 1 → Sat 2 → Ground B
+12.0,9897.533685795592,1259744.0989854527,Ground A → Sat 1 → Sat 2 → Ground B
+14.0,9897.53368579559,1279539.166357044,Ground A → Sat 1 → Sat 2 → Ground B
+16.0,9897.533685795592,1299334.2337286351,Ground A → Sat 1 → Sat 2 → Ground B
+18.0,9897.533685795592,1319129.3011002264,Ground A → Sat 1 → Sat 2 → Ground B
+20.0,9897.533685795592,1338924.3684718176,Ground A → Sat 1 → Sat 2 → Ground B
+22.0,9897.533685795592,1358719.4358434088,Ground A → Sat 1 → Sat 2 → Ground B
+24.0,9897.533685795592,1378514.503215,Ground A → Sat 1 → Sat 2 → Ground B
+26.0,9897.533685795592,1398309.5705865913,Ground A → Sat 1 → Sat 2 → Ground B
+28.0,9897.533685795592,1418104.6379581825,Ground A → Sat 1 → Sat 2 → Ground B
+30.0,9897.53368579559,1437899.7053297737,Ground A → Sat 1 → Sat 2 → Ground B
+32.0,9897.533685795592,1457694.772701365,Ground A → Sat 1 → Sat 2 → Ground B
+34.0,9897.53368579559,1477489.8400729562,Ground A → Sat 1 → Sat 2 → Ground B
+36.0,9897.533685795592,1497284.9074445474,Ground A → Sat 1 → Sat 2 → Ground B
+38.0,9897.533685795592,1517079.9748161386,Ground A → Sat 1 → Sat 2 → Ground B
+40.0,9897.53368579559,1536875.0421877299,Ground A → Sat 1 → Sat 2 → Ground B
+42.0,9897.53368579559,1556670.109559321,Ground A → Sat 1 → Sat 2 → Ground B
+44.0,9897.53368579559,1576465.1769309123,Ground A → Sat 1 → Sat 2 → Ground B
+46.0,9897.53368579559,1596260.2443025035,Ground A → Sat 1 → Sat 2 → Ground B
+48.0,9897.53368579559,1616055.3116740948,Ground A → Sat 1 → Sat 2 → Ground B
+50.0,9897.53368579559,1635850.379045686,Ground A → Sat 1 → Sat 2 → Ground B
+52.0,9897.533685795592,1655645.4464172772,Ground A → Sat 1 → Sat 2 → Ground B
+54.0,9897.533685795592,1675440.5137888684,Ground A → Sat 1 → Sat 2 → Ground B
+56.0,9897.533685795592,1695235.5811604597,Ground A → Sat 1 → Sat 2 → Ground B
+58.0,9897.533685795592,1715030.648532051,Ground A → Sat 1 → Sat 2 → Ground B
+60.0,9897.53368579559,1734825.7159036421,Ground A → Sat 1 → Sat 2 → Ground B
+62.0,9897.533685795592,1754620.7832752333,Ground A → Sat 1 → Sat 2 → Ground B
+64.0,9897.53368579559,1774415.8506468246,Ground A → Sat 1 → Sat 2 → Ground B
+66.0,9897.533685795592,1794210.9180184158,Ground A → Sat 1 → Sat 2 → Ground B
+68.0,9897.533685795592,1814005.985390007,Ground A → Sat 1 → Sat 2 → Ground B
+70.0,9897.533685795592,1833801.0527615983,Ground A → Sat 1 → Sat 2 → Ground B
+72.0,9897.533685795592,1853596.1201331895,Ground A → Sat 1 → Sat 2 → Ground B
+74.0,9861.382072165958,1873355.035891151,Ground A → Sat 1 → Sat 2 → Ground B
+76.0,9449.075159302598,1892665.4931226196,Ground A → Sat 1 → Sat 2 → Ground B
+78.0,9052.017904554752,1911166.586186477,Ground A → Sat 1 → Sat 2 → Ground B
+80.0,8669.871970249169,1928888.4760612808,Ground A → Sat 1 → Sat 2 → Ground B
+82.0,8302.269821093443,1945860.6178526233,Ground A → Sat 1 → Sat 2 → Ground B
+84.0,7948.821327691039,1962111.7090014077,Ground A → Sat 1 → Sat 2 → Ground B
+86.0,7609.119544822584,1977669.6498739214,Ground A → Sat 1 → Sat 2 → Ground B
+88.0,7282.7457358373795,1992561.5151545813,Ground A → Sat 1 → Sat 2 → Ground B
+90.0,6969.273713265513,2006813.5346036842,Ground A → Sat 1 → Sat 2 → Ground B
+92.0,6668.273563262048,2020451.0818802118,Ground A → Sat 1 → Sat 2 → Ground B
+94.0,6379.3148180797325,2033498.6702615537,Ground A → Sat 1 → Sat 2 → Ground B
+96.0,6101.96913679292,2045979.9542164265,Ground A → Sat 1 → Sat 2 → Ground B
+98.0,5835.812550158502,2057917.7359033779,Ground A → Sat 1 → Sat 2 → Ground B
+100.0,5580.427321038821,2069333.9757745753,Ground A → Sat 1 → Sat 2 → Ground B
+102.0,5335.403467337334,2080249.8065629513,Ground A → Sat 1 → Sat 2 → Ground B
+104.0,5100.339990015848,2090685.5500203045,Ground A → Sat 1 → Sat 2 → Ground B
+106.0,4874.845844591818,2100660.735854912,Ground A → Sat 1 → Sat 2 → Ground B
+108.0,4658.540690531061,2110194.122390035,Ground A → Sat 1 → Sat 2 → Ground B
+110.0,4451.055449266106,2119303.718529832,Ground A → Sat 1 → Sat 2 → Ground B
+112.0,4252.0326981349635,2128006.806677233,Ground A → Sat 1 → Sat 2 → Ground B
+114.0,4061.1269244022487,2136319.9662997704,Ground A → Sat 1 → Sat 2 → Ground B
+116.0,3878.0046606555647,2144259.097884828,Ground A → Sat 1 → Sat 2 → Ground B
+118.0,3702.3445202860626,2151839.4470657697,Ground A → Sat 1 → Sat 2 → Ground B
+120.0,3533.8371494203843,2159075.628735476,Ground A → Sat 1 → Sat 2 → Ground B
+122.0,3372.185109585531,2165981.650994482,Ground A → Sat 1 → Sat 2 → Ground B
+124.0,3217.1027035187312,2172570.938807586,Ground A → Sat 1 → Sat 2 → Ground B
+126.0,3068.3157548755607,2178856.3572659804,Ground A → Sat 1 → Sat 2 → Ground B
+128.0,2925.561351117724,2184850.2343719737,Ground A → Sat 1 → Sat 2 → Ground B
+130.0,2788.5875575643163,2190564.383280656,Ground A → Sat 1 → Sat 2 → Ground B
+132.0,2657.153109447599,2196010.123947668,Ground A → Sat 1 → Sat 2 → Ground B
+134.0,2531.027087810181,2201198.3041449254,Ground A → Sat 1 → Sat 2 → Ground B
+136.0,2409.9885842010112,2206139.3198169367,Ground A → Sat 1 → Sat 2 → Ground B
+138.0,2293.826358361886,2210843.1347594997,Ground A → Sat 1 → Sat 2 → Ground B
+140.0,2182.3384924254688,2215319.299610287,Ground A → Sat 1 → Sat 2 → Ground B
+142.0,2075.3320445698405,2219576.9701472824,Ground A → Sat 1 → Sat 2 → Ground B
+144.0,1972.622704563815,2223624.924896416,Ground A → Sat 1 → Sat 2 → Ground B
+146.0,1874.0344532108463,2227471.5820541903,Ground A → Sat 1 → Sat 2 → Ground B
+148.0,1779.3992273167548,2231125.0157347177,Ground A → Sat 1 → Sat 2 → Ground B
+150.0,1688.5565914905508,2234592.971553525,Ground A → Sat 1 → Sat 2 → Ground B
+152.0,1601.3534178050215,2237882.8815628206,Ground A → Sat 1 → Sat 2 → Ground B
+154.0,1517.6435741130626,2241001.8785547386,Ground A → Sat 1 → Sat 2 → Ground B
+156.0,1437.2876216103127,2243956.809750462,Ground A → Sat 1 → Sat 2 → Ground B
+158.0,1360.1525220662247,2246754.2498941384,Ground A → Sat 1 → Sat 2 → Ground B
+160.0,1286.1113549994916,2249400.5137712043,Ground A → Sat 1 → Sat 2 → Ground B
+162.0,1215.0430449539792,2251901.6681711576,Ground A → Sat 1 → Sat 2 → Ground B
+164.0,1146.8320989269832,2254263.5433150386,Ground A → Sat 1 → Sat 2 → Ground B
+166.0,1081.368353918804,2256491.7437678846,Ground A → Sat 1 → Sat 2 → Ground B
+168.0,1018.5467345014449,2258591.658856305,Ground A → Sat 1 → Sat 2 → Ground B
+170.0,958.2670202459582,2260568.4726110524,Ground A → Sat 1 → Sat 2 → Ground B
+172.0,900.4336228001312,2262427.1732540987,Ground A → Sat 1 → Sat 2 → Ground B
+174.0,844.9553723733933,2264172.562249272,Ground A → Sat 1 → Sat 2 → Ground B
+176.0,791.7453133503365,2265809.262934996,Ground A → Sat 1 → Sat 2 → Ground B
+178.0,740.7205087341684,2267341.72875708,Ground A → Sat 1 → Sat 2 → Ground B
+180.0,691.8018531009129,2268774.251118915,Ground A → Sat 1 → Sat 2 → Ground B
+182.0,644.9138937311573,2270110.9668657472,Ground A → Sat 1 → Sat 2 → Ground B
+184.0,599.9846595757798,2271355.8654190544,Ground A → Sat 1 → Sat 2 → Ground B
+186.0,556.9454977042209,2272512.7955763345,Ground A → Sat 1 → Sat 2 → Ground B
+188.0,515.730916878655,2273585.4719909173,Ground A → Sat 1 → Sat 2 → Ground B
+190.0,476.2784378931326,2274577.481345689,Ground A → Sat 1 → Sat 2 → Ground B
+192.0,438.5284503154134,2275492.2882338976,Ground A → Sat 1 → Sat 2 → Ground B
+194.0,402.4240752664222,2276333.2407594793,Ground A → Sat 1 → Sat 2 → Ground B
+196.0,367.91103387151645,2277103.5758686173,Ground A → Sat 1 → Sat 2 → Ground B
+198.0,334.9375210171291,2277806.424423506,Ground A → Sat 1 → Sat 2 → Ground B
+200.0,303.45408404404327,2278444.816028567,Ground A → Sat 1 → Sat 2 → Ground B
+202.0,273.4135060064414,2279021.6836186177,Ground A → Sat 1 → Sat 2 → Ground B
+204.0,244.7706931249682,2279539.8678177493,Ground A → Sat 1 → Sat 2 → Ground B
+206.0,217.48256605479014,2280002.121076929,Ground A → Sat 1 → Sat 2 → Ground B
+208.0,191.50795458739447,2280411.111597571,Ground A → Sat 1 → Sat 2 → Ground B
+210.0,166.8074953960917,2280769.4270475544,Ground A → Sat 1 → Sat 2 → Ground B
+212.0,143.3435324271007,2281079.5780753777,Ground A → Sat 1 → Sat 2 → Ground B
+214.0,121.08001952746491,2281344.0016273325,Ground A → Sat 1 → Ground B
+216.0,99.98242488814674,2281565.064071748,Ground A → Sat 1 → Ground B
+218.0,80.01763686469018,2281745.0641335007,Ground A → Sat 1 → Ground B
+220.0,61.15387072243214,2281886.235641088,Ground A → Sat 1 → Ground B
+222.0,0.0,2281947.38951181,No simultaneous positive-key route
+224.0,0.0,2281947.38951181,No simultaneous positive-key route
+226.0,0.0,2281947.38951181,No simultaneous positive-key route
+228.0,0.0,2281947.38951181,No simultaneous positive-key route
+230.0,0.0,2281947.38951181,No simultaneous positive-key route
+232.0,0.0,2281947.38951181,No simultaneous positive-key route
+234.0,0.0,2281947.38951181,No simultaneous positive-key route
+236.0,0.0,2281947.38951181,No simultaneous positive-key route
+238.0,0.0,2281947.38951181,No simultaneous positive-key route
+240.0,0.0,2281947.38951181,No simultaneous positive-key route
+242.0,0.0,2281947.38951181,No simultaneous positive-key route
+244.0,0.0,2281947.38951181,No simultaneous positive-key route
+246.0,0.0,2281947.38951181,No simultaneous positive-key route
+248.0,0.0,2281947.38951181,No simultaneous positive-key route
+250.0,0.0,2281947.38951181,No simultaneous positive-key route
+252.0,0.0,2281947.38951181,No simultaneous positive-key route
+254.0,0.0,2281947.38951181,No simultaneous positive-key route
+256.0,0.0,2281947.38951181,No simultaneous positive-key route
+258.0,0.0,2281947.38951181,No simultaneous positive-key route
+260.0,0.0,2281947.38951181,No simultaneous positive-key route
+262.0,0.0,2281947.38951181,No simultaneous positive-key route
+264.0,0.0,2281947.38951181,No simultaneous positive-key route
+266.0,0.0,2281947.38951181,No simultaneous positive-key route
+268.0,0.0,2281947.38951181,No simultaneous positive-key route
+270.0,0.0,2281947.38951181,No simultaneous positive-key route
+272.0,0.0,2281947.38951181,No simultaneous positive-key route
+274.0,0.0,2281947.38951181,No simultaneous positive-key route
+276.0,0.0,2281947.38951181,No simultaneous positive-key route
+278.0,0.0,2281947.38951181,No simultaneous positive-key route
+280.0,0.0,2281947.38951181,No simultaneous positive-key route
+282.0,0.0,2281947.38951181,No simultaneous positive-key route
+284.0,0.0,2281947.38951181,No simultaneous positive-key route
+286.0,0.0,2281947.38951181,No simultaneous positive-key route
+288.0,0.0,2281947.38951181,No simultaneous positive-key route
+290.0,0.0,2281947.38951181,No simultaneous positive-key route
+292.0,0.0,2281947.38951181,No simultaneous positive-key route
+294.0,0.0,2281947.38951181,No simultaneous positive-key route
+296.0,0.0,2281947.38951181,No simultaneous positive-key route
+298.0,0.0,2281947.38951181,No simultaneous positive-key route
+300.0,0.0,2281947.38951181,No simultaneous positive-key route
+302.0,0.0,2281947.38951181,No simultaneous positive-key route
+304.0,0.0,2281947.38951181,No simultaneous positive-key route
+306.0,0.0,2281947.38951181,No simultaneous positive-key route
+308.0,0.0,2281947.38951181,No simultaneous positive-key route
+310.0,0.0,2281947.38951181,No simultaneous positive-key route
+312.0,0.0,2281947.38951181,No simultaneous positive-key route
+314.0,0.0,2281947.38951181,No simultaneous positive-key route
+316.0,0.0,2281947.38951181,No simultaneous positive-key route
+318.0,0.0,2281947.38951181,No simultaneous positive-key route
+320.0,0.0,2281947.38951181,No simultaneous positive-key route
+322.0,0.0,2281947.38951181,No simultaneous positive-key route
+324.0,0.0,2281947.38951181,No simultaneous positive-key route
+326.0,0.0,2281947.38951181,No simultaneous positive-key route
+328.0,0.0,2281947.38951181,No simultaneous positive-key route
+330.0,0.0,2281947.38951181,No simultaneous positive-key route
+332.0,0.0,2281947.38951181,No simultaneous positive-key route
+334.0,0.0,2281947.38951181,No simultaneous positive-key route
+336.0,0.0,2281947.38951181,No simultaneous positive-key route
+338.0,0.0,2281947.38951181,No simultaneous positive-key route
+340.0,0.0,2281947.38951181,No simultaneous positive-key route
+342.0,0.0,2281947.38951181,No simultaneous positive-key route
+344.0,0.0,2281947.38951181,No simultaneous positive-key route
+346.0,0.0,2281947.38951181,No simultaneous positive-key route
+348.0,0.0,2281947.38951181,No simultaneous positive-key route
+350.0,0.0,2281947.38951181,No simultaneous positive-key route
+352.0,0.0,2281947.38951181,No simultaneous positive-key route
+354.0,0.0,2281947.38951181,No simultaneous positive-key route
+356.0,0.0,2281947.38951181,No simultaneous positive-key route
+358.0,0.0,2281947.38951181,No simultaneous positive-key route
+360.0,0.0,2281947.38951181,No simultaneous positive-key route
+362.0,0.0,2281947.38951181,No simultaneous positive-key route
+364.0,0.0,2281947.38951181,No simultaneous positive-key route
+366.0,0.0,2281947.38951181,No simultaneous positive-key route
+368.0,0.0,2281947.38951181,No simultaneous positive-key route
+370.0,0.0,2281947.38951181,No simultaneous positive-key route
+372.0,0.0,2281947.38951181,No simultaneous positive-key route
+374.0,0.0,2281947.38951181,No simultaneous positive-key route
+376.0,0.0,2281947.38951181,No simultaneous positive-key route
+378.0,0.0,2281947.38951181,No simultaneous positive-key route
+380.0,0.0,2281947.38951181,No simultaneous positive-key route
+382.0,0.0,2281947.38951181,No simultaneous positive-key route
+384.0,0.0,2281947.38951181,No simultaneous positive-key route
+386.0,0.0,2281947.38951181,No simultaneous positive-key route
+388.0,0.0,2281947.38951181,No simultaneous positive-key route
+390.0,0.0,2281947.38951181,No simultaneous positive-key route
+392.0,0.0,2281947.38951181,No simultaneous positive-key route
+394.0,0.0,2281947.38951181,No simultaneous positive-key route
+396.0,0.0,2281947.38951181,No simultaneous positive-key route
+398.0,0.0,2281947.38951181,No simultaneous positive-key route
+400.0,0.0,2281947.38951181,No simultaneous positive-key route
+402.0,0.0,2281947.38951181,No simultaneous positive-key route
+404.0,0.0,2281947.38951181,No simultaneous positive-key route
+406.0,0.0,2281947.38951181,No simultaneous positive-key route
+408.0,0.0,2281947.38951181,No simultaneous positive-key route
+410.0,0.0,2281947.38951181,No simultaneous positive-key route
+412.0,0.0,2281947.38951181,No simultaneous positive-key route
+414.0,0.0,2281947.38951181,No simultaneous positive-key route
+416.0,0.0,2281947.38951181,No simultaneous positive-key route
+418.0,0.0,2281947.38951181,No simultaneous positive-key route
+420.0,0.0,2281947.38951181,No simultaneous positive-key route
+422.0,0.0,2281947.38951181,No simultaneous positive-key route
+424.0,0.0,2281947.38951181,No simultaneous positive-key route
+426.0,0.0,2281947.38951181,No simultaneous positive-key route
+428.0,0.0,2281947.38951181,No simultaneous positive-key route
+430.0,0.0,2281947.38951181,No simultaneous positive-key route
+432.0,0.0,2281947.38951181,No simultaneous positive-key route
+434.0,0.0,2281947.38951181,No simultaneous positive-key route
+436.0,0.0,2281947.38951181,No simultaneous positive-key route
+438.0,0.0,2281947.38951181,No simultaneous positive-key route
+440.0,0.0,2281947.38951181,No simultaneous positive-key route
+442.0,0.0,2281947.38951181,No simultaneous positive-key route
+444.0,0.0,2281947.38951181,No simultaneous positive-key route
+446.0,0.0,2281947.38951181,No simultaneous positive-key route
+448.0,0.0,2281947.38951181,No simultaneous positive-key route
+450.0,0.0,2281947.38951181,No simultaneous positive-key route
+452.0,0.0,2281947.38951181,No simultaneous positive-key route
+454.0,0.0,2281947.38951181,No simultaneous positive-key route
+456.0,0.0,2281947.38951181,No simultaneous positive-key route
+458.0,0.0,2281947.38951181,No simultaneous positive-key route
+460.0,0.0,2281947.38951181,No simultaneous positive-key route
+462.0,0.0,2281947.38951181,No simultaneous positive-key route
+464.0,0.0,2281947.38951181,No simultaneous positive-key route
+466.0,0.0,2281947.38951181,No simultaneous positive-key route
+468.0,0.0,2281947.38951181,No simultaneous positive-key route
+470.0,0.0,2281947.38951181,No simultaneous positive-key route
+472.0,0.0,2281947.38951181,No simultaneous positive-key route
+474.0,0.0,2281947.38951181,No simultaneous positive-key route
+476.0,0.0,2281947.38951181,No simultaneous positive-key route
+478.0,0.0,2281947.38951181,No simultaneous positive-key route
+480.0,0.0,2281947.38951181,No simultaneous positive-key route
+482.0,0.0,2281947.38951181,No simultaneous positive-key route
+484.0,0.0,2281947.38951181,No simultaneous positive-key route
+486.0,0.0,2281947.38951181,No simultaneous positive-key route
+488.0,0.0,2281947.38951181,No simultaneous positive-key route
+490.0,0.0,2281947.38951181,No simultaneous positive-key route
+492.0,0.0,2281947.38951181,No simultaneous positive-key route
+494.0,0.0,2281947.38951181,No simultaneous positive-key route
+496.0,0.0,2281947.38951181,No simultaneous positive-key route
+498.0,0.0,2281947.38951181,No simultaneous positive-key route
+500.0,0.0,2281947.38951181,No simultaneous positive-key route
+502.0,0.0,2281947.38951181,No simultaneous positive-key route
+504.0,0.0,2281947.38951181,No simultaneous positive-key route
+506.0,0.0,2281947.38951181,No simultaneous positive-key route
+508.0,0.0,2281947.38951181,No simultaneous positive-key route
+510.0,0.0,2281947.38951181,No simultaneous positive-key route
+512.0,0.0,2281947.38951181,No simultaneous positive-key route
+514.0,0.0,2281947.38951181,No simultaneous positive-key route
+516.0,0.0,2281947.38951181,No simultaneous positive-key route
+518.0,0.0,2281947.38951181,No simultaneous positive-key route
+520.0,0.0,2281947.38951181,No simultaneous positive-key route
+522.0,0.0,2281947.38951181,No simultaneous positive-key route
+524.0,0.0,2281947.38951181,No simultaneous positive-key route
+526.0,0.0,2281947.38951181,No simultaneous positive-key route
+528.0,0.0,2281947.38951181,No simultaneous positive-key route
+530.0,0.0,2281947.38951181,No simultaneous positive-key route
+532.0,0.0,2281947.38951181,No simultaneous positive-key route
+534.0,0.0,2281947.38951181,No simultaneous positive-key route
+536.0,0.0,2281947.38951181,No simultaneous positive-key route
+538.0,0.0,2281947.38951181,No simultaneous positive-key route
+540.0,0.0,2281947.38951181,No simultaneous positive-key route
+542.0,0.0,2281947.38951181,No simultaneous positive-key route
+544.0,0.0,2281947.38951181,No simultaneous positive-key route
+546.0,0.0,2281947.38951181,No simultaneous positive-key route
+548.0,0.0,2281947.38951181,No simultaneous positive-key route
+550.0,0.0,2281947.38951181,No simultaneous positive-key route
+552.0,0.0,2281947.38951181,No simultaneous positive-key route
+554.0,0.0,2281947.38951181,No simultaneous positive-key route
+556.0,0.0,2281947.38951181,No simultaneous positive-key route
+558.0,0.0,2281947.38951181,No simultaneous positive-key route
+560.0,0.0,2281947.38951181,No simultaneous positive-key route
+562.0,0.0,2281947.38951181,No simultaneous positive-key route
+564.0,0.0,2281947.38951181,No simultaneous positive-key route
+566.0,0.0,2281947.38951181,No simultaneous positive-key route
+568.0,0.0,2281947.38951181,No simultaneous positive-key route
+570.0,0.0,2281947.38951181,No simultaneous positive-key route
+572.0,0.0,2281947.38951181,No simultaneous positive-key route
+574.0,0.0,2281947.38951181,No simultaneous positive-key route
+576.0,0.0,2281947.38951181,No simultaneous positive-key route
+578.0,0.0,2281947.38951181,No simultaneous positive-key route
+580.0,0.0,2281947.38951181,No simultaneous positive-key route
+582.0,0.0,2281947.38951181,No simultaneous positive-key route
+584.0,0.0,2281947.38951181,No simultaneous positive-key route
+586.0,0.0,2281947.38951181,No simultaneous positive-key route
+588.0,0.0,2281947.38951181,No simultaneous positive-key route
+590.0,0.0,2281947.38951181,No simultaneous positive-key route
+592.0,0.0,2281947.38951181,No simultaneous positive-key route
+594.0,0.0,2281947.38951181,No simultaneous positive-key route
+596.0,0.0,2281947.38951181,No simultaneous positive-key route
+598.0,0.0,2281947.38951181,No simultaneous positive-key route
+600.0,0.0,2281947.38951181,No simultaneous positive-key route

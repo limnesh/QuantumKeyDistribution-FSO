@@ -1,0 +1,63 @@
+{
+  "mode": "trusted",
+  "architecture": "Trusted Satellite Relay - Decoy-State BB84",
+  "network_parameters": {
+    "stage": 3,
+    "satellite_count": 1,
+    "ground_separation_km": 1000,
+    "satellite_span_deg": 0.0,
+    "duration_s": 1200,
+    "time_points": 601,
+    "isl_divergence_rad": 2e-06,
+    "isl_receiver_radius_m": 0.3,
+    "isl_pointing_loss_db": 1.0,
+    "isl_background_yield": 1e-07,
+    "isl_clearance_km": 20.0,
+    "enable_isl": true,
+    "link": {
+      "earth_radius_km": 6371.0,
+      "altitude_km": 500.0,
+      "gravitational_parameter_km3_s2": 398600.4418,
+      "minimum_elevation_deg": 10.0,
+      "sample_count": 401,
+      "atmosphere_height_km": 20.0,
+      "zenith_atmosphere_loss_db": 2.0,
+      "beam_waist_m": 0.05,
+      "divergence_rad": 1e-05,
+      "receiver_radius_m": 0.5,
+      "pointing_loss_db": 1.0,
+      "optical_efficiency": 0.7,
+      "detector_efficiency": 0.5,
+      "mean_photons": 0.5,
+      "background_yield": 2e-06,
+      "optical_error_probability": 0.015,
+      "error_correction_efficiency": 1.16,
+      "pulse_rate_hz": 100000000.0,
+      "signal_duty": 0.8,
+      "basis_sift": 0.5
+    }
+  },
+  "bbm92_parameters": {
+    "pair_rate_hz": 10000000.0,
+    "dark_count_rate_hz": 100,
+    "background_count_rate_hz": 100,
+    "coincidence_window_s": 1e-09,
+    "timing_fwhm_s": 5e-10,
+    "basis_sift": 0.5
+  },
+  "bbm92_available": true,
+  "bbm92_status": "",
+  "metrics": {
+    "Ground separation (km)": 1000,
+    "Common visibility (s, sampled)": 302.0,
+    "BB84 link A generated (bit)": 3757513.2536085485,
+    "BB84 link B generated (bit)": 3757513.253608545,
+    "Trusted simultaneous benchmark (bit)": 882610.6513734465,
+    "Trusted causal stored relay delivered (expected bit)": 3757513.253608545,
+    "BBM92 peak true coincidences (/s)": 17.7761449467113,
+    "BBM92 peak total coincidences (/s)": 17.629855216481364,
+    "BBM92 pooled QBER (fraction)": 0.03458558569308939,
+    "BBM92 peak asymptotic key estimate (bit/s)": 4.698880224847498,
+    "BBM92 integrated asymptotic estimate (bit)": 735.9869076110137
+  }
+}

@@ -1,0 +1,602 @@
+time_s,route,rate_bits_per_second
+-600.0,disconnected,0.0
+-598.0,disconnected,0.0
+-596.0,disconnected,0.0
+-594.0,disconnected,0.0
+-592.0,disconnected,0.0
+-590.0,disconnected,0.0
+-588.0,disconnected,0.0
+-586.0,disconnected,0.0
+-584.0,disconnected,0.0
+-582.0,disconnected,0.0
+-580.0,disconnected,0.0
+-578.0,disconnected,0.0
+-576.0,disconnected,0.0
+-574.0,disconnected,0.0
+-572.0,disconnected,0.0
+-570.0,disconnected,0.0
+-568.0,disconnected,0.0
+-566.0,disconnected,0.0
+-564.0,disconnected,0.0
+-562.0,disconnected,0.0
+-560.0,disconnected,0.0
+-558.0,disconnected,0.0
+-556.0,disconnected,0.0
+-554.0,disconnected,0.0
+-552.0,disconnected,0.0
+-550.0,disconnected,0.0
+-548.0,disconnected,0.0
+-546.0,disconnected,0.0
+-544.0,disconnected,0.0
+-542.0,disconnected,0.0
+-540.0,disconnected,0.0
+-538.0,disconnected,0.0
+-536.0,disconnected,0.0
+-534.0,disconnected,0.0
+-532.0,disconnected,0.0
+-530.0,disconnected,0.0
+-528.0,disconnected,0.0
+-526.0,disconnected,0.0
+-524.0,disconnected,0.0
+-522.0,disconnected,0.0
+-520.0,disconnected,0.0
+-518.0,disconnected,0.0
+-516.0,disconnected,0.0
+-514.0,disconnected,0.0
+-512.0,disconnected,0.0
+-510.0,disconnected,0.0
+-508.0,disconnected,0.0
+-506.0,disconnected,0.0
+-504.0,disconnected,0.0
+-502.0,disconnected,0.0
+-500.0,disconnected,0.0
+-498.0,disconnected,0.0
+-496.0,disconnected,0.0
+-494.0,disconnected,0.0
+-492.0,disconnected,0.0
+-490.0,disconnected,0.0
+-488.0,disconnected,0.0
+-486.0,disconnected,0.0
+-484.0,disconnected,0.0
+-482.0,disconnected,0.0
+-480.0,disconnected,0.0
+-478.0,disconnected,0.0
+-476.0,disconnected,0.0
+-474.0,disconnected,0.0
+-472.0,disconnected,0.0
+-470.0,disconnected,0.0
+-468.0,disconnected,0.0
+-466.0,disconnected,0.0
+-464.0,disconnected,0.0
+-462.0,disconnected,0.0
+-460.0,disconnected,0.0
+-458.0,disconnected,0.0
+-456.0,disconnected,0.0
+-454.0,disconnected,0.0
+-452.0,disconnected,0.0
+-450.0,disconnected,0.0
+-448.0,disconnected,0.0
+-446.0,disconnected,0.0
+-444.0,disconnected,0.0
+-442.0,disconnected,0.0
+-440.0,disconnected,0.0
+-438.0,disconnected,0.0
+-436.0,disconnected,0.0
+-434.0,disconnected,0.0
+-432.0,disconnected,0.0
+-430.0,disconnected,0.0
+-428.0,disconnected,0.0
+-426.0,disconnected,0.0
+-424.0,disconnected,0.0
+-422.0,disconnected,0.0
+-420.0,disconnected,0.0
+-418.0,disconnected,0.0
+-416.0,disconnected,0.0
+-414.0,disconnected,0.0
+-412.0,disconnected,0.0
+-410.0,disconnected,0.0
+-408.0,disconnected,0.0
+-406.0,disconnected,0.0
+-404.0,disconnected,0.0
+-402.0,disconnected,0.0
+-400.0,disconnected,0.0
+-398.0,disconnected,0.0
+-396.0,disconnected,0.0
+-394.0,disconnected,0.0
+-392.0,disconnected,0.0
+-390.0,disconnected,0.0
+-388.0,disconnected,0.0
+-386.0,disconnected,0.0
+-384.0,disconnected,0.0
+-382.0,disconnected,0.0
+-380.0,disconnected,0.0
+-378.0,disconnected,0.0
+-376.0,disconnected,0.0
+-374.0,disconnected,0.0
+-372.0,disconnected,0.0
+-370.0,disconnected,0.0
+-368.0,disconnected,0.0
+-366.0,disconnected,0.0
+-364.0,disconnected,0.0
+-362.0,disconnected,0.0
+-360.0,disconnected,0.0
+-358.0,disconnected,0.0
+-356.0,disconnected,0.0
+-354.0,disconnected,0.0
+-352.0,disconnected,0.0
+-350.0,disconnected,0.0
+-348.0,disconnected,0.0
+-346.0,disconnected,0.0
+-344.0,disconnected,0.0
+-342.0,disconnected,0.0
+-340.0,disconnected,0.0
+-338.0,disconnected,0.0
+-336.0,disconnected,0.0
+-334.0,disconnected,0.0
+-332.0,disconnected,0.0
+-330.0,disconnected,0.0
+-328.0,disconnected,0.0
+-326.0,disconnected,0.0
+-324.0,disconnected,0.0
+-322.0,disconnected,0.0
+-320.0,disconnected,0.0
+-318.0,disconnected,0.0
+-316.0,disconnected,0.0
+-314.0,disconnected,0.0
+-312.0,disconnected,0.0
+-310.0,disconnected,0.0
+-308.0,disconnected,0.0
+-306.0,disconnected,0.0
+-304.0,disconnected,0.0
+-302.0,disconnected,0.0
+-300.0,disconnected,0.0
+-298.0,disconnected,0.0
+-296.0,disconnected,0.0
+-294.0,disconnected,0.0
+-292.0,disconnected,0.0
+-290.0,disconnected,0.0
+-288.0,disconnected,0.0
+-286.0,disconnected,0.0
+-284.0,disconnected,0.0
+-282.0,disconnected,0.0
+-280.0,disconnected,0.0
+-278.0,disconnected,0.0
+-276.0,disconnected,0.0
+-274.0,disconnected,0.0
+-272.0,disconnected,0.0
+-270.0,disconnected,0.0
+-268.0,disconnected,0.0
+-266.0,disconnected,0.0
+-264.0,disconnected,0.0
+-262.0,disconnected,0.0
+-260.0,disconnected,0.0
+-258.0,disconnected,0.0
+-256.0,disconnected,0.0
+-254.0,disconnected,0.0
+-252.0,disconnected,0.0
+-250.0,disconnected,0.0
+-248.0,disconnected,0.0
+-246.0,disconnected,0.0
+-244.0,disconnected,0.0
+-242.0,disconnected,0.0
+-240.0,disconnected,0.0
+-238.0,disconnected,0.0
+-236.0,disconnected,0.0
+-234.0,disconnected,0.0
+-232.0,disconnected,0.0
+-230.0,disconnected,0.0
+-228.0,disconnected,0.0
+-226.0,disconnected,0.0
+-224.0,disconnected,0.0
+-222.0,disconnected,0.0
+-220.0,disconnected,0.0
+-218.0,disconnected,0.0
+-216.0,disconnected,0.0
+-214.0,disconnected,0.0
+-212.0,disconnected,0.0
+-210.0,disconnected,0.0
+-208.0,disconnected,0.0
+-206.0,disconnected,0.0
+-204.0,disconnected,0.0
+-202.0,disconnected,0.0
+-200.0,disconnected,0.0
+-198.0,disconnected,0.0
+-196.0,disconnected,0.0
+-194.0,disconnected,0.0
+-192.0,disconnected,0.0
+-190.0,disconnected,0.0
+-188.0,disconnected,0.0
+-186.0,disconnected,0.0
+-184.0,disconnected,0.0
+-182.0,disconnected,0.0
+-180.0,disconnected,0.0
+-178.0,disconnected,0.0
+-176.0,disconnected,0.0
+-174.0,disconnected,0.0
+-172.0,disconnected,0.0
+-170.0,disconnected,0.0
+-168.0,disconnected,0.0
+-166.0,disconnected,0.0
+-164.0,disconnected,0.0
+-162.0,disconnected,0.0
+-160.0,disconnected,0.0
+-158.0,disconnected,0.0
+-156.0,disconnected,0.0
+-154.0,disconnected,0.0
+-152.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,26.88214956535664
+-150.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,66.10724412854042
+-148.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,107.6233451749726
+-146.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,151.51467902676032
+-144.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,197.8695374932394
+-142.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,246.7804679657542
+-140.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,298.34446762527836
+-138.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,352.6631811448667
+-136.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,409.8431011180889
+-134.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,469.99577027257993
+-132.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,533.2379843179982
+-130.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,599.6919940408645
+-128.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,669.4857049744986
+-126.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,742.7528726493509
+-124.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,819.6332910524005
+-122.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,900.2729714929342
+-120.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,984.8243085759178
+-118.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1073.4462294169864
+-116.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1166.3043215869116
+-114.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1263.5709345393964
+-112.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1365.4252484428685
+-110.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1472.053303398022
+-108.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1583.6479809640996
+-106.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1700.4089287357315
+-104.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1822.542417386166
+-102.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1950.2611181290329
+-100.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,2083.7837869263253
+-98.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,2223.3348399959114
+-96.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,2369.1438032269716
+-94.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,2521.4446160252114
+-92.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,2680.4747678552003
+-90.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,2846.474243386727
+-88.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,3019.684249672734
+-86.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,3200.345696255364
+-84.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,3388.6973965740603
+-82.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,3584.973956598249
+-80.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,3789.403314362682
+-78.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,4002.203892156495
+-76.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,4223.581321710476
+-74.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,4453.724702038486
+-72.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,4692.8023499047695
+-70.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,4940.957004513127
+-68.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5198.300451345023
+-66.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5464.9075355338655
+-64.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+-62.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-60.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+-58.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-56.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-54.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-52.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-50.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+-48.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+-46.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+-44.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+-42.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+-40.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+-38.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-36.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-34.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+-32.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-30.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+-28.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-26.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-24.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-22.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-20.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-18.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-16.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-14.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+-12.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-10.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-8.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-6.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+-4.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+-2.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+0.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+2.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+4.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+6.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+8.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+10.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+12.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+14.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+16.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+18.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+20.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+22.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+24.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+26.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+28.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+30.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+32.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+34.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+36.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+38.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+40.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+42.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+44.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+46.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+48.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+50.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+52.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+54.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+56.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+58.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+60.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+62.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564155
+64.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5548.534145564151
+66.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5464.9075355338655
+68.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,5198.300451345023
+70.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,4940.957004513127
+72.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,4692.8023499047695
+74.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,4453.724702038486
+76.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,4223.581321710476
+78.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,4002.203892156495
+80.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,3789.403314362682
+82.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,3584.973956598249
+84.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,3388.6973965740603
+86.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,3200.345696255364
+88.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,3019.684249672734
+90.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,2846.474243386727
+92.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,2680.4747678552003
+94.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,2521.4446160252114
+96.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,2369.1438032269716
+98.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,2223.3348399959114
+100.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,2083.7837869263253
+102.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1950.2611181290329
+104.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1822.542417386166
+106.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1700.4089287357315
+108.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1583.6479809640996
+110.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1472.053303398022
+112.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1365.4252484428685
+114.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1263.5709345393964
+116.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1166.3043215869116
+118.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,1073.4462294169864
+120.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,984.8243085759178
+122.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,900.2729714929342
+124.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,819.6332910524005
+126.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,742.7528726493509
+128.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,669.4857049744986
+130.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,599.6919940408645
+132.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,533.2379843179982
+134.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,469.99577027257993
+136.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,409.8431011180889
+138.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,352.6631811448667
+140.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,298.34446762527836
+142.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,246.7804679657542
+144.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,197.8695374932394
+146.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,151.51467902676032
+148.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,107.6233451749726
+150.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,66.10724412854042
+152.0,Ground A -> Sat 1 -> Sat 2 -> Ground B,26.88214956535664
+154.0,disconnected,0.0
+156.0,disconnected,0.0
+158.0,disconnected,0.0
+160.0,disconnected,0.0
+162.0,disconnected,0.0
+164.0,disconnected,0.0
+166.0,disconnected,0.0
+168.0,disconnected,0.0
+170.0,disconnected,0.0
+172.0,disconnected,0.0
+174.0,disconnected,0.0
+176.0,disconnected,0.0
+178.0,disconnected,0.0
+180.0,disconnected,0.0
+182.0,disconnected,0.0
+184.0,disconnected,0.0
+186.0,disconnected,0.0
+188.0,disconnected,0.0
+190.0,disconnected,0.0
+192.0,disconnected,0.0
+194.0,disconnected,0.0
+196.0,disconnected,0.0
+198.0,disconnected,0.0
+200.0,disconnected,0.0
+202.0,disconnected,0.0
+204.0,disconnected,0.0
+206.0,disconnected,0.0
+208.0,disconnected,0.0
+210.0,disconnected,0.0
+212.0,disconnected,0.0
+214.0,disconnected,0.0
+216.0,disconnected,0.0
+218.0,disconnected,0.0
+220.0,disconnected,0.0
+222.0,disconnected,0.0
+224.0,disconnected,0.0
+226.0,disconnected,0.0
+228.0,disconnected,0.0
+230.0,disconnected,0.0
+232.0,disconnected,0.0
+234.0,disconnected,0.0
+236.0,disconnected,0.0
+238.0,disconnected,0.0
+240.0,disconnected,0.0
+242.0,disconnected,0.0
+244.0,disconnected,0.0
+246.0,disconnected,0.0
+248.0,disconnected,0.0
+250.0,disconnected,0.0
+252.0,disconnected,0.0
+254.0,disconnected,0.0
+256.0,disconnected,0.0
+258.0,disconnected,0.0
+260.0,disconnected,0.0
+262.0,disconnected,0.0
+264.0,disconnected,0.0
+266.0,disconnected,0.0
+268.0,disconnected,0.0
+270.0,disconnected,0.0
+272.0,disconnected,0.0
+274.0,disconnected,0.0
+276.0,disconnected,0.0
+278.0,disconnected,0.0
+280.0,disconnected,0.0
+282.0,disconnected,0.0
+284.0,disconnected,0.0
+286.0,disconnected,0.0
+288.0,disconnected,0.0
+290.0,disconnected,0.0
+292.0,disconnected,0.0
+294.0,disconnected,0.0
+296.0,disconnected,0.0
+298.0,disconnected,0.0
+300.0,disconnected,0.0
+302.0,disconnected,0.0
+304.0,disconnected,0.0
+306.0,disconnected,0.0
+308.0,disconnected,0.0
+310.0,disconnected,0.0
+312.0,disconnected,0.0
+314.0,disconnected,0.0
+316.0,disconnected,0.0
+318.0,disconnected,0.0
+320.0,disconnected,0.0
+322.0,disconnected,0.0
+324.0,disconnected,0.0
+326.0,disconnected,0.0
+328.0,disconnected,0.0
+330.0,disconnected,0.0
+332.0,disconnected,0.0
+334.0,disconnected,0.0
+336.0,disconnected,0.0
+338.0,disconnected,0.0
+340.0,disconnected,0.0
+342.0,disconnected,0.0
+344.0,disconnected,0.0
+346.0,disconnected,0.0
+348.0,disconnected,0.0
+350.0,disconnected,0.0
+352.0,disconnected,0.0
+354.0,disconnected,0.0
+356.0,disconnected,0.0
+358.0,disconnected,0.0
+360.0,disconnected,0.0
+362.0,disconnected,0.0
+364.0,disconnected,0.0
+366.0,disconnected,0.0
+368.0,disconnected,0.0
+370.0,disconnected,0.0
+372.0,disconnected,0.0
+374.0,disconnected,0.0
+376.0,disconnected,0.0
+378.0,disconnected,0.0
+380.0,disconnected,0.0
+382.0,disconnected,0.0
+384.0,disconnected,0.0
+386.0,disconnected,0.0
+388.0,disconnected,0.0
+390.0,disconnected,0.0
+392.0,disconnected,0.0
+394.0,disconnected,0.0
+396.0,disconnected,0.0
+398.0,disconnected,0.0
+400.0,disconnected,0.0
+402.0,disconnected,0.0
+404.0,disconnected,0.0
+406.0,disconnected,0.0
+408.0,disconnected,0.0
+410.0,disconnected,0.0
+412.0,disconnected,0.0
+414.0,disconnected,0.0
+416.0,disconnected,0.0
+418.0,disconnected,0.0
+420.0,disconnected,0.0
+422.0,disconnected,0.0
+424.0,disconnected,0.0
+426.0,disconnected,0.0
+428.0,disconnected,0.0
+430.0,disconnected,0.0
+432.0,disconnected,0.0
+434.0,disconnected,0.0
+436.0,disconnected,0.0
+438.0,disconnected,0.0
+440.0,disconnected,0.0
+442.0,disconnected,0.0
+444.0,disconnected,0.0
+446.0,disconnected,0.0
+448.0,disconnected,0.0
+450.0,disconnected,0.0
+452.0,disconnected,0.0
+454.0,disconnected,0.0
+456.0,disconnected,0.0
+458.0,disconnected,0.0
+460.0,disconnected,0.0
+462.0,disconnected,0.0
+464.0,disconnected,0.0
+466.0,disconnected,0.0
+468.0,disconnected,0.0
+470.0,disconnected,0.0
+472.0,disconnected,0.0
+474.0,disconnected,0.0
+476.0,disconnected,0.0
+478.0,disconnected,0.0
+480.0,disconnected,0.0
+482.0,disconnected,0.0
+484.0,disconnected,0.0
+486.0,disconnected,0.0
+488.0,disconnected,0.0
+490.0,disconnected,0.0
+492.0,disconnected,0.0
+494.0,disconnected,0.0
+496.0,disconnected,0.0
+498.0,disconnected,0.0
+500.0,disconnected,0.0
+502.0,disconnected,0.0
+504.0,disconnected,0.0
+506.0,disconnected,0.0
+508.0,disconnected,0.0
+510.0,disconnected,0.0
+512.0,disconnected,0.0
+514.0,disconnected,0.0
+516.0,disconnected,0.0
+518.0,disconnected,0.0
+520.0,disconnected,0.0
+522.0,disconnected,0.0
+524.0,disconnected,0.0
+526.0,disconnected,0.0
+528.0,disconnected,0.0
+530.0,disconnected,0.0
+532.0,disconnected,0.0
+534.0,disconnected,0.0
+536.0,disconnected,0.0
+538.0,disconnected,0.0
+540.0,disconnected,0.0
+542.0,disconnected,0.0
+544.0,disconnected,0.0
+546.0,disconnected,0.0
+548.0,disconnected,0.0
+550.0,disconnected,0.0
+552.0,disconnected,0.0
+554.0,disconnected,0.0
+556.0,disconnected,0.0
+558.0,disconnected,0.0
+560.0,disconnected,0.0
+562.0,disconnected,0.0
+564.0,disconnected,0.0
+566.0,disconnected,0.0
+568.0,disconnected,0.0
+570.0,disconnected,0.0
+572.0,disconnected,0.0
+574.0,disconnected,0.0
+576.0,disconnected,0.0
+578.0,disconnected,0.0
+580.0,disconnected,0.0
+582.0,disconnected,0.0
+584.0,disconnected,0.0
+586.0,disconnected,0.0
+588.0,disconnected,0.0
+590.0,disconnected,0.0
+592.0,disconnected,0.0
+594.0,disconnected,0.0
+596.0,disconnected,0.0
+598.0,disconnected,0.0
+600.0,disconnected,0.0

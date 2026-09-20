@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Stage 3: Trusted BB84 / BBM92</title>
+<style>body{font:16px/1.6 system-ui;max-width:1200px;margin:35px auto;padding:0 24px;color:#20354f}img{width:100%}td,th{text-align:left;padding:7px 18px;border-bottom:1px solid #ddd}table{border-collapse:collapse}code{background:#eef3f6}</style>
+<h1>Stage 3: Trusted Satellite Relay and Entanglement-Based Satellite QKD</h1>
+<p>One common circular orbit, atmosphere and optical/detector budget; two separate architectures.
+Mode A uses 100 MHz weak-coherent-pulse clocks at the default settings, independently per downlink, with signal allocation 0.8 and mean 0.5 photons.
+Mode B uses a CW pair source (default 10 million pairs/s), one photon to each station.
+Exact settings are in <a href="summary.json">summary.json</a>; values are simulated expectations.</p>
+<table><tr><th>Ground separation (km)</th><td>1,000</td></tr><tr><th>Common visibility (s, sampled)</th><td>302</td></tr><tr><th>BB84 link A generated (bit)</th><td>3,757,513</td></tr><tr><th>BB84 link B generated (bit)</th><td>3,757,513</td></tr><tr><th>Trusted simultaneous benchmark (bit)</th><td>882,610.7</td></tr><tr><th>Trusted causal stored relay delivered (expected bit)</th><td>3,757,513</td></tr><tr><th>BBM92 peak true coincidences (/s)</th><td>17.77614</td></tr><tr><th>BBM92 peak total coincidences (/s)</th><td>17.62986</td></tr><tr><th>BBM92 pooled QBER (fraction)</th><td>0.03458559</td></tr><tr><th>BBM92 peak asymptotic key estimate (bit/s)</th><td>4.69888</td></tr><tr><th>BBM92 integrated asymptotic estimate (bit)</th><td>735.9869</td></tr></table>
+<p>At 4000 km separation with otherwise identical settings: common visibility = 0 s;
+trusted causal stored delivery = 3,757,513.281 expected bits;
+BBM92 = 0 estimated bits. No entangled pair is carried between passes.</p>
+<img src="comparison.png" alt="Visibility, optical loss, singles, coincidences, QBER and asymptotic rates">
+<img src="key_budgets.png" alt="Trusted generated and consumed key budgets, and BBM92 estimated key integral">
+<p><strong>Mode A:</strong> The satellite is trusted and may know the final relayed key. Pools start empty; trapezoid-generated interval amounts become available at the interval end; each delivered bit consumes one bit from each pool. Unlimited demand, classical storage and negligible authenticated relay delay/cost are assumed.</p>
+<p><strong>Mode B:</strong> The satellite distributes ideal Bell pairs; no satellite key is assigned.
+The high-loss CW model includes noise/accidentals, Gaussian timing acceptance and independent per-arm misalignment.
+The BBM92 rate is q C max[1-f h2(Ebit)-h2(Ephase),0], assuming Ephase=Ebit and basis-independent trusted receivers.
+Both bases must be randomly measured and tested, classical messages authenticated, and the receiver/squashing and adversarial-source assumptions of a security proof satisfied. These requirements are assumed, not established by this numerical model.
+This is an <strong>asymptotic secret-key-rate estimate</strong>, not a validated composably secure finite-key rate or a device-independent claim.</p>
+<p>Equations: <a href="https://arxiv.org/abs/2103.14639">Neumann et al. (2021)</a> (CW coincidences, timing acceptance, BBM92);
+<a href="https://arxiv.org/abs/quant-ph/0503005">Ma et al. (2005)</a> (ideal decoy BB84).</p>
+<p>Data: <a href="comparison.csv">comparison.csv</a>. No quantum memory, swapping or repeater model. No wavelength parameter is introduced because divergence, losses and detector efficiency are already independent specified inputs. These source/hardware choices do not establish universal superiority.</p></html>
