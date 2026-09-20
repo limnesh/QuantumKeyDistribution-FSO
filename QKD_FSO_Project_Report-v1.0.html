@@ -1,0 +1,2757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="DOCX report to HTML: DrawingML crop-aware conversion" name="generator"/>
+<meta content="IIT Delhi Quantum Key Distribution over Free-Space Optical Channels project report." name="description"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Quantum Key Distribution over Free-Space Optical Channels</title>
+<style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+
+    /* GitHub Pages / local-browser additions */
+    body { max-width: 1120px; padding: 32px 48px 80px; line-height: 1.55;
+           font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+    h1, h2, h3 { color: #153451; scroll-margin-top: 20px; }
+    h1:not(.title) { border-bottom: 1px solid #dce5ec; padding-bottom: 0.25em; }
+    h1.title { font-size: clamp(1.8rem, 3vw, 2.7rem); }
+    #TOC { background: #f4f8fc; border: 1px solid #dce7f2; border-radius: 10px;
+           padding: 16px 22px; margin: 20px 0 30px; }
+    #TOC a { color: #184e78; text-decoration: none; }
+    #TOC a:hover { text-decoration: underline; }
+    img { max-width: 100%; height: auto; object-fit: contain; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0 24px;
+            display: block; overflow-x: auto; }
+    th, td { border: 1px solid #d8e1e9; padding: 9px 12px; vertical-align: top; }
+    th { background: #eaf2fa; }
+    tr:nth-child(even) td { background: #f9fbfd; }
+    figure { max-width: 100%; margin: 24px auto; }
+    figcaption { color: #526579; font-size: .91rem; }
+    math[display="block"] { margin: 1.1em auto; overflow-x: auto; overflow-y: hidden; }
+    a { color: #0d5487; }
+    @media (max-width: 700px) { body { padding: 12px 16px 40px; } #TOC { padding: 10px; } }
+    @media print { body { max-width: none; padding: 0; } #TOC { break-after: page; }
+                   figure, img { break-inside: avoid; } table { display: table; } }
+  
+
+/* Word-accurate graphic cropping, web navigation, and report masthead/footer. */
+html { scroll-behavior: smooth; }
+body { padding-top: 0 !important; }
+.site-masthead {
+  position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; margin: 0 -48px 28px; padding: 12px 48px;
+  background: rgba(18,50,78,.97); color: #fff;
+  box-shadow: 0 3px 12px rgba(7,28,48,.17);
+  font-family: 'Segoe UI', Arial, sans-serif; font-size: .86rem;
+}
+.site-masthead-title { font-weight: 750; letter-spacing: .025em; }
+.site-masthead-detail { font-weight: 500; opacity: .9; text-align: right; }
+#title-block-header { background: linear-gradient(135deg,#f5f9ff,#fff); border: 1px solid #e0e9f3;
+  border-radius: 12px; padding: 28px 24px; margin: 12px 0 28px; text-align: center; }
+#title-block-header .subtitle { display: flex; flex-direction: column; gap: .3rem; line-height: 1.5; }
+.subtitle-line { display: block; }
+.contents-panel { margin: 24px 0 42px; padding: 22px 26px; border:1px solid #d9e5ee;
+  border-radius: 12px; background:#f6faff; }
+.contents-panel h1 { margin-top: 0; color:#123653; }
+.contents-panel { scroll-margin-top: 70px; }
+figure:has(>figcaption) { display:flex; flex-direction:column; align-items:center; gap:8px; }
+figure:has(>figcaption) > img { display:block; }
+figure figcaption { text-align:center; font-weight:600; color:#263f55; margin:0 0 12px; }
+.contents-intro { color:#50657b; font-size:.9rem; margin:.25rem 0 1rem; }
+.contents-list { list-style: none; padding-left: 0; margin:0; columns: 2; column-gap:30px; }
+.contents-list > li { list-style:none; break-inside:avoid; margin:0 0 .9rem; padding:0 0 .65rem;
+  border-bottom: 1px solid #dce7f1; }
+.contents-list > li > a { font-weight:700; }
+.contents-list ul { list-style:none; padding-left:1rem; margin:.35rem 0 0; }
+.contents-list ul li { list-style:none; margin:.33rem 0; font-size:.89rem; line-height:1.4; }
+.contents-panel a { color:#154a76; text-decoration: none; }
+.contents-panel a:hover,.contents-panel a:focus { color:#0276b9; text-decoration:underline; }
+img { max-width:100%; height:auto; object-fit:contain; }
+img[src^="report-assets/"] { display:inline-block; vertical-align:middle; }
+p:has(> img[src^="report-assets/"]) { text-align:center; }
+.site-footer { display:flex; align-items:center; justify-content:space-between;
+   gap:16px; border-top:1px solid #d9e5ee; padding:20px 0 30px; margin:58px 0 0;
+   color:#50657b; font-size:.87rem; }
+h1[id],h2[id],h3[id] { scroll-margin-top: 75px; }
+@media(max-width:750px) {
+ .site-masthead { margin:0 -16px 20px; padding:11px 16px; flex-wrap:wrap; }
+ .site-masthead-detail { font-size:.74rem; }
+ .contents-panel {padding:17px 15px;}
+ .contents-list {columns:1;}
+ .site-footer { flex-direction:column;align-items:flex-start;}
+ #title-block-header {padding:19px 13px;}
+}
+@page {
+  size:A4; margin: 21mm 17mm 20mm;
+  @top-left {content: 'QKD over FSO Channels'; color: #244461; font: 8.5pt Arial, sans-serif;}
+  @top-right {content: 'PGDACEQAI | Final Semester';color: #244461;font: 8.5pt Arial, sans-serif;}
+  @bottom-left {content:'Limnesh Augustine | Project Report';color:#526578;font:8.5pt Arial, sans-serif;}
+  @bottom-right {content: 'Page ' counter(page) ' of ' counter(pages);color:#526578;font:8.5pt Arial,sans-serif;}
+}
+@media print {
+ .site-masthead,.site-footer {display:none!important;}
+ body {max-width:none!important; padding:0!important; margin:0!important; font-size:10pt;}
+ .contents-panel {break-after:page;}
+ .contents-list {columns:2;}
+ table {display:table!important;overflow:visible!important;}
+ h1[id],h2[id],h3[id] {scroll-margin-top:0;}
+ img {max-width:100%!important;max-height:235mm;}
+ #title-block-header { background: white; border: 0; }
+}
+</style>
+</head>
+<body><div class="site-masthead" role="banner"><span class="site-masthead-title">QKD over FSO Channels</span><span class="site-masthead-detail">PGDACEQAI  |  Final Semester</span></div>
+<header id="title-block-header">
+<h1 class="title">Quantum Key Distribution over Free-Space Optical
+Channels</h1>
+<p class="subtitle"><span class="subtitle-line">PROJECT REPORT</span><span class="subtitle-line">Simulation and Comparative Analysis</span><span class="subtitle-line">Terrestrial LOS · LEO Downlink · Trusted Satellite Relay ·
+Entanglement-Based BBM92 · Multi-Satellite Trusted Networks</span></p>
+</header>
+
+<table>
+<colgroup>
+<col style="width: 28%"/>
+<col style="width: 71%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>INFORMATION</th>
+<th>DETAIL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Institution</td>
+<td>IIT Delhi, Bharti School of Telecommunication Technology and
+Management</td>
+</tr>
+<tr class="even">
+<td>Prepared by</td>
+<td>Limnesh Augustine</td>
+</tr>
+<tr class="odd">
+<td>Supervisor</td>
+<td>Prof. Neel Kanth Kundu</td>
+</tr>
+<tr class="even">
+<td>Submission date</td>
+<td>23<sup>rd</sup> Sep 2026</td>
+</tr>
+<tr class="odd">
+<td>Software</td>
+<td>Jupyter Notebook (Python), GNU Octave</td>
+</tr>
+<tr class="even">
+<td>Document status</td>
+<td>Institution Review</td>
+</tr>
+<tr class="odd">
+<td>Source Code Repository</td>
+<td><a href="https://github.com/limnesh/QuantumKeyDistribution-FSO">https://github.com/limnesh/QuantumKeyDistribution-FSO</a></td>
+</tr>
+</tbody>
+</table>
+<section aria-labelledby="contents-heading" class="contents-panel" id="contents"><h1 class="TOC-Heading" id="contents-heading">Contents</h1><p class="contents-intro">Select a section to jump directly to it. This web edition uses links instead of Word page numbers.</p><nav aria-label="Report sections" class="contents-links"><ul class="contents-list"><li class="toc-section"><a href="#abstract">Abstract</a><ul></ul></li><li class="toc-section"><a href="#introduction-and-project-scope">Introduction and Project Scope</a><ul><li class="toc-subsection"><a href="#overview">Overview</a></li><li class="toc-subsection"><a href="#problem-statement-long-term-security-limitations-of-conventional-encryption">Problem Statement: Long-Term Security Limitations of Conventional Encryption</a></li><li class="toc-subsection"><a href="#research-question">Research Question</a></li><li class="toc-subsection"><a href="#project-objectives">Project Objectives</a></li><li class="toc-subsection"><a href="#project-scope">Project Scope</a></li></ul></li><li class="toc-section"><a href="#system-architectures-and-eavesdropping-analysis">System Architectures and Eavesdropping Analysis</a><ul><li class="toc-subsection"><a href="#part-a-system-architecture-and-operation">Part A — System Architecture and Operation</a></li><li class="toc-subsection"><a href="#part-b-eavesdropping-and-security-analysis">Part B — Eavesdropping and Security Analysis</a></li></ul></li><li class="toc-section"><a href="#technologies-and-software-used">Technologies and Software Used</a><ul><li class="toc-subsection"><a href="#development-environment">Development Environment</a></li><li class="toc-subsection"><a href="#main-python-libraries-and-packages">Main Python Libraries and Packages</a></li><li class="toc-subsection"><a href="#gnu-octave">GNU Octave</a></li><li class="toc-subsection"><a href="#integration-and-verification">Integration and Verification</a></li></ul></li><li class="toc-section"><a href="#foundations-of-quantum-key-distribution-optical-channels-and-eavesdropping">Foundations of Quantum Key Distribution, Optical Channels and Eavesdropping</a><ul><li class="toc-subsection"><a href="#quantum-and-classical-communication-channels">Quantum and Classical Communication Channels</a></li><li class="toc-subsection"><a href="#bb84-protocol-preparation-and-measurement">BB84 Protocol: Preparation and Measurement</a></li><li class="toc-subsection"><a href="#weak-coherent-laser-pulses-and-single-photons">Weak Coherent Laser Pulses and Single Photons</a></li><li class="toc-subsection"><a href="#decoy-state-bb84-and-protocol-limitations">Decoy-State BB84 and Protocol Limitations</a></li><li class="toc-subsection"><a href="#eavesdropping-and-the-intercept-resend-attack">Eavesdropping and the Intercept-Resend Attack</a></li><li class="toc-subsection"><a href="#error-correction-and-privacy-amplification">Error Correction and Privacy Amplification</a></li><li class="toc-subsection"><a href="#entanglement-based-quantum-key-distribution-using-bbm92">Entanglement-Based Quantum Key Distribution Using BBM92</a></li><li class="toc-subsection"><a href="#bbm92-key-generation-and-security">BBM92 key generation and security</a></li></ul></li><li class="toc-section"><a href="#common-mathematical-models-and-parameters">Common Mathematical Models and Parameters</a><ul><li class="toc-subsection"><a href="#gaussian-beam-propagation-and-aperture-collection">Gaussian beam propagation and aperture collection</a></li><li class="toc-subsection"><a href="#atmosphere-receiver-hardware-and-satellite-geometry">Atmosphere, receiver hardware and satellite geometry</a></li><li class="toc-subsection"><a href="#detection-gain-qber-and-binary-entropy-for-bb84">Detection gain, QBER and binary entropy for BB84</a></li><li class="toc-subsection"><a href="#asymptotic-decoy-state-bb84-benchmark">Asymptotic decoy-state BB84 benchmark</a></li><li class="toc-subsection"><a href="#dps-pulse-train-encoding-and-two-port-detection">DPS pulse-train encoding and two-port detection</a></li><li class="toc-subsection"><a href="#dps-rate-interpretation-and-security-boundary">DPS rate interpretation and security boundary</a></li><li class="toc-subsection"><a href="#log-normal-fluctuations-and-temporal-correlation">Log-normal fluctuations and temporal correlation</a></li><li class="toc-subsection"><a href="#averaging-key-budgets-and-numerical-integration">Averaging, key budgets and numerical integration</a></li><li class="toc-subsection"><a href="#bbm92-pair-statistics-and-coincidence-model">BBM92 pair statistics and coincidence model</a></li></ul></li><li class="toc-section"><a href="#mathematical-calculation-examples">Mathematical calculation Examples</a><ul><li class="toc-subsection"><a href="#ldpc-information-reconciliation">LDPC information reconciliation</a></li><li class="toc-subsection"><a href="#toeplitz-privacy-amplification">Toeplitz privacy amplification</a></li><li class="toc-subsection"><a href="#decoy-state-bb84-signal-weak-decoy-and-vacuum">Decoy-state BB84: signal, weak-decoy and vacuum</a></li><li class="toc-subsection"><a href="#combined-interpretation">Combined interpretation</a></li></ul></li><li class="toc-section"><a href="#simulation-of-basic-los-fso">Simulation of Basic LOS FSO</a><ul><li class="toc-subsection"><a href="#scenario-definition-and-modelling-assumptions">Scenario definition and modelling assumptions</a></li><li class="toc-subsection"><a href="#distance-and-interferometer-visibility">Distance and interferometer visibility</a></li><li class="toc-subsection"><a href="#correlated-fading-and-observed-terrestrial-performance">Correlated fading and observed terrestrial performance</a></li><li class="toc-subsection"><a href="#bb84-processing-observations-and-limitations">BB84 processing observations and limitations</a></li></ul></li><li class="toc-section"><a href="#simulation-of-a-leo-satellite-to-ground-fso-link">Simulation of a LEO Satellite-to-Ground FSO Link</a><ul><li class="toc-subsection"><a href="#orbital-and-optical-configuration">Orbital and optical configuration</a></li><li class="toc-subsection"><a href="#satellite-pass-rate-qber-and-atmospheric-fluctuations">Satellite-pass rate, QBER and atmospheric fluctuations</a></li><li class="toc-subsection"><a href="#interpretation-of-contact-and-numerical-resolution">Interpretation of contact and numerical resolution</a></li></ul></li><li class="toc-section"><a href="#simulation-of-two-ground-stations-and-one-satellite">Simulation of Two Ground Stations and One Satellite</a><ul><li class="toc-subsection"><a href="#scenario-3a-trusted-classical-key-relay">Scenario 3A — trusted classical key relay</a></li><li class="toc-subsection"><a href="#scenario-3b-entangled-bbm92-downlinks">Scenario 3B — entangled BBM92 downlinks</a></li><li class="toc-subsection"><a href="#security-and-operational-distinctions">Security and operational distinctions</a></li></ul></li><li class="toc-section"><a href="#simulation-of-two-ground-stations-and-multiple-satellites">Simulation of Two Ground Stations and Multiple Satellites</a><ul><li class="toc-subsection"><a href="#network-architecture-and-link-availability">Network architecture and link availability</a></li><li class="toc-subsection"><a href="#recorded-time-series-results">Recorded time-series results</a></li></ul></li><li class="toc-section"><a href="#comparative-observations-across-the-four-stages">Comparative Observations Across the Four Stages</a><ul><li class="toc-subsection"><a href="#atmospheric-statistics-versus-useful-detection-weighted-statistics">Atmospheric statistics versus useful detection-weighted statistics</a></li><li class="toc-subsection"><a href="#interpretation-of-network-and-source-resource-assumptions">Interpretation of network and source-resource assumptions</a></li></ul></li><li class="toc-section"><a href="#application-case-study-bahrain-sample-bank-bsb">Application Case Study: Bahrain Sample Bank (BSB)</a><ul><li class="toc-subsection"><a href="#case-study-environment-and-existing-connectivity">Case study environment and existing connectivity</a></li><li class="toc-subsection"><a href="#operational-context-and-quantum-related-security-problem">Operational context and quantum-related security problem</a></li><li class="toc-subsection"><a href="#application-objective-and-specific-research-questions">Application objective and specific research questions</a></li><li class="toc-subsection"><a href="#cryptographic-protection-boundary-and-integration-model">Cryptographic protection boundary and integration model</a></li><li class="toc-subsection"><a href="#mapping-the-four-simulation-stages-to-bsb-infrastructure">Mapping the four simulation stages to BSB infrastructure</a></li><li class="toc-subsection"><a href="#phased-implementation-concept">Phased implementation concept</a></li><li class="toc-subsection"><a href="#bcp-drills-reverse-replication-and-key-availability">BCP drills, reverse replication and key availability</a></li><li class="toc-subsection"><a href="#branch-office-extension-and-cost-boundaries">Branch-office extension and cost boundaries</a></li><li class="toc-subsection"><a href="#evaluation-criteria-and-boundaries-of-the-present-observations">Evaluation criteria and boundaries of the present observations</a></li></ul></li><li class="toc-section"><a href="#conclusion">Conclusion</a><ul></ul></li><li class="toc-section"><a href="#acknowledgement-of-generative-ai-assistance">Acknowledgement of Generative AI Assistance</a><ul></ul></li><li class="toc-section"><a href="#references">References</a><ul></ul></li></ul></nav></section><h1 id="abstract">Abstract</h1>
+<p>This project explores the application of Quantum Key Distribution
+(QKD) over Free-Space Optical (FSO) communication systems, beginning
+with a simple ground-to-ground connection and gradually extending to
+satellite-based quantum communication networks. The main objective is to
+study how distance, atmospheric conditions, optical losses, satellite
+movement, and network configurations affect the generation and
+distribution of secure cryptographic keys.</p>
+<p>The project is developed in four stages. The first stage investigates
+a basic line-of-sight optical link between two ground stations and
+demonstrates the BB84 protocol, eavesdropping attempts by Eve, error
+detection, LDPC-based error correction, and privacy amplification using
+Toeplitz hashing. The second stage extends the simulation to
+communication between a ground station and a Low Earth Orbit (LEO)
+satellite, examining how orbital motion, elevation angle, transmission
+distance, and atmospheric losses influence QKD performance. The third
+stage considers two ground stations communicating through a single
+satellite and compares two approaches: trusted satellite relaying using
+BB84 and entanglement-based communication using the BBM92 protocol. The
+fourth stage expands the system into a network of multiple satellites,
+investigating inter-satellite optical links, network connectivity,
+routing, and end-to-end key distribution.</p>
+<p>The simulations are developed using Python, Jupyter Notebook, and GNU
+Octave, allowing the different scenarios to be studied through numerical
+calculations, graphical analysis, and comparative results. The project
+also examines the effects of eavesdropping and the role of quantum
+communication protocols in detecting potential security threats.</p>
+<p>The overall aim is to develop a clear understanding of the physical
+principles, operational requirements, performance limitations, and
+potential applications of FSO-based QKD in terrestrial and satellite
+communication systems. The work is simulation-based and provides a
+foundation for further research into practical quantum communication
+networks.</p>
+<h1 id="introduction-and-project-scope">Introduction and Project
+Scope</h1>
+<h2 id="overview">Overview</h2>
+<p>Quantum Key Distribution (QKD) is a communication technique that
+allows two parties to establish secret cryptographic keys using the
+principles of quantum mechanics. Unlike conventional key distribution
+methods, QKD uses quantum states, typically encoded in photons, to
+detect potential eavesdropping during key exchange.</p>
+<p>Free-Space Optical (FSO) communication provides a way to transmit
+these photons through the atmosphere or space without relying on optical
+fibre cables. However, the performance of an FSO link depends on several
+factors, including transmission distance, beam divergence, atmospheric
+conditions, receiver aperture, pointing accuracy, and detector
+efficiency. These factors influence the number of photons successfully
+detected and the rate at which secret keys can be generated.</p>
+<p>Satellite-based QKD extends the possibilities of quantum
+communication beyond terrestrial distances. Satellites can establish
+optical links with ground stations and other satellites, potentially
+enabling secure key distribution across geographically separated
+locations. However, satellite movement, changing elevation angles,
+atmospheric losses, and limited communication windows introduce
+additional challenges.</p>
+<p>Different satellite communication architectures also have different
+operational and security requirements. A satellite may establish
+independent quantum keys with two ground stations and act as a trusted
+relay, distribute entangled photon pairs to both stations, or
+participate in a larger network of interconnected satellites.</p>
+<p>This project investigates these approaches through four progressively
+more complex simulation scenarios, beginning with a basic
+ground-to-ground optical link and extending to a multi-satellite QKD
+network.</p>
+<h2 id="problem-statement-long-term-security-limitations-of-conventional-encryption">Problem
+Statement: Long-Term Security Limitations of Conventional
+Encryption</h2>
+<p>Modern digital communication relies heavily on cryptographic
+algorithms to protect sensitive information transmitted across public
+and private networks. Although current encryption systems provide strong
+protection against conventional computing attacks, many widely deployed
+security protocols depend on public-key algorithms such as RSA and
+Elliptic Curve Cryptography (ECC) for key establishment and
+authentication. The rapid advancement of quantum computing introduces a
+significant long-term security concern because a sufficiently powerful,
+fault-tolerant quantum computer could break these algorithms using
+Shor’s algorithm. This creates the Harvest-Now, Decrypt-Later (HNDL)
+threat, in which adversaries intercept and store encrypted
+communications today with the intention of decrypting them when future
+quantum computing capabilities become available. Information requiring
+confidentiality for many years, including financial records, healthcare
+data, government communications, intellectual property and critical
+infrastructure information, is particularly exposed to this risk.
+Although strong symmetric encryption such as AES-256 is not immediately
+considered broken by the same quantum attack, the compromise of
+vulnerable key-establishment mechanisms could expose the keys used to
+protect recorded communications. Consequently, relying exclusively on
+conventional, quantum-vulnerable public-key cryptography may not provide
+sufficient long-term confidentiality.</p>
+<p><img alt="Illustration 1: Problem
+Statement: Long-Term Security Limitations of Conventional
+Encryption" decoding="async" loading="eager" src="report-assets/figure-01.jpeg" style="width:7.14852in;height:auto;max-width:100%;"/></p>
+<p>This problem motivates the investigation of quantum-resistant
+approaches, including post-quantum cryptography and Quantum Key
+Distribution (QKD), which uses quantum-mechanical principles to
+establish shared secret keys. When appropriately implemented alongside
+authenticated communication, secure key management and strong symmetric
+encryption, QKD offers an alternative key-distribution mechanism for
+protecting sensitive information against future cryptographic
+threats.</p>
+<h2 id="research-question">Research Question</h2>
+<p>The primary research question addressed in this project is:</p>
+<p>How do optical channel characteristics, satellite orbital conditions,
+QKD protocols, and network configurations affect the performance and
+feasibility of quantum key distribution over free-space optical
+communication systems?</p>
+<p>The project examines how these factors influence photon detection,
+quantum bit error rate (QBER), secret-key generation rates,
+communication availability, and end-to-end key distribution.</p>
+<p>It also investigates how an eavesdropper (Eve) may affect quantum
+communication and demonstrates how basis sifting, error correction, and
+privacy amplification help Alice and Bob establish matching keys under
+the assumptions of the simulation.</p>
+<p>By comparing terrestrial links, satellite downlinks, trusted
+satellite relays, entanglement-based communication, and multi-satellite
+networks, the project aims to develop a broader understanding of the
+opportunities and limitations of FSO-based QKD.</p>
+<h2 id="project-objectives">Project Objectives</h2>
+<p>The main objectives of this project are to:</p>
+<ul>
+<li><p>Develop a basic FSO communication model to study the effects of
+transmission distance, beam divergence, atmospheric attenuation,
+receiver aperture, and detector efficiency on optical signal
+transmission.</p></li>
+<li><p>Study quantum key distribution protocols, particularly BB84 and
+decoy-state BB84, and understand how quantum states are prepared,
+transmitted, measured, and processed to generate secret keys.</p></li>
+<li><p>Investigate the effects of eavesdropping by introducing Eve into
+the simulation and examining how interception attempts can affect QBER
+and key generation.</p></li>
+<li><p>Demonstrate quantum key post-processing, including basis sifting,
+LDPC-based error correction, and Toeplitz privacy amplification, to
+understand how Alice and Bob can obtain matching shorter keys.</p></li>
+<li><p>Extend the FSO model to satellite communication by simulating a
+Low Earth Orbit (LEO) satellite and studying orbital movement, elevation
+angle, slant range, atmospheric losses, visibility windows, and their
+effects on QKD performance.</p></li>
+<li><p>Investigate satellite-assisted key distribution between two
+ground stations by comparing a trusted satellite relay using BB84 with
+an entanglement-based approach using the BBM92 protocol.</p></li>
+<li><p>Develop a multi-satellite QKD network model to study
+inter-satellite optical links, Earth obstruction, network connectivity,
+routing, and the availability of end-to-end secret keys.</p></li>
+<li><p>Compare the performance of different scenarios using relevant
+parameters such as optical transmission efficiency, photon detection
+rates, QBER, secret-key rates, and communication availability.</p></li>
+<li><p>Implement and analyze the simulations using Python, Jupyter
+Notebook, and GNU Octave, providing graphical visualizations, numerical
+results, and reproducible experiments.</p></li>
+<li><p>Identify the limitations and potential applications of FSO-based
+QKD and establish a foundation for future research into practical
+terrestrial and satellite quantum communication networks.</p></li>
+</ul>
+<h2 id="project-scope">Project Scope</h2>
+<p>The project focuses on the mathematical modelling and computer-based
+simulation of quantum key distribution over free-space optical
+communication channels. It covers four main scenarios, with the third
+scenario divided into two alternative communication architectures.</p>
+<p>The simulations incorporate simplified optical propagation, orbital
+geometry, quantum key generation, eavesdropping, error correction,
+privacy amplification, and network routing where applicable.</p>
+<p>Python, Jupyter Notebook, and GNU Octave are used to implement the
+models, perform numerical calculations, visualize results, and compare
+the different communication scenarios.</p>
+<p>The project does not involve the physical construction or deployment
+of a QKD system. Advanced technologies such as quantum repeaters,
+quantum memories, and entanglement swapping between multiple satellites
+are outside its present scope.</p>
+<p>The simulation results are intended to demonstrate the principles and
+performance characteristics of FSO-based QKD under defined assumptions.
+They do not constitute experimental validation or a complete security
+proof of a practical quantum communication system.</p>
+<h1 id="system-architectures-and-eavesdropping-analysis">System
+Architectures and Eavesdropping Analysis</h1>
+<p>This covers overview, including the five communication architectures
+and their corresponding Eve-related security scenarios.</p>
+<h2 id="part-a-system-architecture-and-operation">Part A — System
+Architecture and Operation</h2>
+<p><img alt="Illustration 2: Part A — System
+Architecture and Operation" decoding="async" loading="lazy" src="report-assets/figure-02.png" style="width:6.98557in;height:auto;max-width:100%;"/></p>
+<p>Figure 1: Ground-to-Ground Free-Space Optical Quantum Key
+Distribution</p>
+<p>Illustrates a basic line-of-sight FSO link between Alice and Bob,
+including optical transmission, decoy-state BB84, photon detection,
+atmospheric losses, and the classical post-processing steps used to
+establish a shared secret key.</p>
+<p><img alt="Illustration 3: Part A — System
+Architecture and Operation" decoding="async" loading="lazy" src="report-assets/figure-03.png" style="width:6.95998in;height:auto;max-width:100%;"/></p>
+<p>Figure 2: Satellite-to-Ground Quantum Key Distribution
+Architecture</p>
+<p>Demonstrates QKD between a Low Earth Orbit satellite and a ground
+station, showing orbital geometry, slant range, elevation angle, optical
+transmission losses, and their influence on photon detection and
+secret-key generation.</p>
+<p><img alt="Illustration 4: Part A — System
+Architecture and Operation" decoding="async" loading="lazy" src="report-assets/figure-04.png" style="width:6.93194in;height:auto;max-width:100%;"/></p>
+<p>Figure 3A: Quantum Key Distribution Using a Trusted Satellite
+Relay</p>
+<p>Illustrates how a single satellite independently establishes quantum
+keys with two ground stations using decoy-state BB84. The satellite
+stores and relays key material, enabling Alice and Bob to establish a
+common key even when their satellite communication windows occur at
+different times.</p>
+<p><img alt="Illustration 5: Part A — System
+Architecture and Operation" decoding="async" loading="lazy" src="report-assets/figure-05.png" style="width:6.91508in;height:auto;max-width:100%;"/></p>
+<p>Figure 3B: Entanglement-Based Satellite Quantum Key Distribution
+Using BBM92</p>
+<p>Illustrates a satellite distributing entangled photon pairs to two
+ground stations simultaneously. The diagram highlights common
+visibility, coincidence detection, quantum correlations, and the BBM92
+protocol used to generate a shared secret key without requiring the
+satellite to know the final key.</p>
+<p><img alt="Illustration 6: Part A — System
+Architecture and Operation" decoding="async" loading="lazy" src="report-assets/figure-06.png" style="width:6.92211in;height:auto;max-width:100%;"/></p>
+<p>Figure 5: Multi-Satellite Trusted-Node Quantum Key Distribution
+Network</p>
+<p>Presents a QKD network connecting two ground stations through
+multiple satellites. It demonstrates inter-satellite optical links,
+communication availability, Earth obstruction, individual link-key
+generation, and network routing for end-to-end key distribution.</p>
+<h2 id="part-b-eavesdropping-and-security-analysis">Part B —
+Eavesdropping and Security Analysis</h2>
+<p><img alt="Illustration 7: Part B —
+Eavesdropping and Security Analysis" decoding="async" loading="lazy" src="report-assets/figure-07.png" style="width:6.96755in;height:auto;max-width:100%;"/></p>
+<p>Figure 6: Eavesdropping Detection in Ground-to-Ground QKD</p>
+<p>Demonstrates Eve attempting to intercept and measure quantum signals
+transmitted between Alice and Bob. The diagram illustrates how an
+intercept-resend attack can introduce detectable errors, increasing the
+quantum bit error rate (QBER), and how privacy amplification helps
+reduce Eve's information about the final key.</p>
+<p><img alt="Illustration 8: Part B —
+Eavesdropping and Security Analysis" decoding="async" loading="lazy" src="report-assets/figure-08.png" style="width:6.94349in;height:auto;max-width:100%;"/></p>
+<p>Figure 7: Eavesdropping Threats in Satellite-to-Ground QKD</p>
+<p>Illustrates an eavesdropper attempting to intercept quantum signals
+along a satellite-to-ground optical link. The diagram highlights the
+role of decoy-state BB84, photon detection statistics, and QBER analysis
+in identifying disturbances and evaluating the security of the
+communication.</p>
+<p><img alt="Illustration 9: Part B —
+Eavesdropping and Security Analysis" decoding="async" loading="lazy" src="report-assets/figure-09.png" style="width:6.94937in;height:auto;max-width:100%;"/></p>
+<p>Figure 8A: Eavesdropping Analysis in Trusted Satellite Relay QKD</p>
+<p>Demonstrates how Eve may independently target either of the quantum
+links connecting the satellite to the two ground stations. Each link
+performs its own security checks before the resulting key material is
+stored and used for trusted key relaying.</p>
+<p><img alt="Illustration 10: Part B —
+Eavesdropping and Security Analysis" decoding="async" loading="lazy" src="report-assets/figure-10.png" style="width:6.9675in;height:auto;max-width:100%;"/></p>
+<p>Figure 8B: Eavesdropping Detection in Entanglement-Based Satellite
+QKD</p>
+<p>Illustrates Eve attempting to interact with one photon of an
+entangled pair distributed by the satellite. The diagram demonstrates
+how unauthorized measurements may disturb quantum correlations,
+influencing coincidence statistics and QBER, which are evaluated during
+BBM92 security processing.</p>
+<p><img alt="Illustration 11: Part B —
+Eavesdropping and Security Analysis" decoding="async" loading="lazy" src="report-assets/figure-11.png" style="width:7.01561in;height:auto;max-width:100%;"/></p>
+<p>Figure 9: Security Analysis of a Multi-Satellite QKD Network</p>
+<p>Demonstrates potential eavesdropping attempts on individual
+ground-to-satellite and inter-satellite quantum links. The diagram
+highlights link-level security checks, identification of abnormal error
+rates, rejection of unsuitable keys, and alternative routing through
+available trusted satellite nodes.</p>
+<h1 id="technologies-and-software-used">Technologies and Software
+Used</h1>
+<p>The FSO-QKD simulation project was developed using GNU Octave and
+Python. These technologies were selected for mathematical modelling,
+numerical computation, simulation, graphical visualization and analysis
+of the four project scenarios.</p>
+<h2 id="development-environment">Development Environment</h2>
+<table>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 9%"/>
+<col style="width: 73%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Technology</th>
+<th>Version</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GNU Octave</td>
+<td>10.3.0</td>
+<td>Mathematical modelling, numerical simulations, interactive
+dashboards and graphical analysis.</td>
+</tr>
+<tr class="even">
+<td>Python</td>
+<td>3.11.9</td>
+<td>Simulation development, numerical computations, QKD protocol
+implementation and data analysis.</td>
+</tr>
+<tr class="odd">
+<td>Jupyter Notebook</td>
+<td>N/A</td>
+<td>Interactive execution of Python simulations, documentation,
+mathematical analysis and visualization.</td>
+</tr>
+<tr class="even">
+<td>VS Code</td>
+<td>1.138.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="main-python-libraries-and-packages">Main Python Libraries and
+Packages</h2>
+<p>The following libraries were identified in the project's four Jupyter
+notebooks.</p>
+<table>
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 87%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Package</th>
+<th>Application in the project</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>NumPy</td>
+<td>Numerical computation, array processing, mathematical operations and
+simulation calculations.</td>
+</tr>
+<tr class="even">
+<td>Matplotlib</td>
+<td>Generation of graphs, plots, performance comparisons and
+visualization of simulation results.</td>
+</tr>
+<tr class="odd">
+<td>IPython</td>
+<td>Display of formatted Markdown and simulation results within Jupyter
+notebooks.</td>
+</tr>
+<tr class="even">
+<td>math</td>
+<td>Mathematical functions and numerical calculations.</td>
+</tr>
+<tr class="odd">
+<td>dataclasses</td>
+<td>Organization and management of simulation parameters and
+configuration structures.</td>
+</tr>
+<tr class="even">
+<td>pathlib</td>
+<td>File and directory management for project files and simulation
+outputs.</td>
+</tr>
+<tr class="odd">
+<td>json</td>
+<td>Handling structured simulation data and configuration
+information.</td>
+</tr>
+<tr class="even">
+<td>sys</td>
+<td>Python path management and access to project-specific modules.</td>
+</tr>
+</tbody>
+</table>
+<p>The project also uses custom Python modules, including leo_model,
+network_model, network_report, stage3_model and stage3_report. These
+implement scenario-specific calculations, satellite network simulations,
+BBM92 comparisons and report generation. They are project modules rather
+than external Python packages.</p>
+<h2 id="gnu-octave">GNU Octave</h2>
+<p>GNU Octave 10.3.0 is used as a complementary numerical computing
+environment for implementing and analyzing the FSO-QKD models.
+Alternatively Mathlab can be used.</p>
+<p>It supports the development of interactive simulation dashboards,
+modification of physical parameters, execution of numerical
+calculations, and generation of graphs and results.</p>
+<p>The project uses Octave's built-in mathematical functions, plotting
+capabilities and GUI components to provide an interactive environment
+for studying the different QKD scenarios.</p>
+<h2 id="integration-and-verification">Integration and Verification</h2>
+<p>Python and GNU Octave provide complementary platforms for
+implementing the mathematical models and analyzing the simulation
+results. Where equivalent calculations are available in both
+environments, their outputs can be compared to check numerical
+consistency.</p>
+<p>Jupyter Notebook provides a structured environment combining
+executable code, mathematical explanations, simulation results and
+graphical outputs. The generated HTML reports allow results to be
+reviewed without executing the notebooks.</p>
+<p>Together, these technologies provide a reproducible environment for
+investigating terrestrial FSO links, satellite-based QKD,
+entanglement-based communication and multi-satellite quantum key
+distribution networks.</p>
+<h1 id="foundations-of-quantum-key-distribution-optical-channels-and-eavesdropping">Foundations
+of Quantum Key Distribution, Optical Channels and Eavesdropping</h1>
+<p>This chapter introduces the fundamental principles of Quantum Key
+Distribution (QKD) and explains how photons are used to establish secret
+cryptographic keys. It also describes the communication channels, BB84
+protocol, eavesdropping detection, error correction and privacy
+amplification techniques used in the project.</p>
+<h2 id="quantum-and-classical-communication-channels">Quantum and
+Classical Communication Channels</h2>
+<p>Quantum Key Distribution requires two communication channels: a
+quantum channel and a classical channel.</p>
+<p>The quantum channel is used to transmit photons carrying quantum
+information from the sender, Alice, to the receiver, Bob. In this
+project, the photons travel through a free-space optical link, which may
+connect two ground stations, a satellite and a ground station, or
+multiple satellites.</p>
+<p>The classical channel is used for communication between Alice and Bob
+during key generation. They exchange information about their measurement
+bases, estimate errors and perform the processing needed to establish a
+common key. This channel is public but must be authenticated to prevent
+an attacker from impersonating either participant or modifying messages
+without detection.</p>
+<p>An eavesdropper, conventionally called Eve, may observe the classical
+communication and attempt to intercept photons travelling through the
+quantum channel. However, unauthorized interactions with quantum states
+can introduce disturbances that Alice and Bob may detect through their
+security checks.</p>
+<p>The simulation assumes that an authenticated classical channel is
+available. It does not implement a complete network authentication
+system.</p>
+<p><img alt="Illustration 12: Quantum and
+Classical Communication Channels" decoding="async" loading="lazy" src="report-assets/figure-12.png" style="width:6.93881in;height:auto;max-width:100%;"/></p>
+<p>Figure 10: Alice, Bob, Eve and Their Communication Channels</p>
+<p>The diagram illustrates the quantum optical link between Alice and
+Bob, the authenticated public classical channel used for key processing,
+and Eve's potential interception of the quantum signals.</p>
+<h2 id="bb84-protocol-preparation-and-measurement">BB84 Protocol:
+Preparation and Measurement</h2>
+<p>BB84 is one of the fundamental protocols used in Quantum Key
+Distribution. It enables Alice and Bob to establish a shared key by
+preparing and measuring quantum states using randomly selected
+bases.</p>
+<p><img alt="Illustration 13: BB84 Protocol:
+Preparation and Measurement" decoding="async" loading="lazy" src="report-assets/figure-13.png" style="width:6.85833in;height:auto;max-width:100%;"/></p>
+<p>Figure 11: BB84 Quantum Key Distribution Protocol</p>
+<p>The diagram illustrates the BB84 protocol, including quantum state
+preparation, polarization encoding, photon transmission, random-basis
+measurement, basis sifting, and QBER estimation. It also demonstrates
+how LDPC error correction and Toeplitz privacy amplification are used to
+establish a common secret key between Alice and Bob.</p>
+<p>In the polarization-based example used in this project, Alice
+randomly selects a binary value, either 0 or 1, and encodes it using one
+of two polarization bases:</p>
+<ul>
+<li><p>Rectilinear basis (Z): Horizontal (H) and vertical (V)
+polarization.</p></li>
+<li><p>Diagonal basis (X): Diagonal (D) and anti-diagonal (A)
+polarization.</p></li>
+</ul>
+<p>Bob independently selects a measurement basis for each received
+photon. If his chosen basis matches Alice's preparation basis, the
+measurement ideally reproduces the original bit. If the bases differ,
+the measurement outcome is random.</p>
+<p>After transmission, Alice and Bob announce their basis choices
+through the authenticated classical channel. They retain only the
+detected events for which their bases match and discard the remaining
+events. This procedure is known as basis sifting.</p>
+<p>When Alice and Bob select their bases independently with equal
+probabilities, approximately half of the detected events are
+retained:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">q = \frac{1}{2}
+</annotation></semantics></math></p>
+<p>The retained bits form the sifted keys. Alice and Bob then compare a
+selected portion of their data to estimate the Quantum Bit Error Rate
+(QBER), which represents the proportion of compared bits that
+disagree.</p>
+<p>A low QBER indicates that the measured data contain relatively few
+errors. A higher QBER may result from optical imperfections, detector
+noise, atmospheric disturbances or eavesdropping. In practical QKD
+systems, the error estimate must also account for statistical
+uncertainty.</p>
+<h2 id="weak-coherent-laser-pulses-and-single-photons">Weak Coherent
+Laser Pulses and Single Photons</h2>
+<p>The optical model used in the first two stages of this project
+represents a weak laser source rather than an ideal device that emits
+exactly one photon at a time.</p>
+<p>The laser intensity is reduced so that each pulse contains a small
+average number of photons, represented by the parameter
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>.</p>
+<p>For phase-randomized coherent pulses, the probability of a pulse
+containing exactly
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>photons
+follows a Poisson distribution:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>n</mi><mo form="postfix" stretchy="true">)</mo></mrow><mo>=</mo><mfrac><mrow><msup><mi>e</mi><mrow><mi>−</mi><mi>μ</mi></mrow></msup><msup><mi>μ</mi><mi>n</mi></msup></mrow><mrow><mi>n</mi><mi>!</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">P(n) = \frac{e^{- \mu}\mu^{n}}{n!}
+</annotation></semantics></math></p>
+<p>The probability of a pulse containing exactly one photon is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mrow><mo form="prefix" stretchy="true">(</mo><mn>1</mn><mo form="postfix" stretchy="true">)</mo></mrow><mo>=</mo><mi>μ</mi><msup><mi>e</mi><mrow><mi>−</mi><mi>μ</mi></mrow></msup></mrow><annotation encoding="application/x-tex">P(1) = \mu e^{- \mu}
+</annotation></semantics></math></p>
+<p>For example, when the mean photon number is set to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">\mu = 0.5</annotation></semantics></math>,
+some pulses contain no photons, some contain one photon, and a smaller
+proportion contain multiple photons.</p>
+<p>This distinction is important because the security analysis cannot
+assume that every transmitted pulse contains exactly one photon.
+Multiphoton pulses may create additional opportunities for an
+eavesdropper to obtain information.</p>
+<p>The project therefore uses a key-rate model that separately accounts
+for the single-photon contribution. However, the Stage 1 simulation
+obtains this contribution from the assumed channel model rather than
+estimating it from separate experimental datasets.</p>
+<h2 id="decoy-state-bb84-and-protocol-limitations">Decoy-State BB84 and
+Protocol Limitations</h2>
+<p>Decoy-state BB84 improves the security analysis of systems that use
+weak coherent laser pulses.</p>
+<p>In this approach, Alice randomly varies the intensity of transmitted
+pulses. The resulting detection statistics can help Alice and Bob
+estimate the contribution from single-photon signals and identify
+behavior that may be associated with photon-number-splitting
+attacks.</p>
+<p>A practical decoy-state implementation requires observations from
+different pulse intensities, such as signal, weak-decoy and vacuum
+states.</p>
+<p>The simulations in this project use an idealized approach in which
+the single-photon yield and error rate are calculated from the assumed
+optical channel parameters. These values are used to estimate the
+achievable key rate.</p>
+<p>Consequently, the resulting curves represent theoretical, asymptotic
+performance estimates. They do not include the complete statistical
+analysis of finite decoy-state measurements required for a practical
+security assessment.</p>
+<p>Stage 1 also includes a simplified comparison involving Differential
+Phase Shift (DPS) QKD. This is used for educational purposes and does
+not represent a complete implementation or security proof of the DPS
+protocol.</p>
+<h2 id="eavesdropping-and-the-intercept-resend-attack">Eavesdropping and
+the Intercept-Resend Attack</h2>
+<p>One of the distinguishing features of QKD is its ability to reveal
+certain disturbances introduced when an eavesdropper interacts with
+transmitted quantum states.</p>
+<p>In this project, the eavesdropper is represented by Eve, who attempts
+an intercept-resend attack.</p>
+<p>During this attack, Eve intercepts selected signals transmitted by
+Alice, measures them using a randomly chosen basis, and prepares
+replacement states that she forwards to Bob.</p>
+<p>Because Eve does not know Alice's preparation basis in advance, she
+may choose the wrong basis. Her measurement and subsequent
+retransmission can therefore introduce errors into Bob's results.</p>
+<p>For an ideal BB84 system with unbiased basis choices, intercepting
+every signal produces an expected QBER contribution of 25% in the sifted
+key. When Eve intercepts only a fraction of the signals, the expected
+disturbance is approximately:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>a</mi><mi>t</mi><mi>t</mi><mi>a</mi><mi>c</mi><mi>k</mi></mrow></msub><mo>≈</mo><mfrac><msub><mi>p</mi><mi>E</mi></msub><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">E_{attack} \approx \frac{p_{E}}{4}
+</annotation></semantics></math></p>
+<p>where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>E</mi></msub><annotation encoding="application/x-tex">p_{E}</annotation></semantics></math>represents
+the fraction of signals intercepted by Eve.</p>
+<p>This relationship applies to the idealized intercept-resend model
+before accounting for additional channel errors.</p>
+<p>The simulation allows Eve's interception probability to be adjusted
+so that its effect on the measured QBER can be studied.</p>
+<p>Importantly, an increase in QBER does not automatically prove the
+presence of Eve. Similar errors can arise from detector noise, optical
+misalignment and atmospheric disturbances. QBER is a security-monitoring
+parameter, and the decision to accept or reject a key must be based on
+the applicable protocol and its security requirements.</p>
+<p>The simulation demonstrates how an intercept-resend attack affects
+BB84 measurements. It does not reproduce every possible eavesdropping
+strategy or establish a complete security proof.</p>
+<h2 id="error-correction-and-privacy-amplification">Error Correction and
+Privacy Amplification</h2>
+<p>After basis sifting, Alice and Bob may possess slightly different bit
+sequences because of transmission errors, detector noise or disturbances
+introduced by Eve.</p>
+<p>To establish matching keys, they must perform additional
+processing.</p>
+<p>Error correction using LDPC</p>
+<p>The project uses Low-Density Parity-Check (LDPC) codes to demonstrate
+information reconciliation.</p>
+<p>Alice and Bob exchange parity-check information through the
+authenticated classical channel. An iterative LDPC decoder uses this
+information to identify and correct errors in Bob's bit sequence.</p>
+<p>The objective is to produce identical reconciled keys.</p>
+<p>However, the parity information exchanged during this process is
+public and may reveal some information about the key. This information
+leakage must be considered when determining the length of the final
+secret key.</p>
+<p>Privacy amplification using Toeplitz hashing</p>
+<p>Even after successful error correction, Eve may possess partial
+information about the reconciled key.</p>
+<p>Privacy amplification addresses this issue by compressing the
+reconciled key into a shorter output using a suitable hash function.</p>
+<p>The project demonstrates this process using Toeplitz hashing. A
+Toeplitz matrix is a binary matrix in which the elements remain constant
+along each diagonal. Alice and Bob use the same matrix to transform
+their matching reconciled keys into shorter bit sequences.</p>
+<p>The matrix can be generated using a publicly shared random seed. Its
+security does not depend on keeping the matrix secret.</p>
+<p>The length of the final key must be selected using an appropriate
+information-leakage and security analysis. Simply shortening a key does
+not, by itself, guarantee secrecy.</p>
+<p>The simulation verifies whether Alice and Bob obtain matching outputs
+after LDPC reconciliation and Toeplitz hashing. This demonstrates the
+operation of the post-processing chain, but matching keys alone do not
+constitute proof that the resulting key is secure against every possible
+attack.</p>
+<p><img alt="Illustration 14: Error Correction and
+Privacy Amplification" decoding="async" loading="lazy" src="report-assets/figure-14.png" style="width:7.07261in;height:auto;max-width:100%;"/></p>
+<p>Figure 12: End-to-End Quantum Key Distribution Protocol</p>
+<p>The diagram presents the complete key-generation process, beginning
+with BB84 state preparation and transmission, followed by basis sifting,
+QBER estimation, LDPC error correction and Toeplitz privacy
+amplification. The process concludes with Alice and Bob obtaining a
+matching final key, provided the protocol's acceptance and security
+conditions are satisfied.</p>
+<h2 id="entanglement-based-quantum-key-distribution-using-bbm92">Entanglement-Based
+Quantum Key Distribution Using BBM92</h2>
+<p>The BBM92 protocol is an entanglement-based approach to Quantum Key
+Distribution. Unlike BB84, in which Alice prepares and transmits quantum
+states to Bob, BBM92 uses pairs of entangled photons distributed to two
+communicating parties.</p>
+<p><img alt="Illustration 15: Entanglement-Based
+Quantum Key Distribution Using BBM92" decoding="async" loading="lazy" src="report-assets/figure-15.png" style="width:6.85833in;height:auto;max-width:100%;"/></p>
+<p>Figure 13: BBM92 Entanglement-Based Quantum Key Distribution
+Protocol</p>
+<p>The diagram illustrates the BBM92 protocol, in which an
+entangled-photon source distributes correlated photon pairs to Alice and
+Bob. It demonstrates independent basis selection, simultaneous photon
+detection, coincidence sifting, and QBER estimation, followed by error
+correction and privacy amplification to establish a shared secret
+key.</p>
+<p>In this project, BBM92 is investigated in Scenario 3B, where a
+satellite acts as an entangled-photon source and distributes one photon
+from each pair to Ground Station A (Alice) and the other photon to
+Ground Station B (Bob).</p>
+<p>The two ground stations independently select measurement bases and
+record their photon detections. Using an authenticated classical
+channel, they identify detection events belonging to the same photon
+pair and retain the events measured using compatible bases.</p>
+<p>The resulting correlated measurements are used to generate sifted
+keys.</p>
+<p><strong>Entangled-photon distribution</strong></p>
+<p>An example of a maximally entangled polarization state is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mspace width="0.222em"></mspace><mo>∣</mo><msup><mi>Φ</mi><mo>+</mo></msup><mo form="postfix" stretchy="true">⟩</mo></mrow><mo>=</mo><mfrac><mrow><mspace width="0.222em"></mspace><mrow><mspace width="0.222em"></mspace><mo>∣</mo><mi>H</mi><mi>H</mi><mo form="postfix" stretchy="true">⟩</mo></mrow><mo>+</mo><mi>∣</mi><mi>V</mi><mi>V</mi><mo form="postfix" stretchy="true">⟩</mo></mrow><msqrt><mn>2</mn></msqrt></mfrac></mrow><annotation encoding="application/x-tex">\left. \  \mid \Phi^{+} \right\rangle = \frac{\left. \ \left. \  \mid HH \right\rangle + \mid VV \right\rangle}{\sqrt{2}}
+</annotation></semantics></math></p>
+<p>Here,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>represent
+horizontal and vertical polarization.</p>
+<p>The two photons exhibit quantum correlations. When Alice and Bob
+measure their photons in the same polarization basis, their results are
+ideally correlated for this particular state.</p>
+<p>Unlike the trusted satellite relay architecture, the satellite
+distributes entangled photons without needing to measure or obtain the
+final secret key.</p>
+<p><strong>Simultaneous visibility and coincidence
+detection</strong></p>
+<p>BBM92 requires both ground stations to receive photons from the same
+entangled pairs.</p>
+<p>Therefore, the satellite must be visible to both ground stations
+simultaneously, and both optical links must provide sufficient
+transmission efficiency.</p>
+<p>The ideal true coincidence rate is expressed as:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mrow><mi>t</mi><mi>r</mi><mi>u</mi><mi>e</mi></mrow></msub><mo>=</mo><mi>B</mi><msub><mi>η</mi><mi>A</mi></msub><msub><mi>η</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">C_{true} = B\eta_{A}\eta_{B}
+</annotation></semantics></math></p>
+<p>where:</p>
+<ul>
+<li><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>is
+the entangled-pair generation rate.</p></li>
+<li><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>η</mi><mi>A</mi></msub><annotation encoding="application/x-tex">\eta_{A}</annotation></semantics></math>is
+the total transmission and detection efficiency for Alice's
+link.</p></li>
+<li><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>η</mi><mi>B</mi></msub><annotation encoding="application/x-tex">\eta_{B}</annotation></semantics></math>is
+the total transmission and detection efficiency for Bob's link.</p></li>
+</ul>
+<p>This relationship demonstrates an important characteristic of
+entanglement-based QKD: losses on either optical path reduce the number
+of successfully detected photon pairs.</p>
+<p>The project also accounts for accidental coincidences caused by
+background detections and timing effects.</p>
+<h2 id="bbm92-key-generation-and-security">BBM92 key generation and
+security</h2>
+<p>After coincidence identification and basis sifting, Alice and Bob
+estimate QBER to evaluate the quality of their quantum correlations. An
+eavesdropper attempting to intercept or measure the distributed photons
+may disturb these correlations and introduce additional errors. However,
+optical imperfections, background counts and detector noise can also
+contribute to the observed QBER. The protocol subsequently requires
+information reconciliation and privacy amplification to produce a common
+secret key.</p>
+<p>In this project's BBM92 simulation, these processing steps are
+represented through mathematical key-rate estimates rather than a
+complete finite-bit LDPC and Toeplitz processing demonstration. The
+model therefore provides an illustrative, asymptotic performance
+comparison and does not constitute a complete security proof</p>
+<h1 id="common-mathematical-models-and-parameters">Common Mathematical
+Models and Parameters</h1>
+<p>This chapter establishes a consistent numerical basis for the
+terrestrial and satellite calculations. I distinguish the established
+geometric and detector models from the DPS illustrative key-rate proxy
+and from BBM92 coincidence-based estimates. The same optical efficiency
+is not counted twice when different protocols share a physical link.</p>
+<h2 id="gaussian-beam-propagation-and-aperture-collection">Gaussian beam
+propagation and aperture collection</h2>
+<p>I approximate a centred Gaussian intensity profile by its initial
+1/e² radius w₀ and divergence half-angle θ. The radius of the
+propagating beam and the collection fraction at a circular aperture of
+radius a are:</p>
+<p>w(L) = √[w₀² + (θL)²] η_geo = 1 − exp[−2a² / w(L)²]</p>
+<p>Distance L and radii are expressed in metres, and θ in radians. The
+collection expression assumes beam centring; tracking jitter and
+scintillation are not hidden inside η_geo. The terrestrial baseline uses
+w₀ = 0.05 m, θ = 50 μrad and a = 0.10 m. The LEO downlink uses θ = 10
+μrad and a = 0.50 m under its separately declared parameters.</p>
+<h2 id="atmosphere-receiver-hardware-and-satellite-geometry">Atmosphere,
+receiver hardware and satellite geometry</h2>
+<p>The ground-to-ground link represents fixed attenuation α in dB/km
+across distance d in kilometres. Satellite downlinks use the finite
+atmospheric shell of effective height 20 km with a specified 2 dB zenith
+loss; only the in-atmosphere segment accumulates this modelled loss. The
+entire satellite slant range affects geometric beam expansion, but the
+space segment is not assigned terrestrial atmospheric loss.</p>
+<p>η_atm,ground = 10^(−αd/10) η_point = 10^(−Aₚ/10)</p>
+<p>η_total = η_geo × η_atm × η_point × η_opt × η_det</p>
+<p>The loss factors are multiplied once each. Stage 4 vacuum
+inter-satellite links use no atmospheric attenuation or atmospheric
+fading, and their own receiver aperture, divergence, pointing allowance
+and detector settings. A ground optical edge exists only when the actual
+elevation meets its selected cutoff. The network model also verifies
+geometric clearance of an inter-satellite segment above Earth.</p>
+<h2 id="detection-gain-qber-and-binary-entropy-for-bb84">Detection gain,
+QBER and binary entropy for BB84</h2>
+<p>For mean signal photon number μ, total path efficiency η,
+dark/background probability per gate Y₀ and optical misalignment e_d, I
+use the bounded Stage 2 detector convention below. The historical Stage
+1 baseline retains its documented small-Y₀ additive approximation, so I
+do not equate the two outputs outside the regimes where the
+approximation is valid.</p>
+<p>S = 1 − exp(−μη) Qμ = S + (1−S)Y₀</p>
+<p>Eμ = [e_d S + 0.5(1−S)Y₀] / Qμ</p>
+<p>QBER is undefined when no detections occur, in which case the model
+produces zero rate. For an entropy argument x, h₂(x) = −x log₂(x) −
+(1−x) log₂(1−x), with endpoint values by continuity. This entropy is
+used with distinct protocol-specific privacy terms, rather than
+automatically transferring the BB84 proof to DPS.</p>
+<h2 id="asymptotic-decoy-state-bb84-benchmark">Asymptotic decoy-state
+BB84 benchmark</h2>
+<p>The BB84 comparison uses model-known single-photon yield Y₁ and error
+rate e₁, not finite measured signal, weak-decoy and vacuum statistics.
+The resulting rate is an asymptotic engineering benchmark, not a
+finite-key security certificate.</p>
+<p>r_decoy = q × max{ Q₁[1−h₂(e₁)] − f_EC Qμ h₂(Eμ), 0 }</p>
+<p>Q₁ = μ exp(−μ)Y₁ R_BB84 = r_decoy f_pulse p_signal</p>
+<p>An unbiased BB84 basis choice gives q = 0.5. The satellite and
+network scenarios use a nominal 100 MHz pulse rate and a 0.8 signal
+allocation in their BB84 settings. The finite Alice–Bob–Eve experiment
+is a separate detected-bit demonstration, not a direct transcript of
+every optical event in the pass model.</p>
+<h2 id="dps-pulse-train-encoding-and-two-port-detection">DPS pulse-train
+encoding and two-port detection</h2>
+<p>I introduced a coherent pulse train with relative phase 0 for bit 0
+and π for bit 1. Consecutive pulses interfere at a balanced
+one-slot-delay receiver. A train with N pulses provides N−1 interior
+relative-phase positions; boundary time slots are discarded and explicit
+guard slots separate trains. There is no BB84 random-basis sifting in
+this DPS model.</p>
+<p>aₖ = √μ exp(iφₖ) φₖ − φₖ₋₁ = π bₖ₋₁</p>
+<p>E₊,ₖ = (aₖ + aₖ₋₁)/2 E₋,ₖ = (aₖ − aₖ₋₁)/2</p>
+<p>The detection calculation assumes quasi-static efficiency over
+neighbouring pulses and independent threshold detectors. Visibility V
+and a separately specified constant phase offset δ determine the
+correct/wrong port signal proportions. I do not add a BB84
+polarization-error term to these DPS phase errors.</p>
+<p>e_opt = [1 − V cos(δ)]/2 λ = μη</p>
+<p>p_c = 1 − (1−d)exp[−λ(1−e_opt)]</p>
+<p>p_w = 1 − (1−d)exp(−λe_opt)</p>
+<p>Q_DPS = p_c + p_w − p_c p_w</p>
+<p>E_DPS = [p_w(1−p_c) + 0.5p_c p_w] / Q_DPS</p>
+<p>Here d is the registered background probability per detector and open
+gate; η already contains detector efficiency. A simultaneous click is
+assigned a random bit and contributes half an error on average. No-click
+events do not enter the detected bit string. When Q_DPS = 0, E_DPS is
+undefined and the rate is zero.</p>
+<h2 id="dps-rate-interpretation-and-security-boundary">DPS rate
+interpretation and security boundary</h2>
+<p>The extension calculates a collision-inspired privacy fraction for
+the stated mean photon number μ &lt; 0.5, effective QBER e, and
+reconciliation overhead f_EC. The expression is restricted to the
+declared individual-attack-related error interval instead of being
+extrapolated outside its domain.</p>
+<p>C(e) = 1 − e² − (1−6e)²/2 0 ≤ e ≤ 6/38</p>
+<p>s_proxy = max{−(1−2μ)log₂[C(e)] − f_EC h₂(e), 0}</p>
+<p>R_DPS,proxy = f_clock × duty × N/(N+G) × (N−1)/N × Q_DPS ×
+s_proxy</p>
+<p>The derived quantity is explicitly an illustrative DPS rate proxy:
+this detector, pulse-train, postselection and fading combination has not
+been supplied with a composable security proof or a separately justified
+phase-error bound. All integrated, stored or routed quantities derived
+from it are likewise proxy budgets; they must not be presented as
+certified secret key material. The old DPS teaching curve remains
+distinct from the newer protocol-statistics calculation.</p>
+<h2 id="log-normal-fluctuations-and-temporal-correlation">Log-normal
+fluctuations and temporal correlation</h2>
+<p>The new fading factor F represents collected irradiance or optical
+power, rather than field amplitude. Under a normalized phenomenological
+log-normal model, X is standard normal and σ is the standard deviation
+of log irradiance. The un-clipped factor has unit mean and variance
+exp(σ²)−1.</p>
+<p>F = exp(σX − σ²/2) E[F] = 1</p>
+<p>Three modes are available: deterministic F = 1, independent
+log-normal Monte Carlo draws, and correlated log-normal draws. For
+increasing physical times tₖ, the correlated Gaussian process is
+initialized in its stationary distribution and updated as follows:</p>
+<p>ρₖ = exp[−(tₖ₊₁−tₖ)/τ_c]</p>
+<p>Xₖ₊₁ = ρₖ Xₖ + √(1−ρₖ²) Zₖ</p>
+<p>For this study σ = 0.3, correlation time τ_c = 2 s and seed 123
+unless otherwise specified. These are assumptions, not measured
+meteorological conditions or parameters derived from Cₙ² or Rytov
+variance. The implementation clips optical efficiency to a physical
+upper limit before multiplying the detector efficiency, records the
+clipping fraction and maintains independent fading streams for different
+ground links. F = 1 is enforced on vacuum inter-satellite edges.</p>
+<h2 id="averaging-key-budgets-and-numerical-integration">Averaging, key
+budgets and numerical integration</h2>
+<p>I calculate instantaneous QBER only where events are detected. The
+arithmetic mean of those QBER samples differs from a pooled error ratio
+when the expected number of detections changes with time. I therefore
+report both sample-mean QBER and pooled QBER = integrated expected
+errors / integrated expected detections. I similarly distinguish the
+mean rate from the rate calculated at mean channel efficiency.</p>
+<p>K_model = ∫ R(t) dt ≈ Σ ½[R(tₖ)+R(tₖ₊₁)] Δtₖ</p>
+<p>For DPS, K_model is the integral of an illustrative rate proxy; for
+BBM92 it is the modelled asymptotic key estimate. Contact duration,
+sample count, time step and elevation cutoff accompany each result.
+Deterministic refinements and fixed-path subsampling are used to examine
+numerical convergence rather than resampling turbulence at every
+resolution.</p>
+<h2 id="bbm92-pair-statistics-and-coincidence-model">BBM92 pair
+statistics and coincidence model</h2>
+<p>The BBM92 architecture distributes one member of each Bell pair to
+each ground station and requires simultaneous visibility. For pair
+production B and independently faded arm efficiencies η_A and η_B, the
+true coincidence expectation and singles follow:</p>
+<p>C_true = B η_A η_B Sᵢ = B ηᵢ + Dᵢ + Nᵢ</p>
+<p>With full coincidence window τ and timing acceptance g, the
+implemented high-loss continuous-wave calculation recomputes accidental
+coincidences, total coincidences and QBER after both atmospheric arm
+efficiencies have been updated.</p>
+<p>C_acc = [1−exp(−S_A τ)][1−exp(−S_B τ)] / τ</p>
+<p>C = g C_true + C_acc</p>
+<p>E = [e_pair g C_true + 0.5 C_acc] / C</p>
+<p>R_BBM92 = q C × max[1−f_EC h₂(E)−h₂(E), 0]</p>
+<p>The BBM92 result is a separate asymptotic estimate under symmetric
+basis-independent error assumptions. It is not the DPS proxy, and its
+pair-generation resources differ from the coherent-pulse BB84 and DPS
+sources. The satellite is not assigned the final BBM92 key, and the
+present code does not execute a complete finite-bit BBM92 LDPC and
+Toeplitz transcript.</p>
+<h1 id="mathematical-calculation-examples">Mathematical calculation
+Examples</h1>
+<h2 id="ldpc-information-reconciliation">LDPC information
+reconciliation</h2>
+<p><strong>Initial sifted-key discrepancy</strong></p>
+<p>After BB84 basis sifting, Alice and Bob may hold slightly different
+bit strings. Low-Density Parity-Check (LDPC) information reconciliation
+uses a sparse binary parity-check matrix to provide constraints on an
+unknown error pattern without revealing Alice’s entire key. All
+arithmetic below is over GF(2), where addition is XOR and 1 + 1 = 0 (mod
+2).</p>
+<blockquote>
+<p>Alice: x_A = [1 0 1 1 0 0]ᵀ = 101100</p>
+<p>Bob: x_B = [1 1 1 1 0 0]ᵀ = 111100</p>
+</blockquote>
+<p>Illustrative disagreement rate = 1 / 6 = 16.67%</p>
+<p>The only difference is Bob’s second bit. This deliberately small
+example illustrates the matrix operations; a six-bit sample and its
+apparent QBER cannot establish a usable secret key.</p>
+<p><strong>Sparse parity-check matrix and Alice’s syndrome</strong></p>
+<blockquote>
+<p>H = [ 1 1 0 1 0 0 ]<br/>
+[ 1 0 1 0 1 0 ]<br/>
+[ 0 1 1 0 0 1 ]</p>
+</blockquote>
+<p>A row of H defines a parity constraint. Alice calculates her syndrome
+s_A = H x_A (mod 2). The selected sums in the three rows are:</p>
+<blockquote>
+<p>s_A,1 = (1 + 0 + 1) mod 2 = 0</p>
+<p>s_A,2 = (1 + 1 + 0) mod 2 = 0</p>
+<p>s_A,3 = (0 + 1 + 0) mod 2 = 1</p>
+<p>Result: s_A = [0 0 1]ᵀ = 001</p>
+</blockquote>
+<p>Alice publishes 001 over an authenticated classical channel; she does
+not transmit the entire six-bit string.</p>
+<p><strong>Bob’s syndrome and syndrome difference</strong></p>
+<p>Bob uses the same H and independently computes s_B = H x_B (mod
+2):</p>
+<blockquote>
+<p>s_B,1 = (1 + 1 + 1) mod 2 = 1</p>
+<p>s_B,2 = (1 + 1 + 0) mod 2 = 0</p>
+<p>s_B,3 = (1 + 1 + 0) mod 2 = 0</p>
+<p>Result: s_B = [1 0 0]ᵀ = 100</p>
+<p>Δs = s_A ⊕ s_B = 001 ⊕ 100 = 101</p>
+<p>With e = x_A ⊕ x_B, Δs = H e (mod 2).</p>
+</blockquote>
+<p><strong>Error identification and correction</strong></p>
+<p>The second column of H is [1 0 1]ᵀ, exactly matching Δs. Under the
+single-error assumption, the second bit is the likely erroneous
+position.</p>
+<blockquote>
+<p>Estimated error: e = [0 1 0 0 0 0]ᵀ</p>
+<p>Corrected Bob key: x_B ⊕ e = 111100 ⊕ 010000 = 101100</p>
+<p>Therefore: x_A = x_B,corrected = 101100</p>
+</blockquote>
+<p><strong>Relation to the project’s full LDPC calculation</strong></p>
+<p>The saved project study-guide run describes 1,197 sifted bits, 598
+parity-check rows, a sparse graph with three edges per bit, and decoder
+convergence in five iterations. It subsequently compares the corrected
+bit strings in the simulation. The initial log-likelihood ratio for
+bit-error probability p is:</p>
+<blockquote>
+<p>LLR_initial = ln[(1 − p) / p]</p>
+</blockquote>
+<p>Check nodes and variable nodes exchange messages, and Bob updates his
+error estimate until its syndrome meets the parity constraints or the
+iteration limit is reached. The public syndrome reveals information. A
+simple conservative demonstration estimate of reconciliation leakage is
+the number of published check rows, m; exact independent leakage may
+depend on the binary rank of H and other public disclosures.</p>
+<blockquote>
+<p>leak_EC ≈ m</p>
+<p>f_EC,observed ≈ leak_EC / [n h₂(QBER)]</p>
+</blockquote>
+<p>For the saved demonstration, n = 1,197, m = 598 and QBER = 48 /
+1,197. The study guide reports f_EC,observed ≈ 2.058. This is distinct
+from the idealized rate-model input f = 1.16 and is not automatically
+substituted into that formula.</p>
+<h2 id="toeplitz-privacy-amplification">Toeplitz privacy
+amplification</h2>
+<p><strong>Rationale and reconciled input</strong></p>
+<p>Even after reconciliation, Eve may know partial information from
+interaction with quantum signals and publicly transmitted parity
+information. A randomly selected universal hash can compress the
+reconciled string, provided the output length is justified by an entropy
+bound and leakage accounting.</p>
+<blockquote>
+<p>Reconciled input: x = [1 0 1 1 0 0]ᵀ = 101100</p>
+<p>Final key: k = T x (mod 2)</p>
+</blockquote>
+<p><strong>Construct a 3 × 6 Toeplitz matrix</strong></p>
+<p>A Toeplitz matrix is constant along diagonals from top left to bottom
+right. This example maps a six-bit input to three output bits:</p>
+<blockquote>
+<p>T = [ 1 0 1 1 0 1 ]<br/>
+[ 1 1 0 1 1 0 ]<br/>
+[ 0 1 1 0 1 1 ]</p>
+</blockquote>
+<p>The first row is 101101 and the first column is 110. Their shared
+top-left element gives 6 + 3 − 1 = 8 binary seed positions. The hash
+seed may be publicly agreed; it need not be secret.</p>
+<p><strong>Step-by-step binary matrix multiplication</strong></p>
+<blockquote>
+<p>k₁ = (1×1 + 0×0 + 1×1 + 1×1 + 0×0 + 1×0) mod 2</p>
+<p>= 3 mod 2 = 1</p>
+<p>k₂ = (1×1 + 1×0 + 0×1 + 1×1 + 1×0 + 0×0) mod 2</p>
+<p>= 2 mod 2 = 0</p>
+<p>k₃ = (0×1 + 1×0 + 1×1 + 0×1 + 1×0 + 1×0) mod 2</p>
+<p>= 1 mod 2 = 1</p>
+</blockquote>
+<p>Output: k = [1 0 1]ᵀ = 101</p>
+<p>Demonstrated transformation: 101100 → 101</p>
+<p>Alice and Bob compute the same output because they share the same
+reconciled string and Toeplitz matrix. The matrix multiplication
+illustrates privacy amplification but does not establish that this
+arbitrary three-bit result is secret.</p>
+<p><strong>Selecting a defensible output length</strong></p>
+<p>A finite-key analysis must bound Eve’s uncertainty about the
+pre-reconciliation string and subtract the information disclosed in
+classical post-processing. A schematic form based on leftover-hash
+reasoning is:</p>
+<blockquote>
+<p>ℓ ≲ H_min^ε(X | E) − leak_EC − 2 log₂(1 / ε_PA)</p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 74%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ℓ</strong></td>
+<td>Final key length in bits</td>
+</tr>
+<tr class="even">
+<td><strong>H_min^ε(X | E)</strong></td>
+<td>A suitable bound on conditional smooth min-entropy</td>
+</tr>
+<tr class="odd">
+<td><strong>leak_EC</strong></td>
+<td>Information disclosed through error correction</td>
+</tr>
+<tr class="even">
+<td><strong>ε_PA</strong></td>
+<td>Chosen privacy-amplification security parameter</td>
+</tr>
+</tbody>
+</table>
+<p><strong>LIMITATION</strong> The exact output-length relation,
+smoothing, correctness and security-parameter terms depend on the chosen
+protocol and proof. This six-bit example has no established entropy
+bound and must not be described as a provably secure three-bit key.</p>
+<h2 id="decoy-state-bb84-signal-weak-decoy-and-vacuum">Decoy-state BB84:
+signal, weak-decoy and vacuum</h2>
+<p><strong>Purpose and declared assumptions</strong></p>
+<p>Phase-randomized weak coherent pulses follow a Poisson photon-number
+distribution. Alice changes the pulse intensity between signal,
+weak-decoy and vacuum settings so that detection and error statistics
+can constrain the single-photon contribution. This worked calculation
+extends the project’s model with a sample weak-decoy intensity and a
+chosen channel efficiency; it is not an independently measured
+dataset.</p>
+<table>
+<colgroup>
+<col style="width: 45%"/>
+<col style="width: 16%"/>
+<col style="width: 37%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Symbol</th>
+<th>Illustrative value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Signal intensity</strong></td>
+<td>μ</td>
+<td>0.50 photons/pulse</td>
+</tr>
+<tr class="even">
+<td><strong>Weak-decoy intensity</strong></td>
+<td>ν</td>
+<td>0.10 photons/pulse</td>
+</tr>
+<tr class="odd">
+<td><strong>Vacuum intensity</strong></td>
+<td>0</td>
+<td>0 photons/pulse</td>
+</tr>
+<tr class="even">
+<td><strong>Total transmittance</strong></td>
+<td>η</td>
+<td>0.01 (1%)</td>
+</tr>
+<tr class="odd">
+<td><strong>Background yield</strong></td>
+<td>Y₀</td>
+<td>2 × 10⁻⁶ per gate</td>
+</tr>
+<tr class="even">
+<td><strong>Misalignment error</strong></td>
+<td>e_d</td>
+<td>0.015</td>
+</tr>
+<tr class="odd">
+<td><strong>Random background error</strong></td>
+<td>e₀</td>
+<td>0.5</td>
+</tr>
+<tr class="even">
+<td><strong>Error-correction factor</strong></td>
+<td>f</td>
+<td>1.16</td>
+</tr>
+<tr class="odd">
+<td><strong>Basis-sifting factor</strong></td>
+<td>q</td>
+<td>0.5</td>
+</tr>
+</tbody>
+</table>
+<p>The selected η = 0.01 is not the computed transmittance of any
+specific 20 km FSO scenario. The signal μ, background yield,
+misalignment and f values agree with the Stage 1 parameter choices; the
+weak-decoy intensity and η are illustrative additions.</p>
+<p><strong>Poisson probabilities and multiphoton
+contribution</strong></p>
+<blockquote>
+<p>Pₓ(n) = xⁿ e⁻ˣ / n!</p>
+<p>Pₓ(0) = e⁻ˣ; Pₓ(1) = x e⁻ˣ; Pₓ(n ≥ 2) = 1 − e⁻ˣ − x e⁻ˣ</p>
+</blockquote>
+<p>For μ = 0.50:</p>
+<blockquote>
+<p>Pμ(0) = e⁻⁰·⁵ = 0.606531</p>
+<p>Pμ(1) = 0.5 e⁻⁰·⁵ = 0.303265</p>
+<p>Pμ(n ≥ 2) = 1 − 0.606531 − 0.303265 = 0.090204</p>
+</blockquote>
+<p>For ν = 0.10:</p>
+<blockquote>
+<p>Pν(0) = 0.904837; Pν(1) = 0.090484;</p>
+<p>Pν(n ≥ 2) = 0.004679</p>
+</blockquote>
+<p>Consequently, approximately 9.02% of signal pulses are multiphoton
+pulses in the Poisson source model, compared with approximately 0.468%
+of weak-decoy pulses. This motivates constraining the
+photon-number-conditioned yields using distinct intensity
+statistics.</p>
+<p><strong>Detection gain and QBER</strong></p>
+<p>Using the simplified low-background gain and error expressions:</p>
+<blockquote>
+<p>Qₓ = Y₀ + 1 − exp(−ηx)</p>
+<p>Eₓ Qₓ = e₀Y₀ + e_d[1 − exp(−ηx)]</p>
+</blockquote>
+<p>For signal pulses (μ = 0.50):</p>
+<blockquote>
+<p>Qμ = 0.000002 + 1 − exp(−0.005) = 0.004989521</p>
+<p>Eμ Qμ = 0.5(0.000002) + 0.015[1 − exp(−0.005)]</p>
+<p>= 0.000075812812</p>
+<p>Eμ = 0.000075812812 / 0.004989521 = 0.0151944 = 1.51944%</p>
+</blockquote>
+<p>For weak decoy and vacuum, the same formula gives:</p>
+<table>
+<colgroup>
+<col style="width: 36%"/>
+<col style="width: 32%"/>
+<col style="width: 30%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Intensity</th>
+<th>Gain Qₓ</th>
+<th>QBER Eₓ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Signal: μ = 0.50</strong></td>
+<td>0.004989521</td>
+<td>1.51944%</td>
+</tr>
+<tr class="even">
+<td><strong>Weak decoy: ν = 0.10</strong></td>
+<td>0.001001500</td>
+<td>1.59685%</td>
+</tr>
+<tr class="odd">
+<td><strong>Vacuum: 0</strong></td>
+<td>0.000002000</td>
+<td>50.00000%</td>
+</tr>
+</tbody>
+</table>
+<p>The signal-state gain corresponds to approximately 4,990 detections
+per million transmitted signal pulses. Vacuum-only detections result
+from noise and are modelled as random bit values.</p>
+<p><strong>Lower bound on the single-photon yield</strong></p>
+<p>For an asymptotic vacuum-plus-weak-decoy calculation, assume
+photon-number-conditioned yields are independent of whether the pulse
+was labelled signal or decoy. The lower-bound expression is:</p>
+<blockquote>
+<p>Y₁ᴸ = μ / (μν − ν²) × { Qν exp(ν) − (ν²/μ²) Qμ exp(μ)</p>
+<p>− [(μ² − ν²)/μ²]Y₀ }</p>
+</blockquote>
+<p>The prefactor is 0.5 / (0.05 − 0.01) = 12.5. The bracketed terms,
+evaluated without premature rounding, are:</p>
+<blockquote>
+<p>0.001106828859 − 0.000329053163 − 0.000001920000</p>
+<p>= 0.000775855695</p>
+<p>Y₁ᴸ = 12.5 × 0.000775855695 = 0.009698196</p>
+</blockquote>
+<p>Interpretation: lower bound ≈ 0.9698% on single-photon detection
+yield.</p>
+<p>3.5 Upper bound on the single-photon error rate</p>
+<blockquote>
+<p>e₁ᵁ = [Eν Qν exp(ν) − e₀Y₀] / (νY₁ᴸ)</p>
+<p>= 0.000016674449 / 0.000969819619</p>
+<p>= 0.017193351 ≈ 1.71934%</p>
+</blockquote>
+<p>The upper bound is obtained from the weak-decoy erroneous-detection
+rate after accounting for the vacuum background contribution.</p>
+<p><strong>Lower-bound single-photon gain</strong></p>
+<blockquote>
+<p>Q₁ᴸ = μ exp(−μ) Y₁ᴸ</p>
+<p>= 0.5 exp(−0.5) × 0.009698196</p>
+<p>= 0.002941127</p>
+</blockquote>
+<p>Q₁ᴸ is the lower-bound contribution to the gain from signal-state
+pulses containing one photon.</p>
+<p><strong>Simplified asymptotic secret-key-rate
+calculation</strong></p>
+<blockquote>
+<p>h₂(p) = −p log₂(p) − (1 − p) log₂(1 − p)</p>
+<p>R = q { Q₁ᴸ [1 − h₂(e₁ᵁ)] − Qμ f h₂(Eμ) }</p>
+</blockquote>
+<p>Using the previously calculated error bounds:</p>
+<blockquote>
+<p>h₂(e₁ᵁ) = h₂(0.017193351) = 0.125377805</p>
+<p>h₂(Eμ) = h₂(0.015194407) = 0.113532528</p>
+<p>Single-photon contribution = Q₁ᴸ[1 − h₂(e₁ᵁ)] = 0.002572375</p>
+<p>Error-correction cost = Qμ × 1.16 × h₂(Eμ) = 0.000657109</p>
+<p>R = 0.5 × (0.002572375 − 0.000657109)</p>
+<p>R = 0.000957633 bits per signal pulse</p>
+</blockquote>
+<p>If a transmitter emits 100 million total pulses per second and
+assigns 80% of them to the signal intensity, the illustrative asymptotic
+aggregate is:</p>
+<blockquote>
+<p>100,000,000 × 0.80 × 0.000957633 ≈ 76,611 bits/s</p>
+</blockquote>
+<p><strong>RATE LIMITATION</strong> The 80% signal allocation and 100
+MHz repetition rate are additional worked-example assumptions. This
+figure excludes finite-key penalties, authentication consumption,
+operational downtime and practical implementation overhead. It is not
+measured hardware throughput.</p>
+<h2 id="combined-interpretation">Combined interpretation</h2>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 37%"/>
+<col style="width: 37%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>Main calculation</th>
+<th>Result and significance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Decoy-state parameter estimation</strong></td>
+<td>Poisson statistics; bounds Y₁ᴸ, e₁ᵁ and Q₁ᴸ</td>
+<td>An asymptotic estimate of single-photon contribution and key-rate
+trend.</td>
+</tr>
+<tr class="even">
+<td><strong>LDPC reconciliation</strong></td>
+<td>s = Hx (mod 2); Δs = He (mod 2)</td>
+<td>Corrects candidate bit mismatches using authenticated public parity
+information.</td>
+</tr>
+<tr class="odd">
+<td><strong>Toeplitz privacy amplification</strong></td>
+<td>k = Tx (mod 2)</td>
+<td>Compresses reconciled material subject to entropy/leakage
+limits.</td>
+</tr>
+</tbody>
+</table>
+<p>The three operations address different aspects of QKD. Decoy analysis
+limits how much reliance can be placed on multiphoton-emitting sources;
+LDPC helps Alice and Bob agree on the same string; and privacy
+amplification reduces the exploitable information potentially held by
+Eve. Neither matching key strings nor positive asymptotic model rates
+alone constitute a composable finite-key security proof.</p>
+<h1 id="simulation-of-basic-los-fso">Simulation of Basic LOS FSO</h1>
+<h2 id="scenario-definition-and-modelling-assumptions">Scenario
+definition and modelling assumptions</h2>
+<p>In the first stage I modelled a 20 km line-of-sight link between
+Alice and Bob with Gaussian beam propagation, fixed terrestrial
+attenuation and a single circular receiving aperture. The nominal source
+beam radius is 0.05 m, divergence 50 μrad, receiver radius 0.10 m,
+attenuation 0.20 dB/km, optical efficiency 0.70 and detector efficiency
+0.25. The original BB84 signal mean photon number is 0.50; the new DPS
+train uses its own μ = 0.10, visibility 0.98, 100 MHz clock, 0.8 duty
+factor and 1024 pulses per train.</p>
+<p>I retained the earlier separation between the distance-dependent
+optical-rate study and the finite BB84 Alice–Bob–Eve experiment. The
+latter tests basis sifting, an intercept-resend disturbance, LDPC
+syndrome reconciliation and Toeplitz hashing using a separately selected
+channel-error parameter. It is not an implementation of finite-key DPS
+distillation.</p>
+<h2 id="distance-and-interferometer-visibility">Distance and
+interferometer visibility</h2>
+<p>As distance increases, geometric spreading and fixed atmospheric loss
+reduce the signal-generated click rate; background clicks account for a
+larger share of detections. In the illustrative DPS calculation the QBER
+rises towards the background-dominated regime and the calculated rate
+falls to zero. Visibility has a separate influence on the wrong-port
+intensity and hence on QBER. The steep onset of a positive proxy rate in
+the visibility sweep is a property of the selected privacy and
+reconciliation expression, not proof of a universal security
+threshold.</p>
+<p><img alt="Illustration 16: Distance and
+interferometer visibility" decoding="async" loading="lazy" src="report-assets/figure-16.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
+<p><strong>Figure 14: Terrestrial DPS distance and visibility
+sensitivity</strong></p>
+<p>The left panels show the distance dependence of modelled QBER and the
+illustrative rate. The right panels isolate the visibility dependence
+with all other parameters fixed.</p>
+<h2 id="correlated-fading-and-observed-terrestrial-performance">Correlated
+fading and observed terrestrial performance</h2>
+<p>I simulated 5000 equally spaced instants from t = 0 to 99.98 s at a
+0.02 s interval with σ = 0.3 and τ_c = 2 s. The instantaneous fading
+factors were applied to the collected optical power and the DPS
+click/error statistics were recalculated for every sample. The
+deterministic comparison remained a constant channel over the same
+interval.</p>
+<p><strong>Table 5.1: Stage 1 recorded DPS model output</strong></p>
+<table>
+<colgroup>
+<col style="width: 56%"/>
+<col style="width: 43%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Measured simulation quantity</strong></th>
+<th><strong>Recorded result</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sampled time span</td>
+<td>0–99.98 s; 5000 samples</td>
+</tr>
+<tr class="even">
+<td>Mean DPS QBER</td>
+<td>1.745%</td>
+</tr>
+<tr class="odd">
+<td>Pooled DPS QBER</td>
+<td>1.698%</td>
+</tr>
+<tr class="even">
+<td>95th-percentile instantaneous QBER</td>
+<td>2.124%</td>
+</tr>
+<tr class="odd">
+<td>Mean illustrative rate</td>
+<td>5,074.31 proxy bits/s</td>
+</tr>
+<tr class="even">
+<td>5th-percentile illustrative rate</td>
+<td>2,656.86 proxy bits/s</td>
+</tr>
+<tr class="odd">
+<td>Rate-outage fraction</td>
+<td>0.00%</td>
+</tr>
+<tr class="even">
+<td>Accumulated illustrative rate</td>
+<td>507,352.58 proxy bits</td>
+</tr>
+<tr class="odd">
+<td>Efficiency clipping</td>
+<td>0.00%</td>
+</tr>
+</tbody>
+</table>
+<p>The sample-mean QBER exceeded the pooled QBER because the fading
+trajectory assigns different weights to detection-rich and
+detection-poor periods. No sample in this particular run had a
+nonpositive illustrative rate, but one seeded realization is not a
+confidence statement about real atmospheric availability.</p>
+<p><img alt="Illustration 17: Correlated
+fading and observed terrestrial performance" decoding="async" loading="lazy" src="report-assets/figure-17.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
+<p><strong>Figure 15: Terrestrial DPS time series under correlated
+log-normal fading</strong></p>
+<p>The four panels display the instantaneous proxy rate, accumulated
+proxy budget, QBER and collected-power factor. The deterministic rate is
+a fixed-channel baseline; the fluctuating trace is one seeded
+realization.</p>
+<p><img alt="Illustration 18: Correlated
+fading and observed terrestrial performance" decoding="async" loading="lazy" src="report-assets/figure-18.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
+<p><strong>Figure 16: Terrestrial DPS Monte Carlo
+distributions</strong></p>
+<p>Fading, DPS-QBER and proxy-rate distributions are evaluated over
+independent draws. Distribution statistics complement rather than
+replace the chronological result.</p>
+<h2 id="bb84-processing-observations-and-limitations">BB84 processing
+observations and limitations</h2>
+<p>The historical 20 km BB84 baseline recorded a total detection-path
+efficiency of approximately 1.3761 × 10⁻³, a detection gain of 6.8983 ×
+10⁻⁴, BB84 QBER of 1.641% and model-derived decoy rate of 1.3629 × 10⁻⁴
+bits per signal pulse. These quantities arise from the earlier
+deterministic BB84 assumptions and should not be compared numerically
+with the new DPS outputs without also accounting for differing mean
+photon numbers, clock allocation and protocol-specific rate models.</p>
+<p>The simulated intercept-resend example demonstrates a mechanism by
+which Eve may increase QBER; optical noise can create similar
+disagreement. Successful LDPC correction and matching Toeplitz outputs
+demonstrate functional post-processing, but final-key equality alone
+cannot establish a composable secrecy claim.</p>
+<h1 id="simulation-of-a-leo-satellite-to-ground-fso-link">Simulation of
+a LEO Satellite-to-Ground FSO Link</h1>
+<h2 id="orbital-and-optical-configuration">Orbital and optical
+configuration</h2>
+<p>For the second stage I modelled an ideal circular LEO satellite at
+500 km altitude above a spherical Earth of radius 6371 km. The link is
+sampled at 401 positions within a 10° elevation cutoff, giving a
+modelled interval from −221.318 to +221.318 s. A centred Gaussian beam
+spreads over the complete slant range; a 20 km effective atmospheric
+shell and 2 dB zenith attenuation are applied only in the atmosphere.
+The receiver radius is 0.50 m and a fixed 1 dB pointing allowance is
+included.</p>
+<p>The orbital geometry remains deterministic while the atmospheric
+transmission factor changes between simulation realizations. This
+separates the effect of changing elevation and slant range from the
+additional variation caused by turbulence. Below-cutoff samples cannot
+generate link output even when a random fading factor is large.</p>
+<h2 id="satellite-pass-rate-qber-and-atmospheric-fluctuations">Satellite-pass
+rate, QBER and atmospheric fluctuations</h2>
+<p><strong>Table 6.1: Stage 2 recorded DPS model output</strong></p>
+<table>
+<colgroup>
+<col style="width: 55%"/>
+<col style="width: 45%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Simulation output</strong></th>
+<th><strong>Recorded result</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pass sampling</td>
+<td>401 samples; 442.64 s window</td>
+</tr>
+<tr class="even">
+<td>Mean sampled QBER</td>
+<td>4.725%</td>
+</tr>
+<tr class="odd">
+<td>Pooled QBER</td>
+<td>1.869%</td>
+</tr>
+<tr class="even">
+<td>95th-percentile QBER</td>
+<td>14.888%</td>
+</tr>
+<tr class="odd">
+<td>Peak illustrative rate</td>
+<td>28,494.97 proxy bits/s</td>
+</tr>
+<tr class="even">
+<td>Mean illustrative rate</td>
+<td>4,070.46 proxy bits/s</td>
+</tr>
+<tr class="odd">
+<td>Sample rate outage</td>
+<td>31.92%</td>
+</tr>
+<tr class="even">
+<td>Time-weighted rate outage</td>
+<td>31.75%</td>
+</tr>
+<tr class="odd">
+<td>Integrated illustrative rate</td>
+<td>1,806,234.30 proxy bits</td>
+</tr>
+</tbody>
+</table>
+<p>The deterministic pass forms a smooth envelope with the principal
+maximum near the best link geometry. Fading produces peaks and troughs
+about that envelope. At lower elevation the received useful signal falls
+relative to background, increasing QBER. The difference between 4.725%
+mean sampled QBER and 1.869% pooled QBER is a useful reminder that
+uniformly averaging percentages does not weight a high-loss interval by
+its small detection count.</p>
+<p><img alt="Illustration 19: Satellite-pass
+rate, QBER and atmospheric fluctuations" decoding="async" loading="lazy" src="report-assets/figure-19.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
+<p><strong>Figure 17: LEO satellite DPS pass: faded and deterministic
+outputs</strong></p>
+<p>The panels contain instantaneous rate, cumulative rate integral, QBER
+and fading factor across the sampled pass. The integrated DPS curve
+represents a proxy budget rather than proven secret bits.</p>
+<p><img alt="Illustration 20: Satellite-pass
+rate, QBER and atmospheric fluctuations" decoding="async" loading="lazy" src="report-assets/figure-20.png" style="width:5.35in;height:auto;max-width:100%;"/></p>
+<p><strong>Figure 18: LEO geometry and elevation dependence</strong></p>
+<p>The distance and atmospheric-path panels distinguish beam-spreading
+distance from the portion accumulating atmospheric loss. QBER and rate
+are plotted against elevation.</p>
+<h2 id="interpretation-of-contact-and-numerical-resolution">Interpretation
+of contact and numerical resolution</h2>
+<p>An optical line of sight is a necessary but insufficient condition
+for positive modelled key rate. The time-window and cutoff conditions
+determine available samples; optical attenuation, background detections
+and reconciliation terms determine whether those samples have a nonzero
+rate. The numerical quadrature converges with finer time steps in the
+deterministic control; changes between independently sampled fading
+paths must not be interpreted as quadrature error.</p>
+<h1 id="simulation-of-two-ground-stations-and-one-satellite">Simulation
+of Two Ground Stations and One Satellite</h1>
+<h2 id="scenario-3a-trusted-classical-key-relay">Scenario 3A — trusted
+classical key relay</h2>
+<p>In Mode A, Ground A and Ground B form separate quantum links with the
+satellite. The satellite is trusted and can learn or reconstruct the
+end-to-end relayed key. Each ground edge is evaluated independently
+using its protocol parameters and its own atmospheric fading stream. For
+the illustrative DPS extension, a route or pool budget is explicitly a
+proxy; the corresponding decoy-BB84 option retains its separate
+asymptotic interpretation.</p>
+<p>The network is observed for 1200 s using 601 points with 1000 km
+separation between the ground sites and the default 500 km orbit. A
+simultaneous path is limited by the smaller rate of the two ground
+edges. A separate causal pool calculation stores key material generated
+on the two links and bounds subsequent relay delivery by the smaller
+accumulated inventory, allowing contacts at different times. Those two
+accounting methods answer different operational questions.</p>
+<p><strong>Table 7.1: Stage 3A recorded trusted-relay DPS
+output</strong></p>
+<table>
+<colgroup>
+<col style="width: 58%"/>
+<col style="width: 41%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Simulation output</strong></th>
+<th><strong>Recorded result</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ground-station separation</td>
+<td>1000 km</td>
+</tr>
+<tr class="even">
+<td>Duration and resolution</td>
+<td>1200 s; 601 samples</td>
+</tr>
+<tr class="odd">
+<td>Peak simultaneous DPS rate</td>
+<td>5,581.10 proxy bits/s</td>
+</tr>
+<tr class="even">
+<td>Mean simultaneous DPS rate</td>
+<td>231.72 proxy bits/s</td>
+</tr>
+<tr class="odd">
+<td>Simultaneous rate outage</td>
+<td>86.02%</td>
+</tr>
+<tr class="even">
+<td>Integrated simultaneous rate</td>
+<td>278,523.90 proxy bits</td>
+</tr>
+<tr class="odd">
+<td>Ground A cumulative pool generation</td>
+<td>1,651,385.85 proxy bits</td>
+</tr>
+<tr class="even">
+<td>Ground B cumulative pool generation</td>
+<td>1,661,016.28 proxy bits</td>
+</tr>
+<tr class="odd">
+<td>Delivered pool-accounted quantity</td>
+<td>1,651,385.85 proxy bits</td>
+</tr>
+</tbody>
+</table>
+<p>The integrated simultaneous-route value is substantially smaller than
+the stored-pool delivery estimate in this geometry because the
+individual contact windows overlap for only a short interval. The pool
+value is a distinct accounting result, not an alternative value for the
+same simultaneous transport experiment.</p>
+<p><img alt="Illustration 21: Scenario 3A — trusted
+classical key relay" decoding="async" loading="lazy" src="report-assets/figure-21.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
+<p><strong>Figure 19: Two ground links, simultaneous DPS bottleneck and
+fading</strong></p>
+<p>The individual arm rates peak at different times. The end-to-end
+instantaneous calculation is nonzero only where an appropriate
+simultaneous trusted route is available.</p>
+<p><img alt="Illustration 22: Scenario 3A — trusted
+classical key relay" decoding="async" loading="lazy" src="report-assets/figure-22.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
+<p><strong>Figure 20: Trusted relay: link inventory and delivery
+results</strong></p>
+<p>Separate generated-key pools can accumulate across contacts. The
+plots distinguish physically generated link budgets, remaining buffers
+and the relay delivery bound.</p>
+<h2 id="scenario-3b-entangled-bbm92-downlinks">Scenario 3B — entangled
+BBM92 downlinks</h2>
+<p>In Mode B the satellite produces pairs and sends one photon to each
+ground station. Both arms must be visible simultaneously. The model
+recomputes singles, true coincidences, accidentals and QBER after
+assigning independent fading factors to the two downlinks. This
+architecture is not a DPS relaying variation: its two-arm coincidence
+dependence and asymptotic BBM92 security assumptions are different.</p>
+<p><strong>Table 7.2: Stage 3B recorded BBM92 output</strong></p>
+<table>
+<colgroup>
+<col style="width: 58%"/>
+<col style="width: 41%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Coincidence-based quantity</strong></th>
+<th><strong>Recorded result</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nominal pair generation</td>
+<td>10,000,000 pairs/s</td>
+</tr>
+<tr class="even">
+<td>Common-visibility samples</td>
+<td>151 of 601</td>
+</tr>
+<tr class="odd">
+<td>Highest true coincidence rate</td>
+<td>36.03 coincidences/s</td>
+</tr>
+<tr class="even">
+<td>Highest BBM92 asymptotic rate</td>
+<td>9.531 bits/s</td>
+</tr>
+<tr class="odd">
+<td>Integrated BBM92 estimate</td>
+<td>721.703 model bits</td>
+</tr>
+</tbody>
+</table>
+<p>The BBM92 integrated estimate in this recorded run is about 722 model
+bits. This value should not be divided into or ranked against the DPS
+trusted-relay proxy without normalizing the distinct sources, security
+analyses, timing and receiver resources. The entangled source provides
+coincidences only during common visibility, whereas trusted relay key
+pools may store classical material from separate passes.</p>
+<p><img alt="Illustration 23: Scenario 3B — entangled
+BBM92 downlinks" decoding="async" loading="lazy" src="report-assets/figure-23.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
+<p><strong>Figure 21: BBM92 two-arm fading, detection and coincidence
+analysis</strong></p>
+<p>The six panels show separate arm fading, singles, true and accidental
+coincidences, coincident-error behaviour, BBM92 rate and its cumulative
+model estimate. Outside common visibility no pairs contribute to the
+BBM92 key.</p>
+<h2 id="security-and-operational-distinctions">Security and operational
+distinctions</h2>
+<p>The trusted relay must be trusted with intermediate link key
+material, and the model presumes an authenticated classical channel. In
+BBM92 the satellite need not obtain the final key, but the simplified
+coincidence and error model by itself does not establish security for an
+arbitrary malicious source or a finite-key implementation. I therefore
+interpret Mode A and Mode B separately instead of reporting a protocol
+winner.</p>
+<h1 id="simulation-of-two-ground-stations-and-multiple-satellites">Simulation
+of Two Ground Stations and Multiple Satellites</h1>
+<h2 id="network-architecture-and-link-availability">Network architecture
+and link availability</h2>
+<p>The fourth stage extends the trusted-link model to multiple satellite
+nodes. The reported configuration uses two satellites, 3000 km
+ground-station separation, a 1200 s observation interval and 601
+samples. Ground-to-satellite links use the atmospheric-shell model,
+whereas satellite-to-satellite links operate in vacuum and require an
+unobstructed segment above Earth. Each edge has independent optical
+resources under the model assumptions.</p>
+<p>For each sampled time, I recompute ground-edge efficiencies under
+their own fading streams, then evaluate protocol gain, QBER and link
+rate. Only after updating the individual capacities does the widest-path
+algorithm choose a route. A disconnected network yields zero route
+capacity; one global fading multiplier is never applied to an already
+selected route.</p>
+<p>R_route(t) = max over available paths P { min over edges e∈P R_e(t)
+}</p>
+<p>The path equation expresses the bottleneck of one simultaneously
+active trusted route. Stage 4 does not optimize aggregate multi-route
+flow, shared telescope scheduling or stored key inventories across
+multiple satellites. All DPS-based route rates remain illustrative
+proxies.</p>
+<h2 id="recorded-time-series-results">Recorded time-series results</h2>
+<p><strong>Table 8.1: Stage 4 recorded DPS network output</strong></p>
+<table>
+<colgroup>
+<col style="width: 58%"/>
+<col style="width: 41%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Simulation output</strong></th>
+<th><strong>Recorded result</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Number of satellite nodes</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Ground separation</td>
+<td>3000 km</td>
+</tr>
+<tr class="odd">
+<td>Duration and resolution</td>
+<td>1200 s; 601 samples</td>
+</tr>
+<tr class="even">
+<td>Peak selected-route rate</td>
+<td>5,548.53 proxy bits/s</td>
+</tr>
+<tr class="odd">
+<td>Mean selected-route rate</td>
+<td>789.81 proxy bits/s</td>
+</tr>
+<tr class="even">
+<td>Sampled rate-outage fraction</td>
+<td>76.71%</td>
+</tr>
+<tr class="odd">
+<td>Time-weighted outage</td>
+<td>76.67%</td>
+</tr>
+<tr class="even">
+<td>Integrated route rate</td>
+<td>949,352.71 proxy bits</td>
+</tr>
+</tbody>
+</table>
+<p>The selected-route rate becomes positive only during limited
+intervals. Fading can alter a ground-edge bottleneck even if orbital
+geometry does not change at the same instant; the vacuum inter-satellite
+edge remains unaffected by atmospheric fading. The observed outage
+fraction is for this network layout and one selected random realization,
+not a predicted operational availability for a deployed
+constellation.</p>
+<p><img alt="Illustration 24: Recorded time-series results" decoding="async" loading="lazy" src="report-assets/figure-24.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
+<p><strong>Figure 22: Multi-satellite route rate and atmospheric
+fading</strong></p>
+<p>The panels display the selected route rate, accumulated proxy budget,
+contributing edge rates and edge-specific fading. Route capacity is
+recomputed from the individual edges at every sample.</p>
+<p><img alt="Illustration 25: Recorded time-series results" decoding="async" loading="lazy" src="report-assets/figure-25.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
+<p><strong>Figure 23: Network availability, selected route and
+outage</strong></p>
+<p>Link visibility and bottleneck rate are displayed with
+route-selection and rate-outage indicators. A geometric contact can
+still yield zero positive DPS proxy rate.</p>
+<p><img alt="Illustration 26: Recorded time-series results" decoding="async" loading="lazy" src="report-assets/figure-26.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
+<p><strong>Figure 24: Network fading realizations and turbulence
+sensitivity</strong></p>
+<p>The histogram shows independent integrated proxy realizations at
+fixed geometry. The right panel shows the mean and 5–95% sample interval
+across five seeds as log-irradiance sigma changes.</p>
+<p><img alt="Illustration 27: Recorded time-series results" decoding="async" loading="lazy" src="report-assets/figure-27.png" style="width:5.7in;height:auto;max-width:100%;"/></p>
+<p><strong>Figure 25: Satellite-count sensitivity of the multi-satellite
+model</strong></p>
+<p>The mean integrated DPS proxy varies with satellite count for five
+independent realizations per setting under the model-defined independent
+edge resources; it is not a constellation design optimum.</p>
+<h1 id="comparative-observations-across-the-four-stages">Comparative
+Observations Across the Four Stages</h1>
+<p>The four scenarios share the Gaussian optical model and declared
+DPS/fading settings, but their outputs represent different physical
+conditions and resource structures. Stage 1 maintains a fixed 20 km
+terrestrial link, Stage 2 varies one satellite pass, Stage 3 uses two
+ground links and two distinct relay architectures, and Stage 4 selects
+simultaneous paths through a trusted network. A numerical comparison
+must therefore retain each scenario’s geometry, observation window,
+hardware assumptions and rate security label.</p>
+<p><strong>Table 9.1: Recorded single-seed DPS extension
+results</strong></p>
+<table>
+<colgroup>
+<col style="width: 34%"/>
+<col style="width: 19%"/>
+<col style="width: 26%"/>
+<col style="width: 19%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Scenario</strong></th>
+<th><strong>Mean QBER</strong></th>
+<th><strong>Integrated proxy</strong></th>
+<th><strong>Rate outage</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1: LOS terrestrial</td>
+<td>1.745%</td>
+<td>507,353</td>
+<td>0.0%</td>
+</tr>
+<tr class="even">
+<td>2: LEO downlink</td>
+<td>4.725%</td>
+<td>1,806,234</td>
+<td>31.9%</td>
+</tr>
+<tr class="odd">
+<td>3A: trusted relay</td>
+<td>link-dependent</td>
+<td>278,524</td>
+<td>86.0%</td>
+</tr>
+<tr class="even">
+<td>4: trusted network</td>
+<td>link-dependent</td>
+<td>949,353</td>
+<td>76.7%</td>
+</tr>
+</tbody>
+</table>
+<p>These integrals are illustrative DPS proxy-bit budgets, not certified
+secure bits. Their observation periods, pulse budgets, number of active
+links and network definitions differ, so the ordering of values does not
+rank the protocols or scenarios. In Stage 3B, 721.703 model bits are
+obtained from the separate asymptotic BBM92 coincidence calculation
+under its 10 million pairs/s source and common-visibility
+requirement.</p>
+<h2 id="atmospheric-statistics-versus-useful-detection-weighted-statistics">Atmospheric
+statistics versus useful detection-weighted statistics</h2>
+<p>Across the models, short low-efficiency periods raise instantaneous
+QBER while contributing relatively few detections to the pooled error
+fraction. The Stage 1 run gives 1.745% mean sampled QBER compared with
+1.698% pooled QBER; the LEO run gives 4.725% and 1.869%, respectively.
+These differences are consequences of the weighting definition and the
+selected fading and background conditions, rather than conflicting
+calculations.</p>
+<h2 id="interpretation-of-network-and-source-resource-assumptions">Interpretation
+of network and source-resource assumptions</h2>
+<p>The trusted network selects one simultaneous bottleneck route and
+assumes independent optical terminals and pulse resources per edge. The
+separate Stage 3A inventory assumes storage of pairwise classical keys.
+The BBM92 architecture relies on a different entangled-pair source and
+high-loss coincidence approximation. I did not use these alternatives to
+infer an unconditional performance advantage for one protocol.</p>
+<h1 id="application-case-study-bahrain-sample-bank-bsb">Application Case
+Study: Bahrain Sample Bank (BSB)</h1>
+<p>The following application case study places my four-stage FSO-QKD
+simulation in the context of Bahrain Sample Bank (BSB), a fictional
+banking institution. BSB is a scenario defined for this project, not an
+identified customer, an audited production network or a claim of
+deployed quantum security. I use its assumed site locations, replication
+processes and continuity requirements to interpret my numerical models
+and develop an implementation concept. Distances and network details
+supplied for the case study are planning assumptions; no telecom route
+survey or bank equipment inventory has been performed.</p>
+<h2 id="case-study-environment-and-existing-connectivity">Case study
+environment and existing connectivity</h2>
+<p>BSB operates a primary data centre at its headquarters in Seef,
+Bahrain, a disaster recovery (DR) site in Amwaj, Bahrain, and an
+offshore computing site in Riyadh, Saudi Arabia. Core banking workloads
+run on IBM i (AS/400), while the mobile banking environment uses Oracle.
+The case assumes that these workloads and their data reside on IBM
+storage infrastructure, with data synchronized from headquarters to the
+other computing sites. The precise IBM storage models, replication
+software, database replication topology, bandwidth and encryption
+termination points are not specified and therefore are not assumed in my
+analysis.</p>
+<p>The existing HQ-to-DR data connection is a dedicated telecom-provider
+fibre service. Traffic from Bahrain to Riyadh is carried over
+site-to-site VPNs on the public internet. Numerous branches in Bahrain
+and Saudi Arabia also use site-to-site VPN connectivity. The
+approximately 14-15 km Seef-Amwaj and 420 km Bahrain-Riyadh figures are
+straight-line separations, not surveyed fibre route lengths or
+free-space satellite optical path lengths.</p>
+<p><strong>Table CS.1: Assumed BSB sites and communications</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 24%"/>
+<col style="width: 25%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Location / traffic path</strong></th>
+<th><strong>Distance or role</strong></th>
+<th><strong>Existing service / project assumption</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Seef headquarters (HQ)</td>
+<td>Primary production data centre</td>
+<td>IBM i core banking, Oracle mobile banking and IBM storage; primary
+replication source.</td>
+</tr>
+<tr class="even">
+<td>Amwaj disaster recovery (DR)</td>
+<td>Approximately 14-15 km geodesic separation from HQ</td>
+<td>Dedicated carrier fibre; receives replicated data and assumes
+production during planned BCP drills.</td>
+</tr>
+<tr class="odd">
+<td>Riyadh offshore site</td>
+<td>Approximately 420 km geodesic separation from Bahrain HQ</td>
+<td>Site-to-site VPN over public internet; offshore replicated computing
+and storage.</td>
+</tr>
+<tr class="even">
+<td>Bahrain and KSA branch offices</td>
+<td>Multiple sites; individual distances not specified</td>
+<td>Site-to-site VPNs; branch traffic is separate from the HQ-DR storage
+replication stream.</td>
+</tr>
+</tbody>
+</table>
+<figure><img alt="Illustration 28: Case study
+environment and existing connectivity" decoding="async" loading="lazy" src="report-assets/figure-28.png" style="width:6.78333in;height:auto;max-width:100%;"/> <figcaption><strong>Figure 26: Geographic
+locations of BSB headquarters, DR and offshore data centre, with
+existing connectivity</strong></figcaption></figure>
+<p>The proposed geographic figure will locate Seef HQ, Amwaj DR and the
+Riyadh offshore site and distinguish the existing dedicated HQ-DR fibre
+from the Bahrain-Riyadh public-internet VPN. It will show approximate
+air distances without presenting them as measured cable routes or
+satellite slant ranges.</p>
+<h2 id="operational-context-and-quantum-related-security-problem">Operational
+context and quantum-related security problem</h2>
+<p>BSB performs two planned business continuity planning (BCP) drills
+each year. During each drill, production workloads operate from Amwaj DR
+for approximately two weeks before a controlled return to Seef HQ.
+Encryption and key management must therefore function when replication
+direction and production endpoints change. The design must protect
+HQ-to-DR synchronization, DR-to-HQ reverse synchronization,
+Bahrain-to-Riyadh transfers and relevant branch traffic without making
+banking availability dependent on clear weather or a satellite pass.</p>
+<p>The long-term confidentiality problem is harvest-now, decrypt-later:
+a future adversary may archive encrypted traffic and try to recover
+previously exchanged session keys using a cryptographically relevant
+quantum computer. This concern applies particularly to
+quantum-vulnerable public-key key establishment; it does not imply that
+QKD itself encrypts application data. In this case study, established
+authenticated symmetric encryption protects the replication payload,
+while QKD is investigated as an additional possible key-material source.
+A supported migration toward post-quantum key establishment, including
+appropriately implemented ML-KEM as standardized in NIST FIPS 203, can
+be evaluated on conventional VPN infrastructure. Authentication and
+algorithm support require their own validation.</p>
+<h2 id="application-objective-and-specific-research-questions">Application
+objective and specific research questions</h2>
+<p>My application objective is to evaluate a phased, quantum-safe
+key-establishment and data-in-transit encryption architecture for BSB
+that protects the replication of IBM i core banking and Oracle mobile
+banking information among Seef HQ, Amwaj DR and Riyadh, while preserving
+two-week DR operation and allowing selective expansion to branch
+connections.</p>
+<p>• Map the existing and proposed communications to the terrestrial,
+single-satellite and multi-satellite geometries implemented in the four
+numerical stages.</p>
+<p>• Evaluate optical efficiency, QBER, instantaneous rate, contact
+availability, fading outage and accumulated model-rate quantities under
+explicitly stated source and security assumptions.</p>
+<p>• Distinguish QKD key delivery from AES-256 authenticated encryption
+of the actual replication stream and identify practical KMS, HSM,
+encryption-gateway and authentication interfaces.</p>
+<p>• Assess trusted-relay satellite exposure separately from the BBM92
+architecture and preserve both protocols as distinct implementation
+alternatives.</p>
+<p>• Define key continuity, reverse-replication and fallback
+requirements for the bank's two annual, two-week DR production
+exercises.</p>
+<p>• Compare dedicated QKD at selected data centres with conventional
+post-quantum VPN upgrades at branches, without claiming unmeasured
+performance, cost savings or regulatory compliance.</p>
+<h2 id="cryptographic-protection-boundary-and-integration-model">Cryptographic
+protection boundary and integration model</h2>
+<p>The bank's storage and application replication flows remain
+conventional data traffic. In the proposed architecture, supported
+encryption gateways or compatible application/transport security
+endpoints apply authenticated symmetric encryption, for example a
+correctly configured AES-256-based authenticated mode. A key-management
+layer identifies authorized endpoint pairs, handles key identifiers,
+rotation, access control, expiry, monitoring and audit, and transfers
+key material to the compatible encryption endpoints. I do not assume
+that IBM i, Oracle, IBM storage controllers or existing VPN appliances
+natively ingest QKD keys; those interfaces and vendors must be examined
+before a proof of concept.</p>
+<p>Where compatible QKD equipment is available, separate physical
+quantum links supply key material to the bank's key-management entities.
+ETSI GS QKD 014 describes an application-facing REST key-delivery
+interface that can inform integration design, but conformance of any
+selected equipment remains to be demonstrated. Existing fibre or IP data
+paths continue carrying the encrypted replication traffic. A
+carrier-provided fibre service does not automatically expose dark fibre
+or a transparent optical wavelength suitable for QKD; physical loss,
+access, wavelength coexistence and intermediate amplification/switching
+must be surveyed. An ordinary public-internet VPN cannot serve as a
+quantum optical channel.</p>
+<p>QKD-derived key material and a supported post-quantum
+key-establishment result could be incorporated under an explicitly
+validated hybrid key-derivation and authentication design. Merely
+concatenating keys or claiming a fallback is quantum-safe without a
+security analysis would be insufficient. Key generation, key usage and
+rekey intervals must be sized using measured application traffic,
+equipment limits and outage requirements. The present simulation does
+not demonstrate full-rate one-time-pad encryption, production
+replication throughput or an approved hybrid cryptographic protocol.</p>
+<figure><img alt="Illustration 29: Cryptographic
+protection boundary and integration model" decoding="async" loading="lazy" src="report-assets/figure-29.png" style="width:6.93333in;height:auto;max-width:100%;"/><figcaption><strong>Figure 27: Proposed
+BSB QKD-assisted encryption and key-management architecture</strong></figcaption></figure>
+<p>The proposed figure will separate banking replication traffic and
+conventional encrypted data transport from QKD optical channels, site
+key-management entities, supported encryption endpoints and post-quantum
+key-establishment functions. The authenticated classical channel and
+management trust boundaries will be indicated distinctly.</p>
+<h2 id="mapping-the-four-simulation-stages-to-bsb-infrastructure">Mapping
+the four simulation stages to BSB infrastructure</h2>
+<p><strong>Stage 1: Seef headquarters to Amwaj disaster
+recovery</strong></p>
+<p>Stage 1 represents the short terrestrial connection between HQ and
+DR. My existing 20 km terrestrial example supplies a bounding
+educational comparison for the assumed 14-15 km separation, but I have
+not labelled that baseline as a direct 15 km BSB site simulation. The
+Gaussian optical model and DPS/log-normal turbulence extension enable
+evaluation of a possible rooftop FSO quantum channel, subject to a
+verified unobstructed optical line of sight, building permissions,
+alignment, dust, haze, weather and daylight background. The bank's
+existing telecom fibre provides a second potential physical-QKD route
+only if the provider can supply a compatible optical path and the
+fibre-specific model is separately evaluated. Encryption of IBM i/Oracle
+replication remains on the existing high-capacity transport, not on the
+quantum-photon stream.</p>
+<p><strong>Stage 2: Satellite quantum link with a Bahrain bank
+terminal</strong></p>
+<p>Stage 2 models a LEO satellite communicating with one Bahrain ground
+terminal at a time. I use changing elevation, slant range, finite
+atmospheric-shell loss, telescope collection, QBER and contact-window
+integration to study whether a satellite service could replenish a local
+key pool. A single downlink establishes a key between that satellite and
+its ground receiver; it does not alone establish a shared Bahrain-Riyadh
+key. Actual ground coordinates, satellite ephemerides, weather
+availability, provider equipment and a service contract would be needed
+for deployment. Intermittent visibility makes authenticated local key
+storage and outage policy central design parameters.</p>
+<p><strong>Stage 3A: Bahrain-Riyadh trusted satellite relay</strong></p>
+<p>In the trusted-relay scenario, the satellite establishes independent
+link keys with Bahrain and Riyadh. Their key pools may be replenished on
+different passes and used in an authenticated relay operation that makes
+common material available to the two ground endpoints. The existing
+Bahrain-Riyadh VPN continues to carry encrypted replication data. The
+satellite is a trusted node because it can know the relayed key
+material, and the bank must evaluate operator control, key custody, HSM
+protection, authentication and legal jurisdiction. The 420 km site
+separation is not substituted for the ground-to-satellite slant ranges
+calculated by the simulator. The DPS-derived relay figures remain proxy
+budgets until a protocol-compatible security proof and operational key
+management are established.</p>
+<p><strong>Stage 3B: Bahrain-Riyadh entanglement-based
+BBM92</strong></p>
+<p>Stage 3B evaluates a different international-key architecture: a
+satellite emits entangled photon pairs and sends one photon to each BSB
+ground terminal. Both sites must see the satellite simultaneously; rates
+depend on efficiencies of both atmospheric paths, accepted true
+coincidences, accidental coincidences, basis sifting and QBER. Under
+this model the satellite need not receive the final key, although that
+feature alone is not proof of arbitrary untrusted-source security. The
+existing BBM92 output is an asymptotic model estimate, not a complete
+finite-key deployment result. Its pair-source and detection resources
+differ from BB84/DPS, so raw plotted rates do not establish a universal
+protocol preference.</p>
+<p><strong>Stage 4: Multi-satellite international key
+connectivity</strong></p>
+<p>Stage 4 extends the trusted-node model to multiple satellites and
+optional inter-satellite optical links. Fading affects each atmospheric
+ground edge before route capacity is recalculated, whereas vacuum
+inter-satellite edges do not receive atmospheric attenuation. The
+widest-path output describes one simultaneous capacity-bottleneck route;
+it does not include a complete scheduled constellation, stored-key
+inventory across all nodes, quantum repeaters or operational
+service-level guarantees. Its banking relevance is a possible future
+independent path for replenishing authorized site keys, contingent on
+actual constellation access and appropriate trusted-node arrangements.
+Branches do not automatically gain end-to-end QKD by connecting over
+conventional VPNs to a QKD-enabled central site.</p>
+<p><strong>Table CS.2: Case-study interpretation of the simulation
+stages</strong></p>
+<table>
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 27%"/>
+<col style="width: 51%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Project stage</strong></th>
+<th><strong>BSB use case</strong></th>
+<th><strong>Deployment condition / evidence boundary</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Stage 1 - terrestrial</td>
+<td>Seef-Amwaj HQ/DR key establishment</td>
+<td>Compare rooftop FSO with separately qualified fibre QKD; 20 km
+baseline is not a measured 15 km bank link.</td>
+</tr>
+<tr class="even">
+<td>Stage 2 - LEO</td>
+<td>Satellite-to-Bahrain key replenishment</td>
+<td>Requires suitable ground terminal, real ephemeris and provider;
+single downlink does not create a Riyadh key.</td>
+</tr>
+<tr class="odd">
+<td>Stage 3A - trusted</td>
+<td>Bahrain-Riyadh pairwise key relay</td>
+<td>Satellite operator becomes trusted; separate passes and
+authenticated key storage are required.</td>
+</tr>
+<tr class="even">
+<td>Stage 3B - BBM92</td>
+<td>Bahrain-Riyadh entangled-pair option</td>
+<td>Requires simultaneous visibility and coincidence hardware;
+asymptotic model, no finite-key proof.</td>
+</tr>
+<tr class="odd">
+<td>Stage 4 - network</td>
+<td>Possible redundant trusted satellite routes</td>
+<td>Modelled widest simultaneous route; constellation, scheduling and
+inventories are not proven.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="phased-implementation-concept">Phased implementation
+concept</h2>
+<p>I distinguish the four numerical research stages from proposed bank
+implementation phases. The following phases are a forward-looking plan:
+none is represented as a completed BSB production deployment. Decisions
+about capital expenditure, supplier selection and regulatory approval
+remain outside the numerical simulation.</p>
+<p><strong>Table CS.3: Proposed BSB implementation phases</strong></p>
+<table>
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 44%"/>
+<col style="width: 41%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Phase</strong></th>
+<th><strong>Scope of work</strong></th>
+<th><strong>Acceptance condition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0 - baseline</td>
+<td>Inventory IBM i, Oracle, storage replication, VPN crypto,
+certificate lifecycle, traffic and data-retention needs.</td>
+<td>Document existing encryption endpoints, key-establishment exposure,
+replication directions and business requirements.</td>
+</tr>
+<tr class="even">
+<td>1 - PQC pilot</td>
+<td>Evaluate supported quantum-resistant or hybrid VPN key establishment
+between Bahrain and Riyadh and selected branches.</td>
+<td>Validated interoperability, authenticated handshakes and acceptable
+VPN availability.</td>
+</tr>
+<tr class="odd">
+<td>2 - local QKD PoC</td>
+<td>Survey Seef-Amwaj fibre suitability and FSO line of sight; test
+physical QKD where practical.</td>
+<td>Measured optical loss, QBER, usable key rate, uptime and
+environmental availability.</td>
+</tr>
+<tr class="even">
+<td>3 - encryption integration</td>
+<td>Test vendor-supported KMS/HSM and encryption-gateway delivery to the
+replication transport.</td>
+<td>Confirmed key lifecycle, encryption correctness and replication
+throughput/lag within targets.</td>
+</tr>
+<tr class="odd">
+<td>4 - BCP exercise</td>
+<td>Run planned failover, two-week DR operation, reverse replication and
+restoration with monitored keys.</td>
+<td>No unapproved downgrade; agreed recovery objectives and
+key-continuity requirements met.</td>
+</tr>
+<tr class="even">
+<td>5 - satellite pilot</td>
+<td>Investigate available trusted-relay/BBM92 suppliers, terminal siting
+and satellite passes.</td>
+<td>Proven access, security assumptions, measured rates and operator
+trust/compliance assessments.</td>
+</tr>
+<tr class="odd">
+<td>6 - expansion</td>
+<td>Assess multiple trusted satellites and a branch-oriented
+quantum-safe connectivity strategy.</td>
+<td>Demonstrated operating model and justified total cost of
+ownership.</td>
+</tr>
+</tbody>
+</table>
+<figure><img alt="Illustration 30: Phased implementation
+concept" decoding="async" loading="lazy" src="report-assets/figure-30.png" style="width:6.85833in;height:auto;max-width:100%;"/><figcaption><strong>Figure 28: BSB phased
+implementation and BCP security transition</strong></figcaption></figure>
+<p>The proposed roadmap figure will distinguish the near-term
+post-quantum VPN work, terrestrial HQ-DR QKD proof of concept,
+encryption integration, planned DR exercises, international satellite
+pilot and later network expansion. No phase is represented as completed
+bank deployment.</p>
+<h2 id="bcp-drills-reverse-replication-and-key-availability">BCP drills,
+reverse replication and key availability</h2>
+<p>Twice per year BSB shifts production from Seef to Amwaj for
+approximately two weeks. During this interval the cryptographic design
+must support the changed active site, protected Riyadh traffic, reverse
+synchronization and eventual return to HQ. I therefore use a site-pair
+key-pool concept as an engineering extension rather than equating the
+optical channel rate directly to continuous business-system
+availability. A proposed planning balance is K_available(t) = K_initial
++ K_generated(t) - K_consumed(t), with expiration, key usage and
+security policy handled explicitly in a practical implementation. The
+current model does not derive real consumption from the bank's traffic
+or prove a 14-day available reserve.</p>
+<p><strong>Table CS.4: BSB BCP encryption continuity
+criteria</strong></p>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 74%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Operating mode</strong></th>
+<th><strong>Cryptographic and replication requirement</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Normal production at HQ</td>
+<td>Protect Seef-Amwaj and Bahrain-Riyadh replication; record key IDs,
+rotations, audit and link availability.</td>
+</tr>
+<tr class="even">
+<td>Planned HQ-to-DR cutover</td>
+<td>Preserve authenticated peer identities and compatible encryption as
+Amwaj assumes active production.</td>
+</tr>
+<tr class="odd">
+<td>Two-week DR production</td>
+<td>Maintain protected outbound Riyadh traffic and all necessary branch
+access throughout the exercise.</td>
+</tr>
+<tr class="even">
+<td>Reverse replication</td>
+<td>Encrypt changed data from DR back to HQ using approved keys and
+authenticated endpoints.</td>
+</tr>
+<tr class="odd">
+<td>Return to HQ</td>
+<td>Re-establish normal direction without key reuse, uncontrolled
+fallback or loss of replica consistency.</td>
+</tr>
+<tr class="even">
+<td>QKD outage or depleted pool</td>
+<td>Follow a pre-approved, quantum-safe continuity policy; alert
+operators rather than silently downgrading or stopping replication.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="branch-office-extension-and-cost-boundaries">Branch-office
+extension and cost boundaries</h2>
+<p>For BSB branches, extending quantum-safe cryptography through
+supported VPN software and compatible gateways may reuse existing IP
+connectivity and avoid optical terminals at every location. Such branch
+tunnels may use a properly supported post-quantum or hybrid
+key-establishment mechanism, but they are not end-to-end QKD links. A
+branch can use a centrally governed KMS only if delivery, authorization
+and communication with that KMS remain suitably authenticated and
+protected. A central QKD link cannot automatically make ordinary
+public-internet branch traffic quantum-key-distributed.</p>
+<p><strong>Table CS.5: Branch and core-site options</strong></p>
+<table>
+<colgroup>
+<col style="width: 22%"/>
+<col style="width: 25%"/>
+<col style="width: 51%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Architecture</strong></th>
+<th><strong>Appropriate case-study scope</strong></th>
+<th><strong>Additional cost drivers and limitations</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PQC/hybrid VPN at branches</td>
+<td>Many existing Bahrain/KSA VPN branches</td>
+<td>Gateway support/licensing, firmware, certificates, monitoring,
+interoperability and managed migration.</td>
+</tr>
+<tr class="even">
+<td>QKD-assisted central sites</td>
+<td>HQ, DR and potentially Riyadh</td>
+<td>Optical terminals, suitable fibre or telescope sites, KMS/HSM,
+encryption appliances and operations.</td>
+</tr>
+<tr class="odd">
+<td>Dedicated QKD to every branch</td>
+<td>Only branches with justified high-security needs and a real optical
+path</td>
+<td>Additional quantum endpoints, circuits, alignment/service contracts,
+redundancy and support; ordinary VPN is insufficient.</td>
+</tr>
+</tbody>
+</table>
+<p>No BSB-specific cost estimate or claim of branch savings can be
+established from the available case-study inputs. Before costing, the
+bank would need branch counts, VPN platform inventory, actual carrier
+service types, optical-route surveys, required key-refresh policy,
+encryption throughput, storage replication licensing, satellite service
+availability and support pricing. The bank's Bahrain and Saudi legal,
+privacy, banking supervisory and outsourcing obligations also require a
+jurisdiction- and licence-specific assessment rather than an assumed
+compliance conclusion.</p>
+<h2 id="evaluation-criteria-and-boundaries-of-the-present-observations">Evaluation
+criteria and boundaries of the present observations</h2>
+<p>My current numerical results support statements about optical
+efficiency, modeled detection and QBER, log-normal fading, contact
+availability, coincidence statistics and rate estimates or proxies. They
+do not contain measured BSB replication throughput, branch traffic,
+fibre loss, actual GPS positions, agreed RPO/RTO, vendor integration or
+cryptographic accreditation. I therefore treat the following operational
+measurements as acceptance criteria for future trials rather than as
+completed observations.</p>
+<p><strong>Table CS.6: Technical and banking acceptance
+measures</strong></p>
+<table>
+<colgroup>
+<col style="width: 28%"/>
+<col style="width: 71%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Measure</strong></th>
+<th><strong>Meaning for the bank / evidence required</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>QBER and optical key rate</td>
+<td>Measured on physical QKD equipment; DPS proxy cannot be presented as
+certified key throughput.</td>
+</tr>
+<tr class="even">
+<td>Key-pool availability</td>
+<td>Synchronized generation, use, expiry, outages and reserve across
+both endpoints.</td>
+</tr>
+<tr class="odd">
+<td>Replication throughput and lag</td>
+<td>Measured IBM i/Oracle/storage transport behaviour under the proposed
+encryption layer.</td>
+</tr>
+<tr class="even">
+<td>RPO and RTO</td>
+<td>Bank-approved recovery objectives, validated during a two-week BCP
+exercise.</td>
+</tr>
+<tr class="odd">
+<td>Failover, reverse transfer and restoration</td>
+<td>Successful protected operations through each change of production
+role.</td>
+</tr>
+<tr class="even">
+<td>Cryptographic fallback</td>
+<td>Documented and approved quantum-safe policy when physical QKD is
+unavailable.</td>
+</tr>
+<tr class="odd">
+<td>Cost and regulatory feasibility</td>
+<td>Documented supplier quotations, carrier service characteristics and
+jurisdiction-specific assessment.</td>
+</tr>
+</tbody>
+</table>
+<p>The case-study interpretation is accordingly a phased engineering
+proposal, not a finding that QKD has already prevented harvest-now,
+decrypt-later attacks on bank traffic. The immediate quantum-safe option
+is to assess compatible post-quantum protection on existing IP links;
+terrestrial and satellite QKD remain candidate additional key sources
+subject to device security, authentication, supplier availability and
+deployment validation. All cited DPS integrals in my results remain
+illustrative proxy quantities.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>I developed and extended a four-stage FSO-QKD simulation that
+progresses from a terrestrial link to a LEO downlink, alternative
+single-satellite architectures and a trusted multi-satellite network.
+The original BB84, decoy-state BB84 and finite-bit Alice–Bob–Eve
+post-processing demonstrations remain separate from the new DPS
+optical-statistics model; the single-satellite entanglement scenario
+retains its own BBM92 coincidence formulation.</p>
+<p>The numerical observations show how received optical power,
+background detections, satellite elevation, independent fading on ground
+links and route bottlenecks affect the available protocol statistics.
+Correlated log-normal fluctuations change both instantaneous QBER and
+rate, making sample-mean QBER and pooled QBER materially different. The
+four scenarios were executed with recorded parameters, and the project
+contains passing Python and archived Octave verification results.</p>
+<p>The work constitutes an engineering and educational simulation under
+explicit assumptions. In particular, DPS accumulated values remain
+modelled proxy budgets and cannot be interpreted as certified secret
+keys. This distinction provides a coherent basis for interpreting the
+simulation figures and defining the additional security and experimental
+validation needed for a practical QKD deployment.</p>
+<h1 id="acknowledgement-of-generative-ai-assistance">Acknowledgement of
+Generative AI Assistance</h1>
+<p>I acknowledge the use of OpenAI’s ChatGPT and Codex in the
+development and documentation of this project. ChatGPT assisted with
+diagrams, technical explanations and report refinement, while Codex
+supported the development, debugging and testing of Python and GNU
+Octave simulations. The project objectives, technical requirements and
+design decisions were directed by me. I reviewed the AI-assisted outputs
+and take responsibility for the final content, results and
+interpretations.</p>
+<h1 id="references">References</h1>
+<p>[1] N. K. Kundu, Quantum Key Distribution and Post-Processing, course
+lecture materials, Post Graduate Diploma in Advanced Communication
+Engineering with Quantum and AI Integration, Indian Institute of
+Technology Delhi, 2026. Course materials, including relevant Lecture
+1-23 notes.</p>
+<p>[2] U. Nath, R. Meena, S. Ali and N. K. Kundu, "A Tutorial on Quantum
+Key Distribution Protocols With Interactive Simulation of QBER and SKR
+Performance Metrics," IET Quantum Communication, vol. 7, article e70033,
+2026. DOI: <a href="https://doi.org/10.1049/qtc2.70033">https://doi.org/10.1049/qtc2.70033</a></p>
+<p>[3] X. Ma, B. Qi, Y. Zhao and H.-K. Lo, "Practical decoy state for
+quantum key distribution," Physical Review A, vol. 72, article 012326,
+2005. DOI: <a href="https://doi.org/10.1103/PhysRevA.72.012326">https://doi.org/10.1103/PhysRevA.72.012326</a></p>
+<p>[4] C. H. Bennett and G. Brassard, "Quantum cryptography: Public key
+distribution and coin tossing," Theoretical Computer Science, vol. 560,
+pp. 7-11, 2014. Original work presented in 1984. DOI: <a href="https://doi.org/10.1016/j.tcs.2014.05.025">https://doi.org/10.1016/j.tcs.2014.05.025</a></p>
+<p>[5] E. Waks, H. Takesue and Y. Yamamoto, "Security of
+differential-phase-shift quantum key distribution against individual
+attacks," Physical Review A, vol. 73, article 012344, 2006. DOI: <a href="https://doi.org/10.1103/PhysRevA.73.012344">https://doi.org/10.1103/PhysRevA.73.012344</a></p>
+<p>[6] C. H. Bennett, G. Brassard and N. D. Mermin, "Quantum
+cryptography without Bell's theorem," Physical Review Letters, vol. 68,
+pp. 557-559, 1992. DOI: <a href="https://doi.org/10.1103/PhysRevLett.68.557">https://doi.org/10.1103/PhysRevLett.68.557</a></p>
+<p>[7] S. P. Neumann, T. Scheidl, M. Selimovic, M. Pivoluska, B. Liu, M.
+Bohmann and R. Ursin, "Model for optimizing quantum key distribution
+with continuous-wave pumped entangled-photon sources," Physical Review
+A, vol. 104, article 022406, 2021. DOI: <a href="https://doi.org/10.1103/PhysRevA.104.022406">https://doi.org/10.1103/PhysRevA.104.022406</a></p>
+<p>[8] S. R. Kondamuri, N. K. Kundu and A. Ghanshyala, "Quantum
+Communication in Weakly Turbulent Channels: Error Analysis and Capacity
+Bounds," IEEE Wireless Communications Letters, vol. 13, no. 12, pp.
+3658-3662, 2024. DOI: <a href="https://doi.org/10.1109/LWC.2024.3485533">https://doi.org/10.1109/LWC.2024.3485533</a></p>
+<p>[9] Y. Luo, X. Cheng, H.-K. Mao and Q. Li, "An Overview of
+Postprocessing in Quantum Key Distribution," Mathematics, vol. 12, no.
+14, article 2243, 2024. DOI: <a href="https://doi.org/10.3390/math12142243">https://doi.org/10.3390/math12142243</a></p>
+<p>[10] L. Guo, Q. Ran, D. Jin and D. Huang, "QKD Iterative Information
+Reconciliation Based on LDPC Codes," International Journal of
+Theoretical Physics, vol. 59, pp. 1717-1729, 2020. DOI: <a href="https://doi.org/10.1007/s10773-020-04438-9">https://doi.org/10.1007/s10773-020-04438-9</a></p>
+<p>[11] M. Tomamichel, C. Schaffner, A. Smith and R. Renner, "Leftover
+hashing against quantum side information," IEEE Transactions on
+Information Theory, vol. 57, no. 8, pp. 5524-5535, 2011. DOI: <a href="https://doi.org/10.1109/TIT.2011.2158473">https://doi.org/10.1109/TIT.2011.2158473</a></p>
+<p>[12] National Institute of Standards and Technology,
+Module-Lattice-Based Key-Encapsulation Mechanism Standard, FIPS 203,
+August 2024. DOI: <a href="https://doi.org/10.6028/NIST.FIPS.203">https://doi.org/10.6028/NIST.FIPS.203</a></p>
+<p>[13] European Telecommunications Standards Institute, Quantum Key
+Distribution (QKD); Protocol and Data Format of REST-Based Key Delivery
+API, ETSI GS QKD 014 V1.1.1, February 2019. <a href="https://www.etsi.org/deliver/etsi_gs/QKD/001_099/014/01.01.01_60/gs_qkd014v010101p.pdf">https://www.etsi.org/deliver/etsi_gs/QKD/001_099/014/01.01.01_60/gs_qkd014v010101p.pdf</a></p>
+<div class="site-footer" role="contentinfo"><span>Limnesh Augustine · Project Report</span><span>IIT Delhi · 20 September 2026</span></div></body>
+</html>

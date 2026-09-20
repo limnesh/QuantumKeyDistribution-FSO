@@ -13,7 +13,7 @@
 | Submission date | **20 September 2026** |
 | Software | **Jupyter Notebook (Python)** and **GNU Octave** |
 | Document status | **Institution Review** |
-| Project report | [`QKD_FSO_BSB_Application_Project_Report.docx`](QKD_FSO_BSB_Application_Project_Report.docx) |
+| Project report | [`QKD_FSO_Project_Report-v1.0.html`](QKD_FSO_Project_Report-v1.0.html) |
 
 ## Project overview
 
