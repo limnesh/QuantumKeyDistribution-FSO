@@ -13,7 +13,7 @@
 | Submission date | **20 September 2026** |
 | Software | **Jupyter Notebook (Python)** and **GNU Octave** |
 | Document status | **Institution Review** |
-| Project report | [`QKD_FSO_Project_Report-v1.0.html`](QKD_FSO_Project_Report-v1.0.html) |
+| Project report | [Read the formatted HTML report (GitHub Pages)](https://limnesh.github.io/QuantumKeyDistribution-FSO/QKD_FSO_Project_Report-v1.0.html) |
 
 ## Project overview
 
@@ -53,7 +53,7 @@ You can also run a stage directly by opening its `START_HERE.m` and pressing **F
 
 For the optional DPS/turbulence companion dashboard, open `RUN_DPS_TURBULENCE.m` in the corresponding stage folder and press **F5**.
 
-**Detailed methodology, worked calculations, results, references and limitations:** see the [project report](QKD_FSO_BSB_Application_Project_Report.docx).
+**Detailed methodology, worked calculations, results, references and limitations:** [read the HTML project report](https://limnesh.github.io/QuantumKeyDistribution-FSO/QKD_FSO_Project_Report-v1.0.html).
 
 ## About the author
 
