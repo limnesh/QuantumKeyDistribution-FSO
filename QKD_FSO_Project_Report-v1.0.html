@@ -193,20 +193,20 @@
   
 
 /* Word-accurate graphic cropping, web navigation, and report masthead/footer. */
-html { scroll-behavior: smooth; }
+html { scroll-behavior: auto; scroll-padding-top: 0; }
 body { padding-top: 0 !important; }
 .site-masthead {
   position: sticky; top: 0; z-index: 100; box-sizing: border-box;
   display: flex; align-items: center; justify-content: space-between;
-  gap: 12px; margin: 0 -48px 28px; padding: 12px 48px;
+  gap: 12px; margin: 0 -48px 28px; padding: 10px 48px;
   background: rgba(18,50,78,.97); color: #fff;
   box-shadow: 0 3px 12px rgba(7,28,48,.17);
   font-family: 'Segoe UI', Arial, sans-serif; font-size: .86rem;
 }
-.site-masthead-title { font-weight: 750; letter-spacing: .025em; }
-.site-masthead-logo { width: 42px; height: 42px; flex: 0 0 42px; object-fit: contain; background: #fff;
-  border-radius: 4px; padding: 3px; box-sizing: border-box; }
-.site-masthead-detail { font-weight: 500; opacity: .9; text-align: right; }
+.site-masthead-title { font-weight: 750; letter-spacing: .025em; font-size: 1rem; }
+.site-masthead-detail { font-weight: 500; opacity: .9; text-align: right; margin-left: auto; }
+.institution-cell { display:flex; align-items:center; gap:18px; font-size:1.15rem; line-height:1.4; }
+.institution-cell img { width:150px; height:auto; flex:0 0 auto; object-fit:contain; }
 #title-block-header { background: linear-gradient(135deg,#f5f9ff,#fff); border: 1px solid #e0e9f3;
   border-radius: 12px; padding: 28px 24px; margin: 12px 0 28px; text-align: center; }
 #title-block-header .subtitle { display: flex; flex-direction: column; gap: .3rem; line-height: 1.5; }
@@ -233,10 +233,13 @@ p:has(> img[src^="report-assets/"]) { text-align:center; }
 .site-footer { display:flex; align-items:center; justify-content:space-between;
    gap:16px; border-top:1px solid #d9e5ee; padding:20px 0 30px; margin:58px 0 0;
    color:#50657b; font-size:.87rem; }
-h1[id],h2[id],h3[id] { scroll-margin-top: 75px; }
+h1[id],h2[id],h3[id] { scroll-margin-top: 72px; }
 @media(max-width:750px) {
- .site-masthead { margin:0 -16px 20px; padding:11px 16px; flex-wrap:wrap; }
+ .site-masthead { margin:0 -16px 20px; padding:10px 16px; }
+ .site-masthead-title { font-size:.9rem; }
  .site-masthead-detail { font-size:.74rem; }
+ .institution-cell { align-items:flex-start; gap:12px; font-size:1rem; }
+ .institution-cell img { width:105px; }
  .contents-panel {padding:17px 15px;}
  .contents-list {columns:1;}
  .site-footer { flex-direction:column;align-items:flex-start;}
@@ -261,7 +264,7 @@ h1[id],h2[id],h3[id] { scroll-margin-top: 75px; }
 }
 </style>
 </head>
-<body><div class="site-masthead" role="banner"><img class="site-masthead-logo" src="report-assets/Logo - IIT Delhi.jpg" alt="IIT Delhi logo"/><span class="site-masthead-title">QKD over FSO Channels</span><span class="site-masthead-detail">PGDACEQAI  |  Final Semester</span></div>
+<body><div class="site-masthead" role="banner"><span class="site-masthead-title">QKD over FSO Channels</span><span class="site-masthead-detail">PGDACEQAI  |  Final Semester</span></div>
 <header id="title-block-header">
 <h1 class="title">Quantum Key Distribution over Free-Space Optical
 Channels</h1>
@@ -283,8 +286,46 @@ Entanglement-Based BBM92 · Multi-Satellite Trusted Networks</span></p>
 <tbody>
 <tr class="odd">
 <td>Institution</td>
-<td>IIT Delhi, Bharti School of Telecommunication Technology and
-Management</td>
+<td class="institution-cell"
+    style="display: table-cell !important;
+           text-align: center !important;
+           vertical-align: middle !important;
+           padding: 20px !important;">
+
+    <div style="display: block !important;
+                width: 100% !important;
+                text-align: center !important;">
+
+        <div style="display: block !important;
+                    width: 100% !important;
+                    text-align: center !important;
+                    margin-bottom: 15px !important;">
+
+            <img src="report-assets/Logo - IIT Delhi.jpg"
+                 alt="IIT Delhi logo"
+                 style="display: inline-block !important;
+                        float: none !important;
+                        width: 280px;
+                        max-width: 100%;
+                        height: auto;">
+        </div>
+
+        <div style="display: block !important;
+                    width: 100% !important;
+                    text-align: center !important;
+                    font-size: 0.8rem;
+                    line-height: 1.35;">
+
+            
+                IIT Delhi, Bharti School of Telecommunication
+                Technology and Management
+
+
+        </div>
+
+    </div>
+</td>
+
 </tr>
 <tr class="even">
 <td>Prepared by</td>
@@ -401,7 +442,7 @@ vulnerable key-establishment mechanisms could expose the keys used to
 protect recorded communications. Consequently, relying exclusively on
 conventional, quantum-vulnerable public-key cryptography may not provide
 sufficient long-term confidentiality.</p>
-<p><img alt="Illustration 1: Problem
+<p><img width="1574" height="626" alt="Illustration 1: Problem
 Statement: Long-Term Security Limitations of Conventional
 Encryption" decoding="async" loading="eager" src="report-assets/figure-01.jpeg" style="width:7.14852in;height:auto;max-width:100%;"/></p>
 <p>This problem motivates the investigation of quantum-resistant
@@ -490,7 +531,7 @@ Architectures and Eavesdropping Analysis</h1>
 and their corresponding Eve-related security scenarios.</p>
 <h2 id="part-a-system-architecture-and-operation">Part A — System
 Architecture and Operation</h2>
-<p><img alt="Illustration 2: Part A — System
+<p><img width="1491" height="918" alt="Illustration 2: Part A — System
 Architecture and Operation" decoding="async" loading="lazy" src="report-assets/figure-02.png" style="width:6.98557in;height:auto;max-width:100%;"/></p>
 <p>Figure 1: Ground-to-Ground Free-Space Optical Quantum Key
 Distribution</p>
@@ -498,7 +539,7 @@ Distribution</p>
 including optical transmission, decoy-state BB84, photon detection,
 atmospheric losses, and the classical post-processing steps used to
 establish a shared secret key.</p>
-<p><img alt="Illustration 3: Part A — System
+<p><img width="1491" height="916" alt="Illustration 3: Part A — System
 Architecture and Operation" decoding="async" loading="lazy" src="report-assets/figure-03.png" style="width:6.95998in;height:auto;max-width:100%;"/></p>
 <p>Figure 2: Satellite-to-Ground Quantum Key Distribution
 Architecture</p>
@@ -506,7 +547,7 @@ Architecture</p>
 station, showing orbital geometry, slant range, elevation angle, optical
 transmission losses, and their influence on photon detection and
 secret-key generation.</p>
-<p><img alt="Illustration 4: Part A — System
+<p><img width="1491" height="912" alt="Illustration 4: Part A — System
 Architecture and Operation" decoding="async" loading="lazy" src="report-assets/figure-04.png" style="width:6.93194in;height:auto;max-width:100%;"/></p>
 <p>Figure 3A: Quantum Key Distribution Using a Trusted Satellite
 Relay</p>
@@ -515,7 +556,7 @@ keys with two ground stations using decoy-state BB84. The satellite
 stores and relays key material, enabling Alice and Bob to establish a
 common key even when their satellite communication windows occur at
 different times.</p>
-<p><img alt="Illustration 5: Part A — System
+<p><img width="1491" height="922" alt="Illustration 5: Part A — System
 Architecture and Operation" decoding="async" loading="lazy" src="report-assets/figure-05.png" style="width:6.91508in;height:auto;max-width:100%;"/></p>
 <p>Figure 3B: Entanglement-Based Satellite Quantum Key Distribution
 Using BBM92</p>
@@ -524,7 +565,7 @@ ground stations simultaneously. The diagram highlights common
 visibility, coincidence detection, quantum correlations, and the BBM92
 protocol used to generate a shared secret key without requiring the
 satellite to know the final key.</p>
-<p><img alt="Illustration 6: Part A — System
+<p><img width="1491" height="912" alt="Illustration 6: Part A — System
 Architecture and Operation" decoding="async" loading="lazy" src="report-assets/figure-06.png" style="width:6.92211in;height:auto;max-width:100%;"/></p>
 <p>Figure 5: Multi-Satellite Trusted-Node Quantum Key Distribution
 Network</p>
@@ -534,7 +575,7 @@ communication availability, Earth obstruction, individual link-key
 generation, and network routing for end-to-end key distribution.</p>
 <h2 id="part-b-eavesdropping-and-security-analysis">Part B —
 Eavesdropping and Security Analysis</h2>
-<p><img alt="Illustration 7: Part B —
+<p><img width="1491" height="906" alt="Illustration 7: Part B —
 Eavesdropping and Security Analysis" decoding="async" loading="lazy" src="report-assets/figure-07.png" style="width:6.96755in;height:auto;max-width:100%;"/></p>
 <p>Figure 6: Eavesdropping Detection in Ground-to-Ground QKD</p>
 <p>Demonstrates Eve attempting to intercept and measure quantum signals
@@ -542,7 +583,7 @@ transmitted between Alice and Bob. The diagram illustrates how an
 intercept-resend attack can introduce detectable errors, increasing the
 quantum bit error rate (QBER), and how privacy amplification helps
 reduce Eve's information about the final key.</p>
-<p><img alt="Illustration 8: Part B —
+<p><img width="1491" height="920" alt="Illustration 8: Part B —
 Eavesdropping and Security Analysis" decoding="async" loading="lazy" src="report-assets/figure-08.png" style="width:6.94349in;height:auto;max-width:100%;"/></p>
 <p>Figure 7: Eavesdropping Threats in Satellite-to-Ground QKD</p>
 <p>Illustrates an eavesdropper attempting to intercept quantum signals
@@ -550,14 +591,14 @@ along a satellite-to-ground optical link. The diagram highlights the
 role of decoy-state BB84, photon detection statistics, and QBER analysis
 in identifying disturbances and evaluating the security of the
 communication.</p>
-<p><img alt="Illustration 9: Part B —
+<p><img width="1491" height="912" alt="Illustration 9: Part B —
 Eavesdropping and Security Analysis" decoding="async" loading="lazy" src="report-assets/figure-09.png" style="width:6.94937in;height:auto;max-width:100%;"/></p>
 <p>Figure 8A: Eavesdropping Analysis in Trusted Satellite Relay QKD</p>
 <p>Demonstrates how Eve may independently target either of the quantum
 links connecting the satellite to the two ground stations. Each link
 performs its own security checks before the resulting key material is
 stored and used for trusted key relaying.</p>
-<p><img alt="Illustration 10: Part B —
+<p><img width="1491" height="924" alt="Illustration 10: Part B —
 Eavesdropping and Security Analysis" decoding="async" loading="lazy" src="report-assets/figure-10.png" style="width:6.9675in;height:auto;max-width:100%;"/></p>
 <p>Figure 8B: Eavesdropping Detection in Entanglement-Based Satellite
 QKD</p>
@@ -566,7 +607,7 @@ entangled pair distributed by the satellite. The diagram demonstrates
 how unauthorized measurements may disturb quantum correlations,
 influencing coincidence statistics and QBER, which are evaluated during
 BBM92 security processing.</p>
-<p><img alt="Illustration 11: Part B —
+<p><img width="1491" height="914" alt="Illustration 11: Part B —
 Eavesdropping and Security Analysis" decoding="async" loading="lazy" src="report-assets/figure-11.png" style="width:7.01561in;height:auto;max-width:100%;"/></p>
 <p>Figure 9: Security Analysis of a Multi-Satellite QKD Network</p>
 <p>Demonstrates potential eavesdropping attempts on individual
@@ -735,7 +776,7 @@ security checks.</p>
 <p>The simulation assumes that an authenticated classical channel is
 available. It does not implement a complete network authentication
 system.</p>
-<p><img alt="Illustration 12: Quantum and
+<p><img width="1024" height="737" alt="Illustration 12: Quantum and
 Classical Communication Channels" decoding="async" loading="lazy" src="report-assets/figure-12.png" style="width:6.93881in;height:auto;max-width:100%;"/></p>
 <p>Figure 10: Alice, Bob, Eve and Their Communication Channels</p>
 <p>The diagram illustrates the quantum optical link between Alice and
@@ -747,7 +788,7 @@ Preparation and Measurement</h2>
 Distribution. It enables Alice and Bob to establish a shared key by
 preparing and measuring quantum states using randomly selected
 bases.</p>
-<p><img alt="Illustration 13: BB84 Protocol:
+<p><img width="1024" height="1407" alt="Illustration 13: BB84 Protocol:
 Preparation and Measurement" decoding="async" loading="lazy" src="report-assets/figure-13.png" style="width:6.85833in;height:auto;max-width:100%;"/></p>
 <p>Figure 11: BB84 Quantum Key Distribution Protocol</p>
 <p>The diagram illustrates the BB84 protocol, including quantum state
@@ -910,7 +951,7 @@ after LDPC reconciliation and Toeplitz hashing. This demonstrates the
 operation of the post-processing chain, but matching keys alone do not
 constitute proof that the resulting key is secure against every possible
 attack.</p>
-<p><img alt="Illustration 14: Error Correction and
+<p><img width="1024" height="456" alt="Illustration 14: Error Correction and
 Privacy Amplification" decoding="async" loading="lazy" src="report-assets/figure-14.png" style="width:7.07261in;height:auto;max-width:100%;"/></p>
 <p>Figure 12: End-to-End Quantum Key Distribution Protocol</p>
 <p>The diagram presents the complete key-generation process, beginning
@@ -925,7 +966,7 @@ Quantum Key Distribution Using BBM92</h2>
 Distribution. Unlike BB84, in which Alice prepares and transmits quantum
 states to Bob, BBM92 uses pairs of entangled photons distributed to two
 communicating parties.</p>
-<p><img alt="Illustration 15: Entanglement-Based
+<p><img width="1024" height="1380" alt="Illustration 15: Entanglement-Based
 Quantum Key Distribution Using BBM92" decoding="async" loading="lazy" src="report-assets/figure-15.png" style="width:6.85833in;height:auto;max-width:100%;"/></p>
 <p>Figure 13: BBM92 Entanglement-Based Quantum Key Distribution
 Protocol</p>
@@ -1593,7 +1634,7 @@ intensity and hence on QBER. The steep onset of a positive proxy rate in
 the visibility sweep is a property of the selected privacy and
 reconciliation expression, not proof of a universal security
 threshold.</p>
-<p><img alt="Illustration 16: Distance and
+<p><img width="1680" height="1008" alt="Illustration 16: Distance and
 interferometer visibility" decoding="async" loading="lazy" src="report-assets/figure-16.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
 <p><strong>Figure 14: Terrestrial DPS distance and visibility
 sensitivity</strong></p>
@@ -1664,7 +1705,7 @@ trajectory assigns different weights to detection-rich and
 detection-poor periods. No sample in this particular run had a
 nonpositive illustrative rate, but one seeded realization is not a
 confidence statement about real atmospheric availability.</p>
-<p><img alt="Illustration 17: Correlated
+<p><img width="1680" height="1008" alt="Illustration 17: Correlated
 fading and observed terrestrial performance" decoding="async" loading="lazy" src="report-assets/figure-17.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
 <p><strong>Figure 15: Terrestrial DPS time series under correlated
 log-normal fading</strong></p>
@@ -1672,7 +1713,7 @@ log-normal fading</strong></p>
 proxy budget, QBER and collected-power factor. The deterministic rate is
 a fixed-channel baseline; the fluctuating trace is one seeded
 realization.</p>
-<p><img alt="Illustration 18: Correlated
+<p><img width="1680" height="1008" alt="Illustration 18: Correlated
 fading and observed terrestrial performance" decoding="async" loading="lazy" src="report-assets/figure-18.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
 <p><strong>Figure 16: Terrestrial DPS Monte Carlo
 distributions</strong></p>
@@ -1770,14 +1811,14 @@ relative to background, increasing QBER. The difference between 4.725%
 mean sampled QBER and 1.869% pooled QBER is a useful reminder that
 uniformly averaging percentages does not weight a high-loss interval by
 its small detection count.</p>
-<p><img alt="Illustration 19: Satellite-pass
+<p><img width="1680" height="1008" alt="Illustration 19: Satellite-pass
 rate, QBER and atmospheric fluctuations" decoding="async" loading="lazy" src="report-assets/figure-19.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
 <p><strong>Figure 17: LEO satellite DPS pass: faded and deterministic
 outputs</strong></p>
 <p>The panels contain instantaneous rate, cumulative rate integral, QBER
 and fading factor across the sampled pass. The integrated DPS curve
 represents a proxy budget rather than proven secret bits.</p>
-<p><img alt="Illustration 20: Satellite-pass
+<p><img width="1680" height="1008" alt="Illustration 20: Satellite-pass
 rate, QBER and atmospheric fluctuations" decoding="async" loading="lazy" src="report-assets/figure-20.png" style="width:5.35in;height:auto;max-width:100%;"/></p>
 <p><strong>Figure 18: LEO geometry and elevation dependence</strong></p>
 <p>The distance and atmospheric-path panels distinguish beam-spreading
@@ -1867,14 +1908,14 @@ the stored-pool delivery estimate in this geometry because the
 individual contact windows overlap for only a short interval. The pool
 value is a distinct accounting result, not an alternative value for the
 same simultaneous transport experiment.</p>
-<p><img alt="Illustration 21: Scenario 3A — trusted
+<p><img width="1680" height="1008" alt="Illustration 21: Scenario 3A — trusted
 classical key relay" decoding="async" loading="lazy" src="report-assets/figure-21.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
 <p><strong>Figure 19: Two ground links, simultaneous DPS bottleneck and
 fading</strong></p>
 <p>The individual arm rates peak at different times. The end-to-end
 instantaneous calculation is nonzero only where an appropriate
 simultaneous trusted route is available.</p>
-<p><img alt="Illustration 22: Scenario 3A — trusted
+<p><img width="1680" height="1008" alt="Illustration 22: Scenario 3A — trusted
 classical key relay" decoding="async" loading="lazy" src="report-assets/figure-22.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
 <p><strong>Figure 20: Trusted relay: link inventory and delivery
 results</strong></p>
@@ -1930,7 +1971,7 @@ trusted-relay proxy without normalizing the distinct sources, security
 analyses, timing and receiver resources. The entangled source provides
 coincidences only during common visibility, whereas trusted relay key
 pools may store classical material from separate passes.</p>
-<p><img alt="Illustration 23: Scenario 3B — entangled
+<p><img width="1680" height="1512" alt="Illustration 23: Scenario 3B — entangled
 BBM92 downlinks" decoding="async" loading="lazy" src="report-assets/figure-23.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
 <p><strong>Figure 21: BBM92 two-arm fading, detection and coincidence
 analysis</strong></p>
@@ -2026,25 +2067,25 @@ edge remains unaffected by atmospheric fading. The observed outage
 fraction is for this network layout and one selected random realization,
 not a predicted operational availability for a deployed
 constellation.</p>
-<p><img alt="Illustration 24: Recorded time-series results" decoding="async" loading="lazy" src="report-assets/figure-24.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
+<p><img width="1680" height="1008" alt="Illustration 24: Recorded time-series results" decoding="async" loading="lazy" src="report-assets/figure-24.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
 <p><strong>Figure 22: Multi-satellite route rate and atmospheric
 fading</strong></p>
 <p>The panels display the selected route rate, accumulated proxy budget,
 contributing edge rates and edge-specific fading. Route capacity is
 recomputed from the individual edges at every sample.</p>
-<p><img alt="Illustration 25: Recorded time-series results" decoding="async" loading="lazy" src="report-assets/figure-25.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
+<p><img width="1680" height="1008" alt="Illustration 25: Recorded time-series results" decoding="async" loading="lazy" src="report-assets/figure-25.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
 <p><strong>Figure 23: Network availability, selected route and
 outage</strong></p>
 <p>Link visibility and bottleneck rate are displayed with
 route-selection and rate-outage indicators. A geometric contact can
 still yield zero positive DPS proxy rate.</p>
-<p><img alt="Illustration 26: Recorded time-series results" decoding="async" loading="lazy" src="report-assets/figure-26.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
+<p><img width="1680" height="560" alt="Illustration 26: Recorded time-series results" decoding="async" loading="lazy" src="report-assets/figure-26.png" style="width:6.1in;height:auto;max-width:100%;"/></p>
 <p><strong>Figure 24: Network fading realizations and turbulence
 sensitivity</strong></p>
 <p>The histogram shows independent integrated proxy realizations at
 fixed geometry. The right panel shows the mean and 5–95% sample interval
 across five seeds as log-irradiance sigma changes.</p>
-<p><img alt="Illustration 27: Recorded time-series results" decoding="async" loading="lazy" src="report-assets/figure-27.png" style="width:5.7in;height:auto;max-width:100%;"/></p>
+<p><img width="980" height="560" alt="Illustration 27: Recorded time-series results" decoding="async" loading="lazy" src="report-assets/figure-27.png" style="width:5.7in;height:auto;max-width:100%;"/></p>
 <p><strong>Figure 25: Satellite-count sensitivity of the multi-satellite
 model</strong></p>
 <p>The mean integrated DPS proxy varies with satellite count for five
@@ -2199,7 +2240,7 @@ replication stream.</td>
 </tr>
 </tbody>
 </table>
-<figure><img alt="Illustration 28: Case study
+<figure><img width="1024" height="1410" alt="Illustration 28: Case study
 environment and existing connectivity" decoding="async" loading="lazy" src="report-assets/figure-28.png" style="width:6.78333in;height:auto;max-width:100%;"/> <figcaption><strong>Figure 26: Geographic
 locations of BSB headquarters, DR and offshore data centre, with
 existing connectivity</strong></figcaption></figure>
@@ -2289,7 +2330,7 @@ rekey intervals must be sized using measured application traffic,
 equipment limits and outage requirements. The present simulation does
 not demonstrate full-rate one-time-pad encryption, production
 replication throughput or an approved hybrid cryptographic protocol.</p>
-<figure><img alt="Illustration 29: Cryptographic
+<figure><img width="1024" height="1395" alt="Illustration 29: Cryptographic
 protection boundary and integration model" decoding="async" loading="lazy" src="report-assets/figure-29.png" style="width:6.93333in;height:auto;max-width:100%;"/><figcaption><strong>Figure 27: Proposed
 BSB QKD-assisted encryption and key-management architecture</strong></figcaption></figure>
 <p>The proposed figure will separate banking replication traffic and
@@ -2487,7 +2528,7 @@ ownership.</td>
 </tr>
 </tbody>
 </table>
-<figure><img alt="Illustration 30: Phased implementation
+<figure><img width="1008" height="1387" alt="Illustration 30: Phased implementation
 concept" decoding="async" loading="lazy" src="report-assets/figure-30.png" style="width:6.85833in;height:auto;max-width:100%;"/><figcaption><strong>Figure 28: BSB phased
 implementation and BCP security transition</strong></figcaption></figure>
 <p>The proposed roadmap figure will distinguish the near-term
@@ -2755,5 +2796,42 @@ August 2024. DOI: <a href="https://doi.org/10.6028/NIST.FIPS.203">https://doi.or
 <p>[13] European Telecommunications Standards Institute, Quantum Key
 Distribution (QKD); Protocol and Data Format of REST-Based Key Delivery
 API, ETSI GS QKD 014 V1.1.1, February 2019. <a href="https://www.etsi.org/deliver/etsi_gs/QKD/001_099/014/01.01.01_60/gs_qkd014v010101p.pdf">https://www.etsi.org/deliver/etsi_gs/QKD/001_099/014/01.01.01_60/gs_qkd014v010101p.pdf</a></p>
-<div class="site-footer" role="contentinfo"><span>Limnesh Augustine · Project Report</span><span>IIT Delhi · 20 September 2026</span></div></body>
+<div class="site-footer" role="contentinfo"><span>Limnesh Augustine · Project Report</span><span>IIT Delhi · 20 September 2026</span></div>
+<script>
+/* Reliable contents navigation: position the exact section below the sticky header. */
+(function () {
+  'use strict';
+  var toc = document.querySelector('.contents-panel .contents-links');
+  if (!toc) return;
+
+  function positionAt(id) {
+    var target = document.getElementById(id);
+    if (!target) return false;
+    var masthead = document.querySelector('.site-masthead');
+    var offset = (masthead ? masthead.getBoundingClientRect().height : 0) + 18;
+    var destination = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({top: Math.max(0, destination), behavior: 'instant'});
+    return true;
+  }
+
+  toc.addEventListener('click', function (event) {
+    var anchor = event.target.closest('a[href^="#"]');
+    if (!anchor || !toc.contains(anchor)) return;
+    var id = decodeURIComponent(anchor.getAttribute('href').slice(1));
+    if (!document.getElementById(id)) return;
+    event.preventDefault();
+    var hash = '#' + encodeURIComponent(id);
+    if (window.location.hash !== hash) history.pushState(null, '', hash);
+    positionAt(id);
+  });
+
+  // Browser Back/Forward should return to the appropriate section as well.
+  window.addEventListener('popstate', function () {
+    if (window.location.hash) {
+      positionAt(decodeURIComponent(window.location.hash.slice(1)));
+    }
+  });
+})();
+</script>
+</body>
 </html>
